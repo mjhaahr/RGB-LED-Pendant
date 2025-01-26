@@ -11,10 +11,10 @@
 		(comment 1 "Matthew Haahr")
 	)
 	(lib_symbols)
-	(text_box "TODOs:\nPick and Add MCU (STM32 or ESP32), needs WS2812 support and low power\n\nBattery charger and controller\n\nExternal interface (USB-C), charge, program, and debug\n\n5V (LEDs) and 3.3V (MCU) regulators\n\nPower Switch/Button, another button for patterns (could be the same and use a long press to turn off, get a power button controller)\n\nPick battery (single cell would need boost for LEDs, so 2-cell is probably better)"
+	(text_box "TODOs:\nPick and Add MCU (STM32 or ESP32), needs WS2812 support and low power\n\nBattery charger and controller\n\nExternal interface (USB-C), charge, program, and debug (will need FTDI or similar on board, can program through that for ESP32)\n\n5V (LEDs) and 3.3V (MCU) regulators\n\nPower Switch/Button, another button for patterns (could be the same and use a long press to turn off, get a power button controller)\n\nPick battery (single cell would need boost for LEDs, so 2-cell is probably better)"
 		(exclude_from_sim no)
 		(at 77.47 39.37 0)
-		(size 41.91 43.18)
+		(size 44.45 45.72)
 		(stroke
 			(width 0)
 			(type default)
