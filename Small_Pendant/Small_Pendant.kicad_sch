@@ -11,6 +11,25 @@
 		(comment 1 "Matthew Haahr")
 	)
 	(lib_symbols)
+	(text_box "TODOs:\nPick and Add MCU (STM32 or ESP32), needs WS2812 support and low power\n\nBattery charger and controller\n\nExternal interface (USB-C), charge, program, and debug\n\n5V (LEDs) and 3.3V (MCU) regulators\n\nPower Switch/Button, another button for patterns (could be the same and use a long press to turn off, get a power button controller)\n\nPick battery (single cell would need boost for LEDs, so 2-cell is probably better)"
+		(exclude_from_sim no)
+		(at 77.47 39.37 0)
+		(size 41.91 43.18)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "897a2bb7-4ae8-4d01-a5eb-8453dee21e11")
+	)
 	(sheet
 		(at 17.78 50.8)
 		(size 31.75 20.32)
