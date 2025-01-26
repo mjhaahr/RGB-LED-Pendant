@@ -1,0 +1,95 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e1f67532-4244-48a0-a633-004c4e91cc2f")
+	(paper "A5")
+	(title_block
+		(title "Small Pendant")
+		(rev "A")
+		(company "MJHaahr")
+		(comment 1 "Matthew Haahr")
+	)
+	(lib_symbols)
+	(sheet
+		(at 17.78 50.8)
+		(size 31.75 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "14f335fc-598f-404a-bfcd-3d46c6f23e92")
+		(property "Sheetname" "Capacitors"
+			(at 17.78 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Capacitors.kicad_sch"
+			(at 17.78 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 19.05)
+		(size 31.75 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f7e054ab-e6f9-45d1-9e92-1309241566f0")
+		(property "Sheetname" "LEDs"
+			(at 17.78 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LEDs.kicad_sch"
+			(at 17.78 39.9546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
