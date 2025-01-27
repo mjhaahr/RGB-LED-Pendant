@@ -14951,7 +14951,7 @@
 		)
 	)
 	(global_label "DATA_THRU5"
-		(shape input)
+		(shape output)
 		(at 146.05 195.58 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15039,7 +15039,7 @@
 		)
 	)
 	(global_label "DATA_THRU9"
-		(shape input)
+		(shape output)
 		(at 247.65 160.02 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15083,7 +15083,7 @@
 		)
 	)
 	(global_label "DATA_THRU8"
-		(shape input)
+		(shape output)
 		(at 222.25 160.02 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15105,7 +15105,7 @@
 		)
 	)
 	(global_label "DATA_THRU1"
-		(shape input)
+		(shape output)
 		(at 44.45 195.58 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15127,7 +15127,7 @@
 		)
 	)
 	(global_label "DATA_THRU7"
-		(shape input)
+		(shape output)
 		(at 196.85 160.02 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15149,7 +15149,7 @@
 		)
 	)
 	(global_label "DATA_THRU6"
-		(shape input)
+		(shape output)
 		(at 171.45 195.58 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15193,7 +15193,7 @@
 		)
 	)
 	(global_label "DATA_THRU3"
-		(shape input)
+		(shape output)
 		(at 95.25 195.58 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15237,7 +15237,7 @@
 		)
 	)
 	(global_label "DATA_THRU4"
-		(shape input)
+		(shape output)
 		(at 120.65 195.58 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15259,7 +15259,7 @@
 		)
 	)
 	(global_label "DATA_THRU2"
-		(shape input)
+		(shape output)
 		(at 69.85 195.58 180)
 		(fields_autoplaced yes)
 		(effects
