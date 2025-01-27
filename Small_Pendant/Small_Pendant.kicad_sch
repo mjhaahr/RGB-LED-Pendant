@@ -11,7 +11,7 @@
 		(comment 1 "Matthew Haahr")
 	)
 	(lib_symbols)
-	(text_box "TODOs:\nPick and Add MCU (STM32 or ESP32), needs WS2812 support and low power\n\nBattery charger and controller\n\nExternal interface (USB-C), charge, program, and debug (will need FTDI or similar on board, can program through that for ESP32)\n\n5V (LEDs) and 3.3V (MCU) regulators\n\nPower Switch/Button, another button for patterns (could be the same and use a long press to turn off, get a power button controller)\n\nPick battery (single cell would need boost for LEDs, so 2-cell is probably better)"
+	(text_box "TODOs:\nAdd MCU - ESP32-C3 (or C2), implement as bare package\n\nBattery charger and controller (power hand off between Raw 5V (USB) and battery, power FTDI only from USB, leave disconnected if not on USB)\n\nExternal interface (USB-C), charge, program, and debug (will need FTDI or similar on board, can program through that for ESP32)\n\n5V (LEDs) and 3.3V (MCU) regulators\n\nPower Switch/Button, another button for patterns (could be the same and use a long press to turn off, get a power button controller)\n\nPick battery (single cell would need boost for LEDs, so 2-cell is probably better)"
 		(exclude_from_sim no)
 		(at 77.47 39.37 0)
 		(size 44.45 45.72)
@@ -31,7 +31,7 @@
 		(uuid "897a2bb7-4ae8-4d01-a5eb-8453dee21e11")
 	)
 	(sheet
-		(at 17.78 50.8)
+		(at 17.78 46.99)
 		(size 31.75 20.32)
 		(fields_autoplaced yes)
 		(stroke
@@ -42,8 +42,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "14f335fc-598f-404a-bfcd-3d46c6f23e92")
-		(property "Sheetname" "Capacitors"
-			(at 17.78 50.0884 0)
+		(property "Sheetname" "MCU"
+			(at 17.78 46.2784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,8 +51,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Capacitors.kicad_sch"
-			(at 17.78 71.7046 0)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 17.78 67.8946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -64,6 +64,44 @@
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 74.93)
+		(size 31.75 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3c1e3da0-6987-4ece-9962-4b7e3d28a6a8")
+		(property "Sheetname" "USB+Power"
+			(at 17.78 74.2184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB+Power.kicad_sch"
+			(at 17.78 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f"
+					(page "4")
 				)
 			)
 		)
