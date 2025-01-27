@@ -653,7 +653,7 @@
       "idf": "",
       "netlist": "",
       "plot": "Small_Pendant_Fab/",
-      "pos_files": "",
+      "pos_files": "Small_Pendant_Fab/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
