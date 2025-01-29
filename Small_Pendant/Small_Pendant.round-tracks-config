@@ -1,5 +1,7 @@
 Default	True	2.0	3
+3V3	True	2.0	3
+5V	True	2.0	3
 Data	True	2.0	3
 GND	True	2.0	3
-Power	True	2.0	3
+VUSB	True	2.0	3
 False	True	False
