@@ -139,7 +139,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "Small_Pendant_Fab/")
+			(outputdirectory "Small_Pendant_Fab/Small_Pendant_Gerbers/")
 		)
 	)
 	(net 0 "")
