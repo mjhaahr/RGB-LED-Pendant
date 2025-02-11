@@ -58,7 +58,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|50015000|31825000|bda09d1b-fb8f-47e0-9e11-966eaae04f3d|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -213,8 +215,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.4,
-          "drill": 0.2
+          "diameter": 0.6,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": true
