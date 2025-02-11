@@ -1,4 +1,4 @@
-23374780418409450
+23376634250582216
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84958,6 +84958,13 @@ ESP32-C3 WROOM-02 espressif
 0
 40
 19
+RF_Module
+ESP32-C3-WROOM-02-Alt
+RF Module, ESP32-C3 WROOM-02, Wi-Fi and Bluetooth, BLE, onboard antenna, https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf
+ESP32-C3 WROOM-02 espressif
+0
+39
+39
 RF_Module
 ESP32-C3-WROOM-02U
 RF Module, ESP32-C3 WROOM-02 , Wi-Fi and Bluetooth, BLE, external antenna, https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf
