@@ -11,10 +11,10 @@
 		(comment 1 "Matthew Haahr")
 	)
 	(lib_symbols)
-	(text_box "TODOs:\nAdd MCU - ESP32-C3 (or C2), implement as bare package\n\nAdd button for patterns (could be the same and use a long press to turn off, get a power button controller) and one for Programming (or a slide switch)\n\nAdd USB-C Power Negotiation (5V with highest current when PD compliant, and highest current otherwise)"
+	(text_box "TODOs:\nAdd MCU - ESP32-C3 (or C2), implement as bare package\n(or RP2350, needs a fun inductor and fun decoupling layout, but does DFU)\n(Or STM32, needs SWD, which can be a 5 Pin Header, I want prog over USB though)\n\nAdd button for patterns (always boot to no LEDs, like ground the pin on boot)\n\nAdd 2x LEDs (V-Dim) for Power Status and Boot Status (can blink the second)\n\nSetup AutoProg Reset (https://www.studiopieters.nl/esp32-auto-program-reset/)"
 		(exclude_from_sim no)
 		(at 77.47 39.37 0)
-		(size 44.45 29.21)
+		(size 66.04 33.02)
 		(stroke
 			(width 0)
 			(type default)
