@@ -11,10 +11,10 @@
 		(comment 1 "Matthew Haahr")
 	)
 	(lib_symbols)
-	(text_box "TODOs:\nAdd MCU - ESP32-C3 (or C2), implement as bare package\n(or RP2350, needs a fun inductor and fun decoupling layout, but does DFU)\n(Or STM32, needs SWD, which can be a 5 Pin Header, I want prog over USB though)\n\nAdd button for patterns (always boot to no LEDs, like ground the pin on boot)\n\nAdd 2x LEDs (V-Dim) for Power Status and Boot Status (can blink the second)\n\nSetup AutoProg Reset (https://www.studiopieters.nl/esp32-auto-program-reset/)"
+	(text_box "TODOs:\nESP32-C3 (or C6) Mini on Second board, can take advantage of WiFi\n\nhttps://docs.espressif.com/projects/esp-idf/en/v5.2/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html\n\nFTDI FT234XD-R for USB-UART (setup AutoProg)\n\nOnly need a 3V3 Regulator and Level Shifter\n\nLSM6DSOX for IMU (use Libs for Abs Orientation)\n\nButtons:\n - Pattern Button (Scrolling Dot, Bouncing Dots, RGB, Fluid?)\n - Color Button (Color Cycle then Rainbow for solid color ones)\n - Sleep off the Pattern Button? (and wake from sleep)\n\nWiFi:\n - Basically the button interface (dropdown for pattern, color picker)\n\nPanelize on my own\n\nFigure out interboard connectors (want relatively high current)\n\nJust power over USB-C? (5V3A should be enough, needs testing with Power Supply)"
 		(exclude_from_sim no)
-		(at 77.47 39.37 0)
-		(size 66.04 33.02)
+		(at 68.58 38.1 0)
+		(size 118.11 52.07)
 		(stroke
 			(width 0)
 			(type default)
