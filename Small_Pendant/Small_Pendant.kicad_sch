@@ -11,10 +11,10 @@
 		(comment 1 "Matthew Haahr")
 	)
 	(lib_symbols)
-	(text_box "TODOs:\nESP32-C3 (or C6) Mini on Second board, can take advantage of WiFi\n\nhttps://docs.espressif.com/projects/esp-idf/en/v5.2/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html\n\nFTDI FT234XD-R for USB-UART (setup AutoProg)\n\nOnly need a 3V3 Regulator and Level Shifter\n\nLSM6DSOX for IMU (use Libs for Abs Orientation)\n\nButtons:\n - Pattern Button (Scrolling Dot, Bouncing Dots, RGB, Fluid?)\n - Color Button (Color Cycle then Rainbow for solid color ones)\n - Sleep off the Pattern Button? (and wake from sleep)\n\nWiFi:\n - Basically the button interface (dropdown for pattern, color picker)\n\nPanelize on my own\n\nFigure out interboard connectors (want relatively high current)\n\nJust power over USB-C? (5V3A should be enough, needs testing with Power Supply)"
+	(text_box "TODOs:\nESP32-C3 (or C6) Mini on Second board, can take advantage of WiFi\n\nhttps://docs.espressif.com/projects/esp-idf/en/v5.2/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html\n\nFTDI FT234XD-R for USB-UART (setup AutoProg)\n\nOnly need a 3V3 Regulator and Level Shifter\n\nLSM6DSOX for IMU (use Libs for Abs Orientation) (Or just BNO055, no code needed)\n\nButtons:\n - Pattern Button (Scrolling Dot, Bouncing Dots, RGB, Fluid?)\n - Color Button (Color Cycle then Rainbow for solid color ones)\n - Sleep off the Pattern Button? (and wake from sleep)\n\nWiFi:\n - Basically the button interface (dropdown for pattern, color picker)\n\nPanelize on my own\n\nFigure out interboard connectors (want relatively high current)\n\nJust power over USB-C? (5V3A should be enough, needs testing with Power Supply)\n\nStatus LEDs? (Power vs Boot (Make Disable-able?)"
 		(exclude_from_sim no)
 		(at 68.58 38.1 0)
-		(size 118.11 52.07)
+		(size 118.11 55.88)
 		(stroke
 			(width 0)
 			(type default)
