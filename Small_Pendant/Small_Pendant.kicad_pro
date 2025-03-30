@@ -58,12 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "items_not_allowed|86595000|45336591|06a9b736-d5e1-4f61-a9d0-f513bf646d82|00000000-0000-0000-0000-000000000000",
-        "items_not_allowed|86595000|45336591|af37c48d-13a9-4302-ad71-c08d94d2ea3d|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|80000000|48826750|37c960af-6bfc-40ef-b819-3cf98db0709b|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|86700751|58800614|9241649f-eb72-4664-9f47-c70a4307c770|00000000-0000-0000-0000-000000000000"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -601,7 +596,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -635,7 +630,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
