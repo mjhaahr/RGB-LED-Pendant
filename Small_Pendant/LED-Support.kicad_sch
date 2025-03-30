@@ -443,18 +443,6 @@
 		(uuid "157cb2f2-8208-4469-83fa-b014e022bbcf")
 	)
 	(junction
-		(at 176.53 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "15a08471-1268-4595-87fc-526288213f81")
-	)
-	(junction
-		(at 190.5 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "24ed9717-1df8-4e71-8c07-2a227bb16a94")
-	)
-	(junction
 		(at 22.86 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -479,24 +467,6 @@
 		(uuid "3ad1794b-b0e2-4d12-ab2a-5c9d83b09137")
 	)
 	(junction
-		(at 176.53 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b3550ce-dde4-468d-b740-3d2527f1f475")
-	)
-	(junction
-		(at 176.53 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c2cb063-6fad-40e4-9e77-ab7fd34b4536")
-	)
-	(junction
-		(at 190.5 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f80bf39-0615-4074-a33a-11aba0031d23")
-	)
-	(junction
 		(at 120.65 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -507,12 +477,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "45942772-02de-441a-9dba-62e86d133645")
-	)
-	(junction
-		(at 176.53 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48e1f7d9-edbb-4169-a9e0-b073df83018f")
 	)
 	(junction
 		(at 50.8 60.96)
@@ -605,12 +569,6 @@
 		(uuid "aae5e47b-8572-4177-a1fb-3f6630619c80")
 	)
 	(junction
-		(at 190.5 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "acee790e-aecc-4b0d-b9d8-8a99a81863f6")
-	)
-	(junction
 		(at 78.74 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -633,12 +591,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bdf330be-bef7-4d0d-a077-7c061d355779")
-	)
-	(junction
-		(at 190.5 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "be350e6e-1d55-44c1-b340-4469202cf7eb")
 	)
 	(junction
 		(at 50.8 39.37)
@@ -711,16 +663,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe04bae2-8727-4eed-b82d-91818641b352")
-	)
-	(wire
-		(pts
-			(xy 204.47 26.67) (xy 204.47 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01a7cabf-9a64-44a2-ab5b-5ca5577d5d31")
 	)
 	(wire
 		(pts
@@ -824,16 +766,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 60.96) (xy 190.5 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f89a3d0-8f38-4d63-8114-23ee0cf48cbb")
-	)
-	(wire
-		(pts
 			(xy 64.77 39.37) (xy 64.77 36.83)
 		)
 		(stroke
@@ -841,16 +773,6 @@
 			(type default)
 		)
 		(uuid "201200fb-9e7a-4bd3-9790-9797ec4a28ca")
-	)
-	(wire
-		(pts
-			(xy 190.5 60.96) (xy 190.5 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "216b4825-3916-4817-a591-a6ac7046803c")
 	)
 	(wire
 		(pts
@@ -891,16 +813,6 @@
 			(type default)
 		)
 		(uuid "32a5c868-776e-4be9-a527-076b2a1c9fd4")
-	)
-	(wire
-		(pts
-			(xy 204.47 60.96) (xy 204.47 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3344a5cf-24cd-4575-b9f4-bf0c037a55ab")
 	)
 	(wire
 		(pts
@@ -951,16 +863,6 @@
 			(type default)
 		)
 		(uuid "3a493265-8008-4810-bc84-787069176834")
-	)
-	(wire
-		(pts
-			(xy 190.5 73.66) (xy 176.53 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a8ba164-6f4e-447e-ad86-6ba3a096c25d")
 	)
 	(wire
 		(pts
@@ -1154,16 +1056,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 26.67) (xy 190.5 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6901722a-1220-4780-9ecf-4797411436c7")
-	)
-	(wire
-		(pts
 			(xy 50.8 60.96) (xy 64.77 60.96)
 		)
 		(stroke
@@ -1354,16 +1246,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 73.66) (xy 190.5 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8eb97151-871e-40ee-884d-f7be65616428")
-	)
-	(wire
-		(pts
 			(xy 106.68 26.67) (xy 106.68 29.21)
 		)
 		(stroke
@@ -1394,16 +1276,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 39.37) (xy 176.53 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95ca04d5-e3c5-4aa0-9660-2e2836753158")
-	)
-	(wire
-		(pts
 			(xy 64.77 60.96) (xy 78.74 60.96)
 		)
 		(stroke
@@ -1431,16 +1303,6 @@
 			(type default)
 		)
 		(uuid "9d53efee-f341-471c-a80a-244d3b2eb891")
-	)
-	(wire
-		(pts
-			(xy 190.5 60.96) (xy 204.47 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a564cf8b-dc2a-4aa2-9e19-929be73713e7")
 	)
 	(wire
 		(pts
@@ -1534,16 +1396,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 39.37) (xy 204.47 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1e7fa7e-269a-4606-a423-24a03f5004bc")
-	)
-	(wire
-		(pts
 			(xy 92.71 73.66) (xy 78.74 73.66)
 		)
 		(stroke
@@ -1574,26 +1426,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 26.67) (xy 204.47 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8d2f165-536a-4e6e-9a92-62e98662c141")
-	)
-	(wire
-		(pts
-			(xy 190.5 39.37) (xy 190.5 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd62bc4e-b402-4878-bc8e-fec81100f804")
-	)
-	(wire
-		(pts
 			(xy 134.62 60.96) (xy 134.62 63.5)
 		)
 		(stroke
@@ -1614,16 +1446,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 73.66) (xy 204.47 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d35a0450-6ae3-4838-a2e0-4c329d96a6e9")
-	)
-	(wire
-		(pts
 			(xy 64.77 73.66) (xy 64.77 71.12)
 		)
 		(stroke
@@ -1631,16 +1453,6 @@
 			(type default)
 		)
 		(uuid "d4ff191c-84ac-47a6-84c0-f2d82a4de19b")
-	)
-	(wire
-		(pts
-			(xy 204.47 39.37) (xy 190.5 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d528e7b3-8dda-4060-8614-561cfe3ef5fe")
 	)
 	(wire
 		(pts
@@ -1661,16 +1473,6 @@
 			(type default)
 		)
 		(uuid "d779f0e1-8731-4365-8cf4-08265a5b8830")
-	)
-	(wire
-		(pts
-			(xy 176.53 26.67) (xy 190.5 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc21e55b-0b83-409d-9dd1-04d4ac5ea9f3")
 	)
 	(wire
 		(pts
@@ -1721,16 +1523,6 @@
 			(type default)
 		)
 		(uuid "ead8afb2-cc85-45cc-8234-66bc6878c842")
-	)
-	(wire
-		(pts
-			(xy 204.47 73.66) (xy 190.5 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0aea3b6-6a8e-4b7d-9c30-7b5d47f8500e")
 	)
 	(wire
 		(pts
@@ -2001,138 +1793,6 @@
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/0aa044a8-3060-48ad-928a-e0b7e1b97858"
 					(reference "C42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 190.5 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0c6ac641-cc06-4acb-880e-6513ff303e2b")
-		(property "Reference" "C13"
-			(at 194.31 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 194.31 34.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 191.4652 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 190.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 190.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 190.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 190.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part#" ""
-			(at 190.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 190.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 190.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 190.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 190.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "905ae672-75d4-490e-a4ff-4a86731114a0")
-		)
-		(pin "2"
-			(uuid "4aea7d7d-c1f4-42c0-ac2c-807528edf4d0")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/0aa044a8-3060-48ad-928a-e0b7e1b97858"
-					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -2464,139 +2124,6 @@
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/0aa044a8-3060-48ad-928a-e0b7e1b97858"
 					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 204.47 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18400183-c5fd-4db3-a789-5cdab2f9c598")
-		(property "Reference" "C46"
-			(at 208.28 66.0399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 208.28 68.5799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 205.4352 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 204.47 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 204.47 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 204.47 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 204.47 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part#" ""
-			(at 204.47 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 204.47 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 204.47 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 204.47 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 204.47 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d4ec3983-d55d-435d-bf4a-e4d2060061ea")
-		)
-		(pin "2"
-			(uuid "fd531b01-7470-4c01-ae8d-7ae602728e9b")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/0aa044a8-3060-48ad-928a-e0b7e1b97858"
-					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -3127,271 +2654,6 @@
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/0aa044a8-3060-48ad-928a-e0b7e1b97858"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 190.5 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3ab9ee40-25f3-4b28-8c63-ed3d4a1b3c20")
-		(property "Reference" "C45"
-			(at 194.31 66.0399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 194.31 68.5799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 191.4652 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 190.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 190.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 190.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 190.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part#" ""
-			(at 190.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 190.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 190.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 190.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 190.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "305dd03e-5d4d-4a3d-8f22-141c5a485db5")
-		)
-		(pin "2"
-			(uuid "4ff75d48-12fb-4d00-a63b-b8d0f2ffa935")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/0aa044a8-3060-48ad-928a-e0b7e1b97858"
-					(reference "C45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 204.47 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3de1913d-8c8c-423b-baf3-31e7e7d65018")
-		(property "Reference" "C14"
-			(at 208.28 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 208.28 34.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 205.4352 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 204.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 204.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 204.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 204.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part#" ""
-			(at 204.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 204.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 204.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 204.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 204.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "539a940f-98ef-4197-943b-c4007f8e37e0")
-		)
-		(pin "2"
-			(uuid "abba367f-015d-465e-abd0-37692f2da4a7")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/0aa044a8-3060-48ad-928a-e0b7e1b97858"
-					(reference "C14")
 					(unit 1)
 				)
 			)
