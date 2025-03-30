@@ -31,7 +31,45 @@
 		(uuid "897a2bb7-4ae8-4d01-a5eb-8453dee21e11")
 	)
 	(sheet
-		(at 17.78 46.99)
+		(at 17.78 48.26)
+		(size 31.75 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0aa044a8-3060-48ad-928a-e0b7e1b97858")
+		(property "Sheetname" "LED Support"
+			(at 17.78 47.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LED-Support.kicad_sch"
+			(at 17.78 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 77.47)
 		(size 31.75 20.32)
 		(fields_autoplaced yes)
 		(stroke
@@ -43,7 +81,7 @@
 		)
 		(uuid "14f335fc-598f-404a-bfcd-3d46c6f23e92")
 		(property "Sheetname" "MCU"
-			(at 17.78 46.2784 0)
+			(at 17.78 76.7584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52,7 +90,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 17.78 67.8946 0)
+			(at 17.78 98.3746 0)
 			(effects
 				(font
 					(size 1.27 1.27)

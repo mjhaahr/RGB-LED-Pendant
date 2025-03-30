@@ -909,6 +909,10 @@
     [
       "14f335fc-598f-404a-bfcd-3d46c6f23e92",
       "MCU"
+    ],
+    [
+      "0aa044a8-3060-48ad-928a-e0b7e1b97858",
+      "LED Support"
     ]
   ],
   "text_variables": {}
