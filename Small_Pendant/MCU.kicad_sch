@@ -4139,10 +4139,6 @@
 		(uuid "68905a10-4c4e-409d-a116-51ceeeb05a04")
 	)
 	(no_connect
-		(at 175.26 77.47)
-		(uuid "753334c3-25de-42be-9218-b3fad16fdc2f")
-	)
-	(no_connect
 		(at 119.38 41.91)
 		(uuid "bd69a4fb-884b-4acc-b97e-17df053fcf8b")
 	)
@@ -4874,6 +4870,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 77.47) (xy 177.8 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c65d7ec-e239-42ae-9715-ec34601afbb7")
+	)
+	(wire
+		(pts
 			(xy 222.25 139.7) (xy 222.25 137.16)
 		)
 		(stroke
@@ -5254,7 +5260,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 80.01) (xy 187.96 80.01)
+			(xy 175.26 80.01) (xy 177.8 80.01)
 		)
 		(stroke
 			(width 0)
@@ -6034,7 +6040,7 @@
 	)
 	(global_label "GPIO9{slash}BOOT"
 		(shape input)
-		(at 187.96 80.01 0)
+		(at 177.8 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6044,7 +6050,7 @@
 		)
 		(uuid "28735d27-d4c7-423c-94ab-ce518efa7d33")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 202.8591 80.01 0)
+			(at 192.6991 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6226,6 +6232,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_DATA"
+		(shape output)
+		(at 177.8 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a20875ff-e800-4469-a13e-8909feccc4ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.6147 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
