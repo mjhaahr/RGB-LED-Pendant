@@ -34983,7 +34983,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b8dd3307-8e19-4c96-815d-f6c009465ee5")
-		(property "Reference" "D1"
+		(property "Reference" "D178"
 			(at 34.29 17.78 0)
 			(effects
 				(font
@@ -35105,7 +35105,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D1")
+					(reference "D178")
 					(unit 1)
 				)
 			)
