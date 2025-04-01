@@ -671,7 +671,7 @@
     "netclass_patterns": [
       {
         "netclass": "5V",
-        "pattern": "+5V"
+        "pattern": "+5V*"
       },
       {
         "netclass": "GND",
