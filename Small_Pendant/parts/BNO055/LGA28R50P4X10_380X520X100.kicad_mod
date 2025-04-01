@@ -61,10 +61,20 @@
 			)
 		)
 	)
-	(attr smd)
+	(attr smd allow_soldermask_bridges)
 	(fp_line
-		(start -2.65 -1.95)
-		(end -2.65 1.95)
+		(start -2.9 -2.2)
+		(end -2.9 -1.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e8f21df1-e4b2-4344-b105-7ac2f04b6d0d")
+	)
+	(fp_line
+		(start -2.7 -2)
+		(end -2.7 2)
 		(stroke
 			(width 0.127)
 			(type solid)
@@ -73,14 +83,24 @@
 		(uuid "36eb3447-ef25-444a-a03e-cf123b949847")
 	)
 	(fp_line
-		(start -2.6 1.95)
-		(end 2.65 1.95)
+		(start -2.7 2)
+		(end 2.7 2)
 		(stroke
 			(width 0.127)
 			(type solid)
 		)
 		(layer "F.SilkS")
 		(uuid "dbf49421-096c-4efb-b6fe-250ef2f49cbd")
+	)
+	(fp_line
+		(start -2.5 -2.2)
+		(end -2.9 -2.2)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "56f1d280-b333-44c5-8b3f-bad870c9e8db")
 	)
 	(fp_line
 		(start 1.75 2.875)
@@ -103,8 +123,8 @@
 		(uuid "b5f051c1-4ecd-4a46-a792-ee68ca1d9743")
 	)
 	(fp_line
-		(start 2.65 -1.95)
-		(end -2.65 -1.95)
+		(start 2.7 -2)
+		(end -2.7 -2)
 		(stroke
 			(width 0.127)
 			(type solid)
@@ -113,8 +133,8 @@
 		(uuid "5cec6762-2516-4fbd-b4f6-c1a8be27072d")
 	)
 	(fp_line
-		(start 2.65 1.95)
-		(end 2.65 -1.95)
+		(start 2.7 2)
+		(end 2.7 -2)
 		(stroke
 			(width 0.127)
 			(type solid)
@@ -161,17 +181,6 @@
 		)
 		(layer "F.SilkS")
 		(uuid "5dbb83ee-725d-43fa-8389-08d7f4712607")
-	)
-	(fp_circle
-		(center -2.35 -2.35)
-		(end -2.25 -2.35)
-		(stroke
-			(width 0.3048)
-			(type solid)
-		)
-		(fill none)
-		(layer "F.SilkS")
-		(uuid "32ee3ab9-2c5a-42ed-a1f5-27e9b772937f")
 	)
 	(fp_circle
 		(center 3.5 2.875)
@@ -469,5 +478,24 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.102)
 		(uuid "c3598b3a-3324-4653-90df-af318cc72117")
+	)
+	(group ""
+		(uuid "0221efe9-ee8a-4474-8ddb-5e1c8caace3e")
+		(members "0f004e9b-5024-4ffa-bb06-81f148499b31" "1510778a-e7e2-4799-81ad-7bab00cda208"
+			"1b43a50d-9d61-49db-ac07-2b78c2f9ad4a" "2aeb4e0f-f9d2-41f2-ac32-8e68fe063abe"
+			"43625dbe-7095-4b15-910b-c8bb6cf82358" "5dbb83ee-725d-43fa-8389-08d7f4712607"
+			"b5f051c1-4ecd-4a46-a792-ee68ca1d9743" "b797d58f-ffb7-4ab6-8866-1b80906d1cbf"
+		)
+	)
+	(model "${KIPRJMOD}/parts/BNO055/BNO055.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
 	)
 )

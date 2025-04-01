@@ -153,7 +153,7 @@
 				)
 			)
 		)
-		(symbol "power:+5V"
+		(symbol "power:+5VL"
 			(power)
 			(pin_numbers hide)
 			(pin_names
@@ -170,7 +170,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+5V"
+			(property "Value" "+5VL"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -196,7 +196,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(property "Description" "Power symbol creates a global label with name \"+5VL\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -214,7 +214,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "+5VL_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -252,7 +252,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "+5VL_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -273,7 +273,7 @@
 				)
 			)
 		)
-		(symbol "power:Earth"
+		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
 			(pin_names
@@ -290,7 +290,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "Earth"
+			(property "Value" "GND"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -307,7 +307,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -316,7 +316,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
 				(effects
 					(font
@@ -325,7 +325,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global ground gnd"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -334,46 +334,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Earth_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy -0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 -2.54) (xy 0.127 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy -1.27 -1.27)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -384,7 +348,7 @@
 					)
 				)
 			)
-			(symbol "Earth_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -437,6 +401,12 @@
 		(uuid "01e9bac2-4d55-45f6-9244-434acd747f30")
 	)
 	(junction
+		(at 77.47 191.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01ffd55e-6525-4a10-8800-d814474d4c26")
+	)
+	(junction
 		(at 26.67 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -455,10 +425,10 @@
 		(uuid "04329cac-f9b1-41da-ab50-81884abc5686")
 	)
 	(junction
-		(at 24.13 20.32)
+		(at 252.73 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "04ff6173-a8dc-4c9f-9230-13b79bfdb850")
+		(uuid "04645157-107e-46a6-857a-9b2a1a731ed1")
 	)
 	(junction
 		(at 204.47 76.2)
@@ -497,6 +467,18 @@
 		(uuid "0963ed8c-c615-44dc-be86-d8d15650aa10")
 	)
 	(junction
+		(at 49.53 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0995b328-a28c-4a1e-af75-772da71f52e5")
+	)
+	(junction
+		(at 52.07 191.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0acd5d2a-1bd2-4303-becc-f9f82efc73fd")
+	)
+	(junction
 		(at 128.27 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -531,12 +513,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0f33d6e7-38e0-4ada-ab3d-1039bcf0c71d")
-	)
-	(junction
-		(at 77.47 191.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0f88eca8-1695-42db-b1d9-28d80622bd82")
 	)
 	(junction
 		(at 179.07 58.42)
@@ -707,12 +683,6 @@
 		(uuid "22b4904d-54c7-4e19-a2e4-faaaae921d38")
 	)
 	(junction
-		(at 100.33 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "22e15ce3-ca95-491d-8f79-3aca0d13d29f")
-	)
-	(junction
 		(at 24.13 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -729,6 +699,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "266d242d-df90-45af-837e-f0af083f16db")
+	)
+	(junction
+		(at 227.33 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28afa047-6df9-4d4f-8108-f0e2f72a7f74")
 	)
 	(junction
 		(at 125.73 127)
@@ -905,6 +881,12 @@
 		(uuid "3a2c1e5a-d765-46f6-86ae-72d79ab348fd")
 	)
 	(junction
+		(at 125.73 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ab88b2d-1579-4114-a0df-25cadc89817d")
+	)
+	(junction
 		(at 77.47 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -921,6 +903,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ce34ad1-94ea-4808-bdea-d6d5f731cdfe")
+	)
+	(junction
+		(at 128.27 191.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3cef35b5-72f5-4602-9d26-770c8029bc8b")
 	)
 	(junction
 		(at 100.33 171.45)
@@ -1049,6 +1037,12 @@
 		(uuid "50c9cbed-fc2d-479d-b5cb-7e6f738177d9")
 	)
 	(junction
+		(at 176.53 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51bbbb75-f07b-46f0-b381-fc149180db09")
+	)
+	(junction
 		(at 227.33 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1133,6 +1127,12 @@
 		(uuid "5b9b148f-913e-4f7b-bcd4-7ba3630bcdd4")
 	)
 	(junction
+		(at 74.93 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d075745-73c6-4df5-a7e1-90cd863bba67")
+	)
+	(junction
 		(at 77.47 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1151,12 +1151,6 @@
 		(uuid "5f0106e8-1486-446b-8bcf-602b7cbe47f4")
 	)
 	(junction
-		(at 74.93 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f0dbfd4-2594-47f8-977a-f36d3d19030c")
-	)
-	(junction
 		(at 255.27 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1167,12 +1161,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60c6b309-e516-4fb7-8860-599316d8db52")
-	)
-	(junction
-		(at 52.07 191.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "623a856e-b813-47fe-9e88-30cda9c4a780")
 	)
 	(junction
 		(at 74.93 153.67)
@@ -1211,12 +1199,6 @@
 		(uuid "663892d0-e6ca-407f-ba39-5160351d980c")
 	)
 	(junction
-		(at 125.73 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6723a1b1-67bc-4928-836b-9c8246aef5e4")
-	)
-	(junction
 		(at 204.47 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1233,12 +1215,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6796c3b1-dd29-4b93-8495-3f39091eddee")
-	)
-	(junction
-		(at 179.07 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "67bb6e1b-cbc7-43a3-a1e5-4f7eb7086595")
 	)
 	(junction
 		(at 49.53 162.56)
@@ -1313,12 +1289,6 @@
 		(uuid "72834457-96dd-4e83-bfaf-85e10612851a")
 	)
 	(junction
-		(at 102.87 191.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "72d525c8-3e15-4a74-97da-6e12413c601f")
-	)
-	(junction
 		(at 49.53 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1335,6 +1305,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "752cb39c-2bb1-4514-a727-1e821d0d726d")
+	)
+	(junction
+		(at 100.33 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75854d29-81c7-4d6a-8437-0c741517fe6b")
 	)
 	(junction
 		(at 227.33 118.11)
@@ -1355,22 +1331,10 @@
 		(uuid "77c535b3-11aa-49d0-9d09-90411af12640")
 	)
 	(junction
-		(at 201.93 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7859b0c0-72f8-4c4c-a928-d915f7803b52")
-	)
-	(junction
 		(at 201.93 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "78f3833f-6d3d-44cc-9ba0-62904c4557d0")
-	)
-	(junction
-		(at 229.87 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "790673da-2ea1-4ae9-b879-d40aafb96f2d")
 	)
 	(junction
 		(at 179.07 102.87)
@@ -1545,12 +1509,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9450fde8-08a0-46f2-8fa7-d237078d361e")
-	)
-	(junction
-		(at 176.53 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94ad7992-60cd-4e56-ade1-9c3482c850fb")
 	)
 	(junction
 		(at 151.13 135.89)
@@ -1751,12 +1709,6 @@
 		(uuid "adff6943-0746-445a-b145-3823378f6a12")
 	)
 	(junction
-		(at 153.67 191.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae4746b7-4cdb-4ff3-bcaf-eec6c17893f7")
-	)
-	(junction
 		(at 255.27 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1835,6 +1787,12 @@
 		(uuid "bacb1f30-84aa-4e89-9eb0-09226791d28a")
 	)
 	(junction
+		(at 153.67 191.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bad022dd-5ad9-4ac2-aa2e-d24b6ac29e3b")
+	)
+	(junction
 		(at 229.87 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1851,12 +1809,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bba64916-4efb-4324-9f01-5742605b7870")
-	)
-	(junction
-		(at 26.67 191.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbddda2c-8e4f-41c2-a640-1814dc126bd9")
 	)
 	(junction
 		(at 179.07 76.2)
@@ -1991,12 +1943,6 @@
 		(uuid "d0136a66-3cf3-4618-98d3-42576397d2b7")
 	)
 	(junction
-		(at 227.33 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d022a8b6-838c-4dd4-89aa-71ca101fe30e")
-	)
-	(junction
 		(at 229.87 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2009,16 +1955,16 @@
 		(uuid "d0d5a5b4-fc53-48f4-bf63-bd164dc71018")
 	)
 	(junction
-		(at 151.13 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d143eb1f-e1fc-4dcd-afeb-0d16cae3e5b5")
-	)
-	(junction
 		(at 176.53 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d15a84a2-4b11-424b-a456-a7f0ce275043")
+	)
+	(junction
+		(at 26.67 191.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2a3f1b3-ac8f-4b77-80d1-5551496bb0fa")
 	)
 	(junction
 		(at 151.13 109.22)
@@ -2055,12 +2001,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d7bb19b3-ad49-4379-97de-3525568823e0")
-	)
-	(junction
-		(at 255.27 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d7cce271-19b5-495d-b87a-7f6c5bd3fbb2")
 	)
 	(junction
 		(at 125.73 180.34)
@@ -2117,16 +2057,16 @@
 		(uuid "dd208a3d-4bd3-4aa7-92b8-0acbb7a9928d")
 	)
 	(junction
-		(at 204.47 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dd3797ca-e7ea-45e3-855d-8c0f60a87828")
-	)
-	(junction
 		(at 128.27 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "de42f9b1-44c7-42ed-8544-d4e027cab3be")
+	)
+	(junction
+		(at 229.87 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df35f9cf-2a44-4559-8ef6-a944bcce9fe9")
 	)
 	(junction
 		(at 100.33 118.11)
@@ -2201,16 +2141,22 @@
 		(uuid "e3cb9801-4ae5-426f-90b8-e578c2abc96b")
 	)
 	(junction
+		(at 204.47 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e480c992-6231-4218-b682-5006aa930959")
+	)
+	(junction
 		(at 227.33 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e502aa44-24c4-42e9-b26a-f706e4a153ff")
 	)
 	(junction
-		(at 128.27 191.77)
+		(at 201.93 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e6663d16-7920-42af-81da-7394fe9c4dae")
+		(uuid "e588f86b-0dd0-4cb6-86b4-ed1ebecf61e3")
 	)
 	(junction
 		(at 125.73 109.22)
@@ -2235,6 +2181,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9bd8f93-17a2-4716-9bdc-af3a8b800cb1")
+	)
+	(junction
+		(at 255.27 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea20144e-c33e-4e0b-bc5d-1ca0389fed5d")
 	)
 	(junction
 		(at 77.47 156.21)
@@ -2279,6 +2231,12 @@
 		(uuid "ecdc0d9d-a841-447f-a0c5-17c688d57a21")
 	)
 	(junction
+		(at 151.13 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eeaa7498-5331-4e15-b0ee-05d203ee16ee")
+	)
+	(junction
 		(at 128.27 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2295,12 +2253,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0b996fb-e045-4732-b550-75efec907307")
-	)
-	(junction
-		(at 49.53 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f160685b-7993-42ef-897a-49fe7026e955")
 	)
 	(junction
 		(at 77.47 58.42)
@@ -2333,6 +2285,12 @@
 		(uuid "f418b924-3c49-48bf-8115-5f1a6bc1bf21")
 	)
 	(junction
+		(at 24.13 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4baa3a4-d208-446c-8c26-ef9d8cdf4d1c")
+	)
+	(junction
 		(at 151.13 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2349,6 +2307,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8e5c95d-70df-42a2-b783-f02a44df6652")
+	)
+	(junction
+		(at 179.07 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8feee94-3d89-4834-9eac-e1655722b3d2")
 	)
 	(junction
 		(at 179.07 147.32)
@@ -2393,16 +2357,16 @@
 		(uuid "fc83a99d-fa81-4595-8bc0-125c050bf6af")
 	)
 	(junction
+		(at 102.87 191.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd844802-1554-4c06-9f69-e9ea66af3a8c")
+	)
+	(junction
 		(at 100.33 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff2b7e73-dc1e-4943-9a33-69d21265cc89")
-	)
-	(junction
-		(at 252.73 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ff782fb4-ca6e-48ca-b097-eb7a703ca929")
 	)
 	(junction
 		(at 74.93 100.33)
@@ -15311,7 +15275,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "02f2aa9e-0164-448f-8691-05125c7a01e2")
-		(property "Reference" "D167"
+		(property "Reference" "D169"
 			(at 237.49 142.24 0)
 			(effects
 				(font
@@ -15418,6 +15382,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "7fc30da5-cb2f-4cc4-b63f-9aa65817cdcc")
 		)
@@ -15433,72 +15406,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D167")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 201.93 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "03cda826-c024-4893-8d56-042040f119ff")
-		(property "Reference" "#PWR015"
-			(at 201.93 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 200.152 16.002 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 201.93 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 201.93 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d3c14013-33d7-45fb-bde0-727cc53cfd38")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR015")
+					(reference "D169")
 					(unit 1)
 				)
 			)
@@ -15513,7 +15421,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03df768d-c7d3-4fd6-8b63-935275bb80fb")
-		(property "Reference" "D165"
+		(property "Reference" "D167"
 			(at 237.49 124.46 0)
 			(effects
 				(font
@@ -15620,6 +15528,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "b461e2dc-3a70-4159-8060-99bb55c95edf")
 		)
@@ -15635,7 +15552,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D165")
+					(reference "D167")
 					(unit 1)
 				)
 			)
@@ -15650,7 +15567,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "067c5416-60f0-4997-9d24-8bfa0182a111")
-		(property "Reference" "D90"
+		(property "Reference" "D92"
 			(at 135.89 97.79 0)
 			(effects
 				(font
@@ -15757,6 +15674,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4ee971a0-ac3e-4a2c-a1af-044bee2961e2")
 		)
@@ -15772,7 +15698,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D90")
+					(reference "D92")
 					(unit 1)
 				)
 			)
@@ -15787,7 +15713,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "082f7165-1698-4c88-9110-ee60531f2572")
-		(property "Reference" "D46"
+		(property "Reference" "D48"
 			(at 85.09 62.23 0)
 			(effects
 				(font
@@ -15894,6 +15820,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "df0d5626-261f-455a-b9fd-3767e8bac6d3")
 		)
@@ -15909,7 +15844,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D46")
+					(reference "D48")
 					(unit 1)
 				)
 			)
@@ -15924,7 +15859,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0ae9f768-31d3-4026-94fe-7bdd3d86c2cb")
-		(property "Reference" "D81"
+		(property "Reference" "D83"
 			(at 135.89 17.78 0)
 			(effects
 				(font
@@ -16031,6 +15966,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "2dbbf2df-5b7b-4d39-97b6-02bd54ad26c9")
 		)
@@ -16046,7 +15990,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D81")
+					(reference "D83")
 					(unit 1)
 				)
 			)
@@ -16061,7 +16005,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0bb753a5-e63a-4e85-988d-3a2c4b0d369d")
-		(property "Reference" "D25"
+		(property "Reference" "D27"
 			(at 59.69 53.34 0)
 			(effects
 				(font
@@ -16168,6 +16112,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9625402a-e829-412e-a3fe-7dc715af724e")
 		)
@@ -16183,7 +16136,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D25")
+					(reference "D27")
 					(unit 1)
 				)
 			)
@@ -16198,7 +16151,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0e42b7a7-bf97-4dd0-bfe5-d8867870300d")
-		(property "Reference" "D31"
+		(property "Reference" "D33"
 			(at 59.69 106.68 0)
 			(effects
 				(font
@@ -16305,6 +16258,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9e16c5ef-b29e-492b-8974-24d0fc688d26")
 		)
@@ -16320,7 +16282,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D31")
+					(reference "D33")
 					(unit 1)
 				)
 			)
@@ -16335,7 +16297,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f81849b-ca21-4b66-b932-30b2b112f914")
-		(property "Reference" "D133"
+		(property "Reference" "D135"
 			(at 186.69 124.46 0)
 			(effects
 				(font
@@ -16442,6 +16404,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5c3d0b5b-5e51-4a15-8944-e00d6acc2a2c")
 		)
@@ -16457,7 +16428,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D133")
+					(reference "D135")
 					(unit 1)
 				)
 			)
@@ -16472,7 +16443,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f847666-5496-4fca-9445-0a81afff8e26")
-		(property "Reference" "D83"
+		(property "Reference" "D85"
 			(at 135.89 35.56 0)
 			(effects
 				(font
@@ -16579,6 +16550,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "162e9980-b3cd-4058-b01a-02991b3a6986")
 		)
@@ -16594,7 +16574,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D83")
+					(reference "D85")
 					(unit 1)
 				)
 			)
@@ -16609,7 +16589,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0fcd8d9d-b9b6-4da3-b628-f8831fbe7b7f")
-		(property "Reference" "D26"
+		(property "Reference" "D28"
 			(at 59.69 62.23 0)
 			(effects
 				(font
@@ -16716,6 +16696,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d59839f7-9a67-412f-9377-ccb4a4c79b60")
 		)
@@ -16731,7 +16720,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D26")
+					(reference "D28")
 					(unit 1)
 				)
 			)
@@ -16746,7 +16735,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "100278e7-5f2e-4e14-8b7d-18909cce8fcb")
-		(property "Reference" "D24"
+		(property "Reference" "D26"
 			(at 59.69 44.45 0)
 			(effects
 				(font
@@ -16853,6 +16842,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c51f8b05-41e0-493f-9acd-190cfa70e0ce")
 		)
@@ -16868,7 +16866,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D24")
+					(reference "D26")
 					(unit 1)
 				)
 			)
@@ -16883,7 +16881,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1226f1fb-ba63-42a1-ba89-bdf92ceb5b77")
-		(property "Reference" "D8"
+		(property "Reference" "D10"
 			(at 34.29 80.01 0)
 			(effects
 				(font
@@ -16990,6 +16988,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d8431b54-9a24-419b-a0f5-a420f1d3de8c")
 		)
@@ -17005,23 +17012,24 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D8")
+					(reference "D10")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 102.87 191.77 0)
+		(lib_id "power:+5VL")
+		(at 151.13 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "12a93a34-f880-46cf-b7a2-7e00e0a75202")
-		(property "Reference" "#PWR08"
-			(at 102.87 198.12 0)
+		(fields_autoplaced yes)
+		(uuid "14bd6f65-91d2-496d-82ce-be5098587b5c")
+		(property "Reference" "#PWR09"
+			(at 151.13 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17029,8 +17037,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 102.87 195.326 0)
+		(property "Value" "+5VL"
+			(at 151.13 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17038,7 +17046,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 191.77 0)
+			(at 151.13 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17046,8 +17054,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 102.87 191.77 0)
+		(property "Datasheet" ""
+			(at 151.13 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17055,8 +17063,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 102.87 191.77 0)
+		(property "Description" "Power symbol creates a global label with name \"+5VL\""
+			(at 151.13 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17065,12 +17073,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b09123e4-1363-472f-a842-97e4dc730acf")
+			(uuid "d55e950c-0b08-4282-9100-44ddf61d323e")
 		)
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR08")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -17085,7 +17093,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "16dcfa41-d4d3-4a11-9794-594344ff8b72")
-		(property "Reference" "D64"
+		(property "Reference" "D66"
 			(at 110.49 44.45 0)
 			(effects
 				(font
@@ -17192,6 +17200,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "282838d0-c4b9-4a3e-9bd3-2b01e532d57c")
 		)
@@ -17207,7 +17224,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D64")
+					(reference "D66")
 					(unit 1)
 				)
 			)
@@ -17222,7 +17239,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "184c4459-3e83-4716-9580-16ef58664c0e")
-		(property "Reference" "D105"
+		(property "Reference" "D107"
 			(at 161.29 53.34 0)
 			(effects
 				(font
@@ -17329,6 +17346,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e62831d5-45f7-4659-a0c2-a57afae1086c")
 		)
@@ -17344,7 +17370,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D105")
+					(reference "D107")
 					(unit 1)
 				)
 			)
@@ -17359,7 +17385,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1872e5c8-66c2-4a4d-98d9-370421c4b718")
-		(property "Reference" "D152"
+		(property "Reference" "D154"
 			(at 212.09 151.13 0)
 			(effects
 				(font
@@ -17466,6 +17492,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "046ad8d9-d48d-40ae-969d-9bc599ace4ae")
 		)
@@ -17481,7 +17516,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D152")
+					(reference "D154")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 255.27 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1901073b-0da9-431b-afce-c24279f3cff8")
+		(property "Reference" "#PWR018"
+			(at 255.27 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 255.27 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 255.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40d43059-6d16-4f41-9b0e-8749100fd012")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -17496,7 +17597,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "19025220-03a1-4794-a942-926ba871fa4a")
-		(property "Reference" "D158"
+		(property "Reference" "D160"
 			(at 237.49 62.23 0)
 			(effects
 				(font
@@ -17603,6 +17704,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4ef70c35-bb68-4c4f-89ae-258acc470668")
 		)
@@ -17618,72 +17728,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D158")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 255.27 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1abb8ac6-b4a5-4098-8c2f-b4ddce65aae7")
-		(property "Reference" "#PWR020"
-			(at 255.27 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 255.27 97.536 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 255.27 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 255.27 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f555c6f8-f04a-482b-a6ac-a4b45736ed6d")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR020")
+					(reference "D160")
 					(unit 1)
 				)
 			)
@@ -17698,7 +17743,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1db2f15b-9ed5-4bb3-b9c7-403a1267ded6")
-		(property "Reference" "D128"
+		(property "Reference" "D130"
 			(at 186.69 80.01 0)
 			(effects
 				(font
@@ -17805,6 +17850,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0de13a0e-eb89-419a-9319-d3ce1790005d")
 		)
@@ -17820,7 +17874,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D128")
+					(reference "D130")
 					(unit 1)
 				)
 			)
@@ -17835,7 +17889,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e37fe86-825d-44e9-9fba-71f0bab09976")
-		(property "Reference" "D95"
+		(property "Reference" "D97"
 			(at 135.89 142.24 0)
 			(effects
 				(font
@@ -17942,6 +17996,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6053ff0d-5e96-4a85-9066-b2e6f9a50468")
 		)
@@ -17957,7 +18020,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D95")
+					(reference "D97")
 					(unit 1)
 				)
 			)
@@ -17972,7 +18035,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1eeacb7f-2664-4465-81a1-72a781571aa4")
-		(property "Reference" "D175"
+		(property "Reference" "D177"
 			(at 262.89 71.12 0)
 			(effects
 				(font
@@ -18079,6 +18142,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 262.89 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "af7f51f7-ceb5-49e1-9e33-e124cec9226b")
 		)
@@ -18094,7 +18166,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D175")
+					(reference "D177")
 					(unit 1)
 				)
 			)
@@ -18109,7 +18181,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1f216efb-99a3-4336-93ba-62b41334ad1c")
-		(property "Reference" "D33"
+		(property "Reference" "D35"
 			(at 59.69 124.46 0)
 			(effects
 				(font
@@ -18216,6 +18288,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5380afbc-f7cb-4895-a24e-d8c44cfa7426")
 		)
@@ -18231,72 +18312,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 52.07 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2115c3d9-b70d-49ea-b5b5-d47d70b48328")
-		(property "Reference" "#PWR04"
-			(at 52.07 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 52.07 195.326 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 52.07 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 52.07 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ba362d2-a79f-470c-8256-9290c7b89a4e")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR04")
+					(reference "D35")
 					(unit 1)
 				)
 			)
@@ -18311,7 +18327,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "21c4f699-c260-4a51-becc-cf667f5da07a")
-		(property "Reference" "D173"
+		(property "Reference" "D175"
 			(at 262.89 53.34 0)
 			(effects
 				(font
@@ -18418,6 +18434,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 262.89 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0e0bb0f6-e182-4645-8858-cd1aa57d8b82")
 		)
@@ -18433,7 +18458,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D173")
+					(reference "D175")
 					(unit 1)
 				)
 			)
@@ -18448,7 +18473,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "21f0a790-565c-4b19-bf83-08d143f09cf4")
-		(property "Reference" "D66"
+		(property "Reference" "D68"
 			(at 110.49 62.23 0)
 			(effects
 				(font
@@ -18555,6 +18580,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a98b8424-ddd5-4a1b-902f-75a56115cb12")
 		)
@@ -18570,7 +18604,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D66")
+					(reference "D68")
 					(unit 1)
 				)
 			)
@@ -18585,7 +18619,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "22c85a48-b9e6-40ac-b46c-a648c5b89a66")
-		(property "Reference" "D126"
+		(property "Reference" "D128"
 			(at 186.69 62.23 0)
 			(effects
 				(font
@@ -18692,6 +18726,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4ee9979d-fa77-4332-809e-d899de646d22")
 		)
@@ -18707,72 +18750,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 227.33 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "22d7ecc9-ab43-40ab-a3b5-eeff715a7984")
-		(property "Reference" "#PWR017"
-			(at 227.33 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 225.552 16.002 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 227.33 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 227.33 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a6484cc4-1c4a-4b4b-a2f4-cb115d27a271")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR017")
+					(reference "D128")
 					(unit 1)
 				)
 			)
@@ -18787,7 +18765,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2307c2fb-a746-44c6-ad53-4bbcf09b79f0")
-		(property "Reference" "D28"
+		(property "Reference" "D30"
 			(at 59.69 80.01 0)
 			(effects
 				(font
@@ -18894,6 +18872,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a2a200c9-2de5-47b5-8d7c-13170eff1982")
 		)
@@ -18909,7 +18896,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D28")
+					(reference "D30")
 					(unit 1)
 				)
 			)
@@ -18924,7 +18911,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2386eb08-886e-41d3-bffa-55526b8510f0")
-		(property "Reference" "D108"
+		(property "Reference" "D110"
 			(at 161.29 80.01 0)
 			(effects
 				(font
@@ -19031,6 +19018,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5cdf907b-81ce-49f8-a1cb-7b6d2be36636")
 		)
@@ -19046,7 +19042,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D108")
+					(reference "D110")
 					(unit 1)
 				)
 			)
@@ -19061,7 +19057,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23d880af-6d5e-47ce-b688-210037380c47")
-		(property "Reference" "D51"
+		(property "Reference" "D53"
 			(at 85.09 106.68 0)
 			(effects
 				(font
@@ -19168,6 +19164,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5c07096b-e84f-49fc-94f5-a437bba42305")
 		)
@@ -19183,7 +19188,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D51")
+					(reference "D53")
 					(unit 1)
 				)
 			)
@@ -19198,7 +19203,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23fc4a67-eb1a-4152-8156-db624c079f51")
-		(property "Reference" "D79"
+		(property "Reference" "D81"
 			(at 110.49 177.8 0)
 			(effects
 				(font
@@ -19305,6 +19310,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "32cc8db9-ae2d-4ee7-8d3e-3f94d61e1c41")
 		)
@@ -19320,7 +19334,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D79")
+					(reference "D81")
 					(unit 1)
 				)
 			)
@@ -19335,7 +19349,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25908578-7f35-41cf-9ddc-47abf84575ee")
-		(property "Reference" "D17"
+		(property "Reference" "D19"
 			(at 34.29 160.02 0)
 			(effects
 				(font
@@ -19442,6 +19456,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "53a0ea7a-26b5-4e30-934f-798d29f1acf6")
 		)
@@ -19457,7 +19480,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D17")
+					(reference "D19")
 					(unit 1)
 				)
 			)
@@ -19472,7 +19495,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "259d7405-bfb6-4ab3-8169-159cf46a3a87")
-		(property "Reference" "D139"
+		(property "Reference" "D141"
 			(at 212.09 35.56 0)
 			(effects
 				(font
@@ -19579,6 +19602,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4c5ee0be-8946-4b29-8250-f1cd4ccd8423")
 		)
@@ -19594,7 +19626,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D139")
+					(reference "D141")
 					(unit 1)
 				)
 			)
@@ -19609,7 +19641,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25eb4bd4-bcfe-46b0-b801-adae01dce80f")
-		(property "Reference" "D99"
+		(property "Reference" "D101"
 			(at 135.89 177.8 0)
 			(effects
 				(font
@@ -19716,6 +19748,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "459b0bd1-7a9a-4edc-9c9b-e1add08ee072")
 		)
@@ -19731,7 +19772,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D99")
+					(reference "D101")
 					(unit 1)
 				)
 			)
@@ -19746,7 +19787,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "26ef1931-a1d9-40bf-80bf-6eb2dad1d14c")
-		(property "Reference" "D15"
+		(property "Reference" "D17"
 			(at 34.29 142.24 0)
 			(effects
 				(font
@@ -19853,6 +19894,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6b0d3d3d-f2c6-4703-bcb0-b7a02e692111")
 		)
@@ -19868,7 +19918,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D15")
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -19883,7 +19933,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27f29be5-bdfa-4002-9727-63d0b6a42015")
-		(property "Reference" "D71"
+		(property "Reference" "D73"
 			(at 110.49 106.68 0)
 			(effects
 				(font
@@ -19990,6 +20040,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "3843fd05-ce59-4cd1-9538-c3b253738a89")
 		)
@@ -20005,7 +20064,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D71")
+					(reference "D73")
 					(unit 1)
 				)
 			)
@@ -20020,7 +20079,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "286822ad-dfe4-4890-9604-396617433268")
-		(property "Reference" "D172"
+		(property "Reference" "D174"
 			(at 262.89 44.45 0)
 			(effects
 				(font
@@ -20127,6 +20186,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 262.89 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a8dc7a21-0c27-462d-b3df-7817ef4e839a")
 		)
@@ -20142,7 +20210,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D172")
+					(reference "D174")
 					(unit 1)
 				)
 			)
@@ -20157,7 +20225,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "286fc100-211c-4475-b47d-fa53fca5434e")
-		(property "Reference" "D112"
+		(property "Reference" "D114"
 			(at 161.29 115.57 0)
 			(effects
 				(font
@@ -20264,6 +20332,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "21304ca3-4737-48ec-8bb4-88c2a96e4117")
 		)
@@ -20279,7 +20356,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D112")
+					(reference "D114")
 					(unit 1)
 				)
 			)
@@ -20294,7 +20371,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "28e25c7b-4e41-44da-adcb-b84de4d9b5f2")
-		(property "Reference" "D58"
+		(property "Reference" "D60"
 			(at 85.09 168.91 0)
 			(effects
 				(font
@@ -20401,6 +20478,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a3e20ff4-7f36-49b6-8d8e-a60aa2e93cfa")
 		)
@@ -20416,7 +20502,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D58")
+					(reference "D60")
 					(unit 1)
 				)
 			)
@@ -20431,7 +20517,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c335fcc-a73f-4927-9799-b7430bc39279")
-		(property "Reference" "D127"
+		(property "Reference" "D129"
 			(at 186.69 71.12 0)
 			(effects
 				(font
@@ -20538,6 +20624,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d54f600f-9938-4ffe-8d6e-402a4bc25716")
 		)
@@ -20553,7 +20648,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D127")
+					(reference "D129")
 					(unit 1)
 				)
 			)
@@ -20568,7 +20663,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3043b2d7-87e1-4820-a495-a50f32524b43")
-		(property "Reference" "D161"
+		(property "Reference" "D163"
 			(at 237.49 88.9 0)
 			(effects
 				(font
@@ -20675,6 +20770,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0ed5b726-69b5-45ac-9bc4-7b207dc732c0")
 		)
@@ -20690,7 +20794,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D161")
+					(reference "D163")
 					(unit 1)
 				)
 			)
@@ -20705,7 +20809,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "308af831-fa36-42e1-820b-fa96174f6f83")
-		(property "Reference" "D125"
+		(property "Reference" "D127"
 			(at 186.69 53.34 0)
 			(effects
 				(font
@@ -20812,6 +20916,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c4983598-883f-4fe4-88b5-c68678ef17bf")
 		)
@@ -20827,7 +20940,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D125")
+					(reference "D127")
 					(unit 1)
 				)
 			)
@@ -20842,7 +20955,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "30f8b015-fcf3-4686-a144-65a8a6132e21")
-		(property "Reference" "D16"
+		(property "Reference" "D18"
 			(at 34.29 151.13 0)
 			(effects
 				(font
@@ -20949,6 +21062,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "94101bf8-e4c0-406a-bd34-6e43b4b2d0e0")
 		)
@@ -20964,7 +21086,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D16")
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 52.07 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "373d9a95-f805-4189-9ef3-3fd3f77fde09")
+		(property "Reference" "#PWR02"
+			(at 52.07 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19317859-eecc-47cf-978a-ced31613ad38")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -20979,7 +21167,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "37472ff0-fbf0-4516-81ae-da31d7696412")
-		(property "Reference" "D29"
+		(property "Reference" "D31"
 			(at 59.69 88.9 0)
 			(effects
 				(font
@@ -21086,6 +21274,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "7c5b60cd-5437-4827-bb93-b57ae5894225")
 		)
@@ -21101,72 +21298,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 179.07 156.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "39d49278-731a-437e-b124-b3e37f7f10a6")
-		(property "Reference" "#PWR014"
-			(at 179.07 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 179.07 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 179.07 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e997d210-9f1c-43d6-b645-d996399e2485")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR014")
+					(reference "D31")
 					(unit 1)
 				)
 			)
@@ -21181,7 +21313,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3a828ec7-edc2-44d8-9d60-15031457fb71")
-		(property "Reference" "D35"
+		(property "Reference" "D37"
 			(at 59.69 142.24 0)
 			(effects
 				(font
@@ -21288,6 +21420,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "1a33af0b-d25c-4de5-a2c8-a7ac350d9be2")
 		)
@@ -21303,7 +21444,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D35")
+					(reference "D37")
 					(unit 1)
 				)
 			)
@@ -21318,7 +21459,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3aa11d8e-7162-48b3-b2e0-772c4665ac01")
-		(property "Reference" "D154"
+		(property "Reference" "D156"
 			(at 237.49 26.67 0)
 			(effects
 				(font
@@ -21425,6 +21566,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9b1d8462-d574-4e81-aac6-eb0112456559")
 		)
@@ -21440,7 +21590,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D154")
+					(reference "D156")
 					(unit 1)
 				)
 			)
@@ -21455,7 +21605,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b451907-b76b-4980-ac77-36d5aa5175aa")
-		(property "Reference" "D148"
+		(property "Reference" "D150"
 			(at 212.09 115.57 0)
 			(effects
 				(font
@@ -21562,6 +21712,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6403d353-44fd-4b2b-92e3-48917bb29ea5")
 		)
@@ -21577,7 +21736,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D148")
+					(reference "D150")
 					(unit 1)
 				)
 			)
@@ -21592,7 +21751,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "41d5b777-4b24-4ca8-be4f-78b21e4827ef")
-		(property "Reference" "D159"
+		(property "Reference" "D161"
 			(at 237.49 71.12 0)
 			(effects
 				(font
@@ -21699,6 +21858,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6bff35ff-dfa8-4670-a8ae-fd2de211d6fc")
 		)
@@ -21714,7 +21882,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D159")
+					(reference "D161")
 					(unit 1)
 				)
 			)
@@ -21729,7 +21897,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "424f4778-e990-44c5-90c4-a3e5997418e2")
-		(property "Reference" "D176"
+		(property "Reference" "D178"
 			(at 262.89 80.01 0)
 			(effects
 				(font
@@ -21836,6 +22004,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 262.89 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e5dbfc3f-e77c-49cc-85d7-06c0c8574410")
 		)
@@ -21851,7 +22028,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D176")
+					(reference "D178")
 					(unit 1)
 				)
 			)
@@ -21866,7 +22043,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4437f086-36c9-4d82-b6f3-e06dde1a4941")
-		(property "Reference" "D70"
+		(property "Reference" "D72"
 			(at 110.49 97.79 0)
 			(effects
 				(font
@@ -21973,6 +22150,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "559f8da3-c7c4-4f4e-8c69-e3aeafe1b6c1")
 		)
@@ -21988,7 +22174,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D70")
+					(reference "D72")
 					(unit 1)
 				)
 			)
@@ -22003,7 +22189,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "449f4c39-1d52-4685-8f6c-e4daa47278dc")
-		(property "Reference" "D104"
+		(property "Reference" "D106"
 			(at 161.29 44.45 0)
 			(effects
 				(font
@@ -22110,6 +22296,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "31281a11-922c-4def-bc6d-bbf06d0c9c3e")
 		)
@@ -22125,7 +22320,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D104")
+					(reference "D106")
 					(unit 1)
 				)
 			)
@@ -22140,7 +22335,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "465dfdf2-63dc-4576-89a6-58e376791fc4")
-		(property "Reference" "D65"
+		(property "Reference" "D67"
 			(at 110.49 53.34 0)
 			(effects
 				(font
@@ -22247,6 +22442,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "300be5a2-5b71-46f3-acde-2360385f282b")
 		)
@@ -22262,7 +22466,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D65")
+					(reference "D67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VL")
+		(at 227.33 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "467f3869-bff9-45e4-afea-0c37ed93f8fe")
+		(property "Reference" "#PWR03"
+			(at 227.33 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VL"
+			(at 227.33 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VL\""
+			(at 227.33 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57d499b5-a7d1-49b8-9011-738b69e11bcc")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -22277,7 +22547,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "46ba9888-2e50-457c-a80a-c636ea5c39c0")
-		(property "Reference" "D75"
+		(property "Reference" "D77"
 			(at 110.49 142.24 0)
 			(effects
 				(font
@@ -22384,6 +22654,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "ba569a54-d1e7-4487-bf16-eab833a3c200")
 		)
@@ -22399,7 +22678,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D75")
+					(reference "D77")
 					(unit 1)
 				)
 			)
@@ -22414,7 +22693,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4723de36-c1cb-4d9a-8f29-96ef57502e25")
-		(property "Reference" "D137"
+		(property "Reference" "D139"
 			(at 212.09 17.78 0)
 			(effects
 				(font
@@ -22521,6 +22800,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0c9756bc-08e2-4cff-acd7-61b1a3c84f7b")
 		)
@@ -22536,7 +22824,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D137")
+					(reference "D139")
 					(unit 1)
 				)
 			)
@@ -22551,7 +22839,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "47c388b4-7f12-4475-8b33-18ebaab743b4")
-		(property "Reference" "D67"
+		(property "Reference" "D69"
 			(at 110.49 71.12 0)
 			(effects
 				(font
@@ -22658,6 +22946,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "b118067e-66d6-44e8-b262-dbd27b4c689c")
 		)
@@ -22673,7 +22970,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D67")
+					(reference "D69")
 					(unit 1)
 				)
 			)
@@ -22688,7 +22985,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "499af33e-d9ce-467e-84f7-8207e2230733")
-		(property "Reference" "D124"
+		(property "Reference" "D126"
 			(at 186.69 44.45 0)
 			(effects
 				(font
@@ -22795,6 +23092,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5756b35e-4d66-43c9-bee6-b7b7bb2ba676")
 		)
@@ -22810,7 +23116,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D124")
+					(reference "D126")
 					(unit 1)
 				)
 			)
@@ -22825,7 +23131,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ad29005-4ce0-4123-8e72-d3fe3f2e99fb")
-		(property "Reference" "D115"
+		(property "Reference" "D117"
 			(at 161.29 142.24 0)
 			(effects
 				(font
@@ -22932,6 +23238,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5450d018-38c3-4f52-a569-f2f7f0745849")
 		)
@@ -22947,7 +23262,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D115")
+					(reference "D117")
 					(unit 1)
 				)
 			)
@@ -22962,7 +23277,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b0c8b04-972a-43ce-81e5-1a7a57332935")
-		(property "Reference" "D162"
+		(property "Reference" "D164"
 			(at 237.49 97.79 0)
 			(effects
 				(font
@@ -23069,6 +23384,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "7fe47840-19e0-49c0-a0e1-ccc0c34319be")
 		)
@@ -23084,7 +23408,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D162")
+					(reference "D164")
 					(unit 1)
 				)
 			)
@@ -23099,7 +23423,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4cb070e4-24a5-4cfc-8607-cd8bcd34b1df")
-		(property "Reference" "D170"
+		(property "Reference" "D172"
 			(at 262.89 26.67 0)
 			(effects
 				(font
@@ -23206,6 +23530,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 262.89 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6238fdb6-bf71-40bb-bde4-c19ac9ac1867")
 		)
@@ -23221,7 +23554,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D170")
+					(reference "D172")
 					(unit 1)
 				)
 			)
@@ -23236,7 +23569,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d6d8360-4876-4659-a664-5d36a6a80e25")
-		(property "Reference" "D23"
+		(property "Reference" "D25"
 			(at 59.69 35.56 0)
 			(effects
 				(font
@@ -23343,6 +23676,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4ee3fd0d-2f6c-4b4f-a700-18f5476a0293")
 		)
@@ -23358,7 +23700,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D23")
+					(reference "D25")
 					(unit 1)
 				)
 			)
@@ -23373,7 +23715,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "506619a0-6fb2-4470-b322-63db2bcbc426")
-		(property "Reference" "D50"
+		(property "Reference" "D52"
 			(at 85.09 97.79 0)
 			(effects
 				(font
@@ -23480,6 +23822,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "bd36c96e-1376-4197-9101-4b618223e497")
 		)
@@ -23495,7 +23846,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D50")
+					(reference "D52")
 					(unit 1)
 				)
 			)
@@ -23510,7 +23861,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50b24dc6-73da-492e-8c90-d88a7076fb9f")
-		(property "Reference" "D111"
+		(property "Reference" "D113"
 			(at 161.29 106.68 0)
 			(effects
 				(font
@@ -23617,6 +23968,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "ef357d4e-0fc5-4f4e-afb4-915f40f00e69")
 		)
@@ -23632,7 +23992,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D111")
+					(reference "D113")
 					(unit 1)
 				)
 			)
@@ -23647,7 +24007,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52c19758-8fe8-485b-8684-3a37316a533d")
-		(property "Reference" "D2"
+		(property "Reference" "D4"
 			(at 34.29 26.67 0)
 			(effects
 				(font
@@ -23754,6 +24114,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6bb99eb3-fb77-4d74-8f49-cd83b5281e73")
 		)
@@ -23769,7 +24138,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D2")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -23784,7 +24153,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52ca1548-a83b-4ff5-916a-999394b2fd31")
-		(property "Reference" "D100"
+		(property "Reference" "D102"
 			(at 135.89 186.69 0)
 			(effects
 				(font
@@ -23891,6 +24260,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "bf89ebb0-6eef-4896-91ec-74312d26f526")
 		)
@@ -23906,7 +24284,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D100")
+					(reference "D102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 153.67 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5365fae5-b36b-470c-8b8f-814ea62030b8")
+		(property "Reference" "#PWR08"
+			(at 153.67 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.67 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 153.67 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a874261-d05e-4717-92df-e0fad66b2804")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -23921,7 +24365,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "54ad79b1-dfe3-4be9-bf26-09d472109986")
-		(property "Reference" "D56"
+		(property "Reference" "D58"
 			(at 85.09 151.13 0)
 			(effects
 				(font
@@ -24028,6 +24472,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "092c6f6a-07c1-44c4-8a8b-002993f083ec")
 		)
@@ -24043,7 +24496,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D56")
+					(reference "D58")
 					(unit 1)
 				)
 			)
@@ -24058,7 +24511,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "55b5f755-94f2-4b9c-9526-fe0f98e63e09")
-		(property "Reference" "D78"
+		(property "Reference" "D80"
 			(at 110.49 168.91 0)
 			(effects
 				(font
@@ -24165,6 +24618,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4906bbbd-444f-4463-a97f-7b966fdc5a32")
 		)
@@ -24180,7 +24642,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D78")
+					(reference "D80")
 					(unit 1)
 				)
 			)
@@ -24195,7 +24657,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "566091b5-f811-44a9-946e-0bde56a9b2a1")
-		(property "Reference" "D6"
+		(property "Reference" "D8"
 			(at 34.29 62.23 0)
 			(effects
 				(font
@@ -24302,6 +24764,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "f545843e-3e32-40c9-a380-49beaca6dd68")
 		)
@@ -24317,7 +24788,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D6")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -24332,7 +24803,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "56a93537-7369-4021-9bbc-1b93b7695f3b")
-		(property "Reference" "D68"
+		(property "Reference" "D70"
 			(at 110.49 80.01 0)
 			(effects
 				(font
@@ -24439,6 +24910,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "f0fbab3f-ca0d-4349-8a7e-d299ad2e0875")
 		)
@@ -24454,7 +24934,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D68")
+					(reference "D70")
 					(unit 1)
 				)
 			)
@@ -24469,7 +24949,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "57309204-4bd5-43e4-beed-3df272d3e1e6")
-		(property "Reference" "D76"
+		(property "Reference" "D78"
 			(at 110.49 151.13 0)
 			(effects
 				(font
@@ -24576,6 +25056,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4dbef14e-ee31-4aa6-8af9-c346bdfb3e35")
 		)
@@ -24591,7 +25080,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D76")
+					(reference "D78")
 					(unit 1)
 				)
 			)
@@ -24606,7 +25095,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5852b236-df40-4c33-a566-3f6c99985ee4")
-		(property "Reference" "D102"
+		(property "Reference" "D104"
 			(at 161.29 26.67 0)
 			(effects
 				(font
@@ -24713,6 +25202,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "bfb43b81-e6db-4ca1-91cf-d58dda45ff71")
 		)
@@ -24728,7 +25226,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D102")
+					(reference "D104")
 					(unit 1)
 				)
 			)
@@ -24743,7 +25241,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "58b723b6-ef4b-40ad-99ef-4dce45c16b56")
-		(property "Reference" "D144"
+		(property "Reference" "D146"
 			(at 212.09 80.01 0)
 			(effects
 				(font
@@ -24850,6 +25348,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "11669b84-b979-46e5-a370-f87650560419")
 		)
@@ -24865,7 +25372,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D144")
+					(reference "D146")
 					(unit 1)
 				)
 			)
@@ -24880,7 +25387,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5918dfeb-d0c7-46af-a66f-f3239cc579ba")
-		(property "Reference" "D5"
+		(property "Reference" "D7"
 			(at 34.29 53.34 0)
 			(effects
 				(font
@@ -24987,6 +25494,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "8ea1cce8-49d8-40bf-b4f5-bbf58250fd83")
 		)
@@ -25002,7 +25518,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D5")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -25017,7 +25533,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5946fdb5-979c-4102-8e03-a38d88bcbb37")
-		(property "Reference" "D118"
+		(property "Reference" "D120"
 			(at 161.29 168.91 0)
 			(effects
 				(font
@@ -25124,6 +25640,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "f5192ab7-103e-493e-b3cd-106452d25b20")
 		)
@@ -25139,7 +25664,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D118")
+					(reference "D120")
 					(unit 1)
 				)
 			)
@@ -25154,7 +25679,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "596a6cbb-c4d2-49a4-997f-0674aec38d9b")
-		(property "Reference" "D73"
+		(property "Reference" "D75"
 			(at 110.49 124.46 0)
 			(effects
 				(font
@@ -25261,6 +25786,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d7cc6d4d-847b-4432-a639-9d517db5fba4")
 		)
@@ -25276,7 +25810,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D73")
+					(reference "D75")
 					(unit 1)
 				)
 			)
@@ -25291,7 +25825,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a1d89c6-9d60-4d3a-9fa9-a615eb081f4a")
-		(property "Reference" "D141"
+		(property "Reference" "D143"
 			(at 212.09 53.34 0)
 			(effects
 				(font
@@ -25398,6 +25932,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "3ab5232e-2a63-4966-91c8-d9dea82d12db")
 		)
@@ -25413,7 +25956,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D141")
+					(reference "D143")
 					(unit 1)
 				)
 			)
@@ -25428,7 +25971,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a5320b0-7359-47e3-9cc1-216f5a2cb1a9")
-		(property "Reference" "D61"
+		(property "Reference" "D63"
 			(at 110.49 17.78 0)
 			(effects
 				(font
@@ -25535,6 +26078,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "1bafd10d-e222-471c-a38a-8913495d14a2")
 		)
@@ -25550,7 +26102,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D61")
+					(reference "D63")
 					(unit 1)
 				)
 			)
@@ -25565,7 +26117,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5aac33aa-7247-4663-bba4-433053395f33")
-		(property "Reference" "D177"
+		(property "Reference" "D179"
 			(at 262.89 88.9 0)
 			(effects
 				(font
@@ -25672,6 +26224,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 262.89 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "3aad8a76-aa13-492c-99ad-7309c163a007")
 		)
@@ -25687,7 +26248,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D177")
+					(reference "D179")
 					(unit 1)
 				)
 			)
@@ -25702,7 +26263,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b0eb518-0127-46a7-b481-8fe2fb0b1aa3")
-		(property "Reference" "D49"
+		(property "Reference" "D51"
 			(at 85.09 88.9 0)
 			(effects
 				(font
@@ -25809,6 +26370,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "21df69c2-b935-432d-b8ca-9a04a83d354c")
 		)
@@ -25824,7 +26394,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D49")
+					(reference "D51")
 					(unit 1)
 				)
 			)
@@ -25839,7 +26409,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f42b0ad-b806-472a-aa42-3c321a3ea4c3")
-		(property "Reference" "D110"
+		(property "Reference" "D112"
 			(at 161.29 97.79 0)
 			(effects
 				(font
@@ -25946,6 +26516,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9630400a-8ff5-4bec-ac20-78921a50e382")
 		)
@@ -25961,7 +26540,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D110")
+					(reference "D112")
 					(unit 1)
 				)
 			)
@@ -25976,7 +26555,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "606c26bf-e97b-4ccc-a46a-b34eb460141b")
-		(property "Reference" "D160"
+		(property "Reference" "D162"
 			(at 237.49 80.01 0)
 			(effects
 				(font
@@ -26083,6 +26662,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a4d1c394-ea22-46ff-a568-99dc48209e12")
 		)
@@ -26098,7 +26686,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D160")
+					(reference "D162")
 					(unit 1)
 				)
 			)
@@ -26113,7 +26701,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "608ba2b7-3c05-4a55-a7a8-dc6517f72504")
-		(property "Reference" "D80"
+		(property "Reference" "D82"
 			(at 110.49 186.69 0)
 			(effects
 				(font
@@ -26220,6 +26808,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "aae990eb-c00c-475e-b5cf-b7b895253324")
 		)
@@ -26235,7 +26832,139 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D80")
+					(reference "D82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 204.47 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62220623-c0ad-4c08-b247-41f3880eecbd")
+		(property "Reference" "#PWR014"
+			(at 204.47 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 204.47 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 204.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7519b2ff-20ef-4cca-990c-dcd5856ae41b")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VL")
+		(at 125.73 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "647784ab-3fac-43eb-af08-9f007bfeab16")
+		(property "Reference" "#PWR011"
+			(at 125.73 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VL"
+			(at 125.73 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VL\""
+			(at 125.73 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ea971f8-51d0-4419-be95-5ecae85d61f6")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -26250,7 +26979,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6669316d-1355-4349-b086-246cc3490b0c")
-		(property "Reference" "D41"
+		(property "Reference" "D43"
 			(at 85.09 17.78 0)
 			(effects
 				(font
@@ -26357,6 +27086,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "132a3562-c9ce-49d2-82f8-9e28f4f4e879")
 		)
@@ -26372,72 +27110,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 26.67 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "668de1ca-ea0c-4642-b9e8-b35b725c910e")
-		(property "Reference" "#PWR02"
-			(at 26.67 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 26.67 195.326 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 26.67 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "12eb9e64-25cb-478f-bb92-2e672961e4b7")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR02")
+					(reference "D43")
 					(unit 1)
 				)
 			)
@@ -26452,7 +27125,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "68404018-01b2-4687-9caf-e7457d471c6b")
-		(property "Reference" "D94"
+		(property "Reference" "D96"
 			(at 135.89 133.35 0)
 			(effects
 				(font
@@ -26559,6 +27232,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "777b8fe2-d129-4e57-9888-f0a522f81ae8")
 		)
@@ -26574,7 +27256,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D94")
+					(reference "D96")
 					(unit 1)
 				)
 			)
@@ -26589,7 +27271,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "693ce30c-b469-40a9-8210-b76093a6ad06")
-		(property "Reference" "D92"
+		(property "Reference" "D94"
 			(at 135.89 115.57 0)
 			(effects
 				(font
@@ -26696,6 +27378,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0ded0e5d-77a6-4adb-920d-86826dafdbfa")
 		)
@@ -26711,72 +27402,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D92")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 77.47 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6b235c61-5393-44c1-a835-c58b824a8001")
-		(property "Reference" "#PWR06"
-			(at 77.47 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 77.47 195.326 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 77.47 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 77.47 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1ab7ad55-e5e5-4053-83e4-d2eed8936aba")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR06")
+					(reference "D94")
 					(unit 1)
 				)
 			)
@@ -26791,7 +27417,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c0f26a7-4ad9-4d14-930e-ca3488c5b824")
-		(property "Reference" "D109"
+		(property "Reference" "D111"
 			(at 161.29 88.9 0)
 			(effects
 				(font
@@ -26898,6 +27524,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c10dd3fd-98fd-4273-81c9-debedb80f9a7")
 		)
@@ -26913,7 +27548,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D109")
+					(reference "D111")
 					(unit 1)
 				)
 			)
@@ -26928,7 +27563,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6d86379d-826f-4fc6-8796-7f514bc1cdca")
-		(property "Reference" "D19"
+		(property "Reference" "D21"
 			(at 34.29 177.8 0)
 			(effects
 				(font
@@ -27035,6 +27670,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "646b9ce0-5054-4060-b570-5f0cc2a43585")
 		)
@@ -27050,7 +27694,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D19")
+					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -27065,7 +27709,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6dc16dc8-9a55-49f2-9b00-1147ba83a56c")
-		(property "Reference" "D122"
+		(property "Reference" "D124"
 			(at 186.69 26.67 0)
 			(effects
 				(font
@@ -27172,6 +27816,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "41e2c59d-6fa5-4be7-aa95-2e5d485c81a6")
 		)
@@ -27187,7 +27840,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D122")
+					(reference "D124")
 					(unit 1)
 				)
 			)
@@ -27202,7 +27855,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ec445e3-f617-4e91-8171-66014976e234")
-		(property "Reference" "D7"
+		(property "Reference" "D9"
 			(at 34.29 71.12 0)
 			(effects
 				(font
@@ -27309,6 +27962,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9589de0b-8b62-4277-97d2-3da69515177b")
 		)
@@ -27324,7 +27986,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D7")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -27339,7 +28001,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "71683e33-570e-445d-a154-c684b7ea1f73")
-		(property "Reference" "D116"
+		(property "Reference" "D118"
 			(at 161.29 151.13 0)
 			(effects
 				(font
@@ -27446,6 +28108,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0f01849b-e7b0-4f4b-a283-c9d07da5eae5")
 		)
@@ -27461,7 +28132,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D116")
+					(reference "D118")
 					(unit 1)
 				)
 			)
@@ -27476,7 +28147,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "731a206a-139f-4b33-a171-483ab918e1cf")
-		(property "Reference" "D87"
+		(property "Reference" "D89"
 			(at 135.89 71.12 0)
 			(effects
 				(font
@@ -27583,6 +28254,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e9d38ec2-f012-44d9-aa2e-359654bbc895")
 		)
@@ -27598,23 +28278,24 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D87")
+					(reference "D89")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 229.87 156.21 0)
+		(lib_id "power:GND")
+		(at 26.67 191.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "74884e20-eb71-4ba8-803b-073dc240abaf")
-		(property "Reference" "#PWR018"
-			(at 229.87 162.56 0)
+		(fields_autoplaced yes)
+		(uuid "7618da3e-89ca-43a1-bab8-7bcaa7a8f914")
+		(property "Reference" "#PWR059"
+			(at 26.67 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27622,8 +28303,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 229.87 159.766 0)
+		(property "Value" "GND"
+			(at 26.67 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27631,7 +28312,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 156.21 0)
+			(at 26.67 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27639,8 +28320,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 229.87 156.21 0)
+		(property "Datasheet" ""
+			(at 26.67 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27648,8 +28329,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 229.87 156.21 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 26.67 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27658,12 +28339,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f1a946e7-88df-4171-b3c9-d3dcbf5a12be")
+			(uuid "63f347df-c222-4917-a962-78fa9cb4264a")
 		)
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR018")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -27678,7 +28359,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7699e89c-096d-4a0b-a541-a00bea9883bd")
-		(property "Reference" "D22"
+		(property "Reference" "D24"
 			(at 59.69 26.67 0)
 			(effects
 				(font
@@ -27785,6 +28466,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5df01709-e177-4aa6-b900-dcfc77a80051")
 		)
@@ -27800,72 +28490,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 125.73 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7759bca1-2e56-4f53-a853-cb98fef8be70")
-		(property "Reference" "#PWR09"
-			(at 125.73 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 123.952 16.002 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 125.73 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b26112d8-0d37-41e5-8aa2-841e6090ee08")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR09")
+					(reference "D24")
 					(unit 1)
 				)
 			)
@@ -27880,7 +28505,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "79af9f97-4310-4c74-aed3-c2f54865c9dd")
-		(property "Reference" "D88"
+		(property "Reference" "D90"
 			(at 135.89 80.01 0)
 			(effects
 				(font
@@ -27987,6 +28612,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e7a9f5c2-c85a-4df4-9b90-d6a099259efb")
 		)
@@ -28002,7 +28636,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D88")
+					(reference "D90")
 					(unit 1)
 				)
 			)
@@ -28017,7 +28651,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "79c2b0e2-af44-4e24-9036-b41cdd47848e")
-		(property "Reference" "D72"
+		(property "Reference" "D74"
 			(at 110.49 115.57 0)
 			(effects
 				(font
@@ -28124,6 +28758,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "77ee6258-10c9-44cf-ac6e-ac397dc665ba")
 		)
@@ -28139,7 +28782,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D72")
+					(reference "D74")
 					(unit 1)
 				)
 			)
@@ -28154,7 +28797,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a9edf54-16ca-462a-905b-31d7dcf7ce08")
-		(property "Reference" "D130"
+		(property "Reference" "D132"
 			(at 186.69 97.79 0)
 			(effects
 				(font
@@ -28261,6 +28904,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "3c12cdfd-c6a9-48bf-924c-1169d7494373")
 		)
@@ -28276,7 +28928,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D130")
+					(reference "D132")
 					(unit 1)
 				)
 			)
@@ -28291,7 +28943,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7b0c0112-4aa6-4922-b77b-98e32d3a78ee")
-		(property "Reference" "D171"
+		(property "Reference" "D173"
 			(at 262.89 35.56 0)
 			(effects
 				(font
@@ -28398,6 +29050,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 262.89 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5e002c59-354d-46b9-af00-03e66bdc6b7f")
 		)
@@ -28413,7 +29074,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D171")
+					(reference "D173")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b3111f3-abd5-412d-83fe-909b5323196f")
+		(property "Reference" "#PWR06"
+			(at 102.87 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 102.87 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5686b553-8392-4043-8071-af5e9c5055d0")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -28428,7 +29155,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7b7c0a08-db5b-468f-84ad-80bb99f7e768")
-		(property "Reference" "D119"
+		(property "Reference" "D121"
 			(at 161.29 177.8 0)
 			(effects
 				(font
@@ -28535,6 +29262,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a8f1bfbd-4f93-4739-9ed0-e4dc0d705c4e")
 		)
@@ -28550,7 +29286,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D119")
+					(reference "D121")
 					(unit 1)
 				)
 			)
@@ -28565,7 +29301,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7c606dfa-cf28-49ea-babe-c89216977e32")
-		(property "Reference" "D77"
+		(property "Reference" "D79"
 			(at 110.49 160.02 0)
 			(effects
 				(font
@@ -28672,6 +29408,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4eb6591c-9faa-4650-ba23-7f35b9d8e4b6")
 		)
@@ -28687,7 +29432,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D77")
+					(reference "D79")
 					(unit 1)
 				)
 			)
@@ -28702,7 +29447,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ccc3764-0cf4-4e48-bc79-b96cfa2acbec")
-		(property "Reference" "D114"
+		(property "Reference" "D116"
 			(at 161.29 133.35 0)
 			(effects
 				(font
@@ -28809,6 +29554,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e2d0cc71-2845-4fd2-a289-83ef697ae3ad")
 		)
@@ -28824,7 +29578,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D114")
+					(reference "D116")
 					(unit 1)
 				)
 			)
@@ -28839,7 +29593,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "822ee55c-1e69-4c0e-8cf4-0b07373e66b5")
-		(property "Reference" "D39"
+		(property "Reference" "D41"
 			(at 59.69 177.8 0)
 			(effects
 				(font
@@ -28946,6 +29700,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c95fa141-bcaa-4867-83ec-c4f90e1ef292")
 		)
@@ -28961,7 +29724,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D39")
+					(reference "D41")
 					(unit 1)
 				)
 			)
@@ -28976,7 +29739,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82e31287-8375-4eaf-9105-c9de386ab8c6")
-		(property "Reference" "D53"
+		(property "Reference" "D55"
 			(at 85.09 124.46 0)
 			(effects
 				(font
@@ -29083,6 +29846,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "fffd568d-b3bb-4f20-94e7-a210882fc1fa")
 		)
@@ -29098,7 +29870,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D53")
+					(reference "D55")
 					(unit 1)
 				)
 			)
@@ -29113,7 +29885,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "83679b76-888f-47d3-b812-24a70e057bab")
-		(property "Reference" "D60"
+		(property "Reference" "D62"
 			(at 85.09 186.69 0)
 			(effects
 				(font
@@ -29220,6 +29992,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4f7667d5-e50c-4e2e-91ac-1ef08c7e8937")
 		)
@@ -29235,7 +30016,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D60")
+					(reference "D62")
 					(unit 1)
 				)
 			)
@@ -29250,7 +30031,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "837a97d6-b406-40ef-bbe6-b4feea04afb5")
-		(property "Reference" "D30"
+		(property "Reference" "D32"
 			(at 59.69 97.79 0)
 			(effects
 				(font
@@ -29357,6 +30138,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6b7fd18a-6573-474e-91f9-5b087288ee87")
 		)
@@ -29372,7 +30162,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D30")
+					(reference "D32")
 					(unit 1)
 				)
 			)
@@ -29387,7 +30177,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84336f44-ef08-418e-8958-5018fa690a3e")
-		(property "Reference" "D38"
+		(property "Reference" "D40"
 			(at 59.69 168.91 0)
 			(effects
 				(font
@@ -29494,6 +30284,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5ce19e4a-d394-4bab-aee3-7ab70202e0f3")
 		)
@@ -29509,7 +30308,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D38")
+					(reference "D40")
 					(unit 1)
 				)
 			)
@@ -29524,7 +30323,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "858f0ac3-503e-41ad-8906-5e537ed74ce6")
-		(property "Reference" "D155"
+		(property "Reference" "D157"
 			(at 237.49 35.56 0)
 			(effects
 				(font
@@ -29631,6 +30430,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "633016d2-9b00-4df5-987a-136ba3ff22af")
 		)
@@ -29646,7 +30454,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D155")
+					(reference "D157")
 					(unit 1)
 				)
 			)
@@ -29661,7 +30469,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "861fa327-2947-4725-b6d5-075de49ebdfa")
-		(property "Reference" "D96"
+		(property "Reference" "D98"
 			(at 135.89 151.13 0)
 			(effects
 				(font
@@ -29768,6 +30576,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c4e2d2f7-0ad4-49df-ab6f-376fed4334aa")
 		)
@@ -29783,7 +30600,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D96")
+					(reference "D98")
 					(unit 1)
 				)
 			)
@@ -29798,7 +30615,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "86dd4884-3f8d-4b05-89ae-4ac67c7aacc1")
-		(property "Reference" "D150"
+		(property "Reference" "D152"
 			(at 212.09 133.35 0)
 			(effects
 				(font
@@ -29905,6 +30722,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "2a685a1f-133c-4c47-bf10-01f6cd712d88")
 		)
@@ -29920,7 +30746,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D150")
+					(reference "D152")
 					(unit 1)
 				)
 			)
@@ -29935,7 +30761,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "87132433-6512-4f01-a8cb-fe8d70eac78c")
-		(property "Reference" "D4"
+		(property "Reference" "D6"
 			(at 34.29 44.45 0)
 			(effects
 				(font
@@ -30042,6 +30868,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6a3186fc-b221-4079-b844-dae22cf94ff3")
 		)
@@ -30057,7 +30892,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D4")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -30072,7 +30907,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "87a38392-9d57-4b73-aef3-9ee5186e3562")
-		(property "Reference" "D145"
+		(property "Reference" "D147"
 			(at 212.09 88.9 0)
 			(effects
 				(font
@@ -30179,6 +31014,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6cf886d3-8c1c-4e7a-9fbf-3ce2d8652c0e")
 		)
@@ -30194,7 +31038,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D145")
+					(reference "D147")
 					(unit 1)
 				)
 			)
@@ -30209,7 +31053,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "882881cb-c0b7-4f7f-ab95-7e724f38eec0")
-		(property "Reference" "D48"
+		(property "Reference" "D50"
 			(at 85.09 80.01 0)
 			(effects
 				(font
@@ -30316,6 +31160,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "17aaf22c-711a-4062-bd4e-c5a6a7416a7b")
 		)
@@ -30331,137 +31184,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D48")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 100.33 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8b24375d-cde7-438b-a162-e139b467a7fe")
-		(property "Reference" "#PWR07"
-			(at 100.33 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 98.552 16.002 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 100.33 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ba933fdd-776a-420d-8f2c-577fe75a653b")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 153.67 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8b8dbf64-e305-4dc8-ab5a-4c99ce10ecbf")
-		(property "Reference" "#PWR012"
-			(at 153.67 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 153.67 195.326 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 153.67 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "946df25d-5851-41b4-8ca4-27d12aae0df1")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR012")
+					(reference "D50")
 					(unit 1)
 				)
 			)
@@ -30476,7 +31199,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8bb499a6-f315-447b-a3e0-90cf8ff083f4")
-		(property "Reference" "D174"
+		(property "Reference" "D176"
 			(at 262.89 62.23 0)
 			(effects
 				(font
@@ -30583,6 +31306,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 262.89 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d6a35782-968b-40a0-854a-abf609fda172")
 		)
@@ -30598,7 +31330,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D174")
+					(reference "D176")
 					(unit 1)
 				)
 			)
@@ -30613,7 +31345,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c7f9eed-cb2a-47f0-bb04-484eb6c5d0f3")
-		(property "Reference" "D42"
+		(property "Reference" "D44"
 			(at 85.09 26.67 0)
 			(effects
 				(font
@@ -30720,6 +31452,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9c6be74d-89b9-4add-bbeb-b77c660a3eb7")
 		)
@@ -30735,7 +31476,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D42")
+					(reference "D44")
 					(unit 1)
 				)
 			)
@@ -30750,7 +31491,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c837fe3-58e0-4d44-9436-e778802dc2e5")
-		(property "Reference" "D101"
+		(property "Reference" "D103"
 			(at 161.29 17.78 0)
 			(effects
 				(font
@@ -30857,6 +31598,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "46b53826-94bf-43e1-8f42-5bb1e9614a57")
 		)
@@ -30872,7 +31622,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D101")
+					(reference "D103")
 					(unit 1)
 				)
 			)
@@ -30887,7 +31637,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d5ab91d-edbe-4bd7-95d9-463a45e077bf")
-		(property "Reference" "D98"
+		(property "Reference" "D100"
 			(at 135.89 168.91 0)
 			(effects
 				(font
@@ -30994,6 +31744,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "22d965f1-0043-4f75-b7dd-638e5c8b63c1")
 		)
@@ -31009,7 +31768,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D98")
+					(reference "D100")
 					(unit 1)
 				)
 			)
@@ -31024,7 +31783,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d86bfb9-c983-4a45-933f-b35a02f0b3da")
-		(property "Reference" "D156"
+		(property "Reference" "D158"
 			(at 237.49 44.45 0)
 			(effects
 				(font
@@ -31131,6 +31890,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "2fb146b0-9b57-4baa-bbb6-af57504df975")
 		)
@@ -31146,7 +31914,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D156")
+					(reference "D158")
 					(unit 1)
 				)
 			)
@@ -31161,7 +31929,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9815ee93-981f-49ab-898a-c1ba6ef0d4b2")
-		(property "Reference" "D106"
+		(property "Reference" "D108"
 			(at 161.29 62.23 0)
 			(effects
 				(font
@@ -31268,6 +32036,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "13dbbe91-512d-4b9a-bfef-f3797781d400")
 		)
@@ -31283,7 +32060,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D106")
+					(reference "D108")
 					(unit 1)
 				)
 			)
@@ -31298,7 +32075,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "98a7aebc-b2a3-443c-8000-041f41da0923")
-		(property "Reference" "D166"
+		(property "Reference" "D168"
 			(at 237.49 133.35 0)
 			(effects
 				(font
@@ -31405,6 +32182,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "eb8d7ead-346b-44da-8d08-ce78f774d2ac")
 		)
@@ -31420,137 +32206,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D166")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 151.13 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "99357a6e-86b8-498f-89db-884bada5e941")
-		(property "Reference" "#PWR011"
-			(at 151.13 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 149.352 16.002 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 151.13 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f36fac7-8d2e-452f-b28e-80063e432576")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 128.27 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "997659b4-f2f9-431d-bcb5-8091afe8bd29")
-		(property "Reference" "#PWR010"
-			(at 128.27 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 128.27 195.326 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 128.27 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 128.27 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dd9c051c-2658-46e2-9273-7576c6b54dce")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR010")
+					(reference "D168")
 					(unit 1)
 				)
 			)
@@ -31565,7 +32221,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9aec636d-d037-4d9c-8515-fde3d0bb92ba")
-		(property "Reference" "D142"
+		(property "Reference" "D144"
 			(at 212.09 62.23 0)
 			(effects
 				(font
@@ -31672,6 +32328,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "98f5fd31-25a3-4d8a-a9fa-232d9bc79467")
 		)
@@ -31687,7 +32352,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D142")
+					(reference "D144")
 					(unit 1)
 				)
 			)
@@ -31702,7 +32367,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9b552ae3-0638-4c9f-8420-816c2f06feda")
-		(property "Reference" "D120"
+		(property "Reference" "D122"
 			(at 161.29 186.69 0)
 			(effects
 				(font
@@ -31809,6 +32474,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "003211c3-aa92-49e7-81f7-2c8897ebd6ab")
 		)
@@ -31824,7 +32498,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D120")
+					(reference "D122")
 					(unit 1)
 				)
 			)
@@ -31839,7 +32513,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9b9a3f78-bffd-4e4d-9890-e6f7b991d7b4")
-		(property "Reference" "D44"
+		(property "Reference" "D46"
 			(at 85.09 44.45 0)
 			(effects
 				(font
@@ -31946,6 +32620,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "361a344d-4254-4764-be83-cc4a292d6122")
 		)
@@ -31961,7 +32644,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D44")
+					(reference "D46")
 					(unit 1)
 				)
 			)
@@ -31976,7 +32659,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9ccd6322-3ae3-4f62-8e9c-989b08ac2fe5")
-		(property "Reference" "D89"
+		(property "Reference" "D91"
 			(at 135.89 88.9 0)
 			(effects
 				(font
@@ -32083,6 +32766,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "b62fb718-34ee-4eb8-a3a9-c7636f5cb4d3")
 		)
@@ -32098,7 +32790,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D89")
+					(reference "D91")
 					(unit 1)
 				)
 			)
@@ -32113,7 +32805,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9d7a89a7-ce58-43aa-a26c-e87cea9923c8")
-		(property "Reference" "D103"
+		(property "Reference" "D105"
 			(at 161.29 35.56 0)
 			(effects
 				(font
@@ -32220,6 +32912,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6d0bdad9-846c-43ee-ada7-1883d7df58e0")
 		)
@@ -32235,7 +32936,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D103")
+					(reference "D105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 77.47 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e3d69a4-4fff-41ff-97e9-5bb214863326")
+		(property "Reference" "#PWR04"
+			(at 77.47 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06a38400-5e27-4c78-994b-05a65b8d90f0")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -32250,7 +33017,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e801e97-228b-4711-94a6-0c5c49d87823")
-		(property "Reference" "D131"
+		(property "Reference" "D133"
 			(at 186.69 106.68 0)
 			(effects
 				(font
@@ -32357,6 +33124,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e6982cf0-e008-4656-8cf2-d24978ad7bdb")
 		)
@@ -32372,7 +33148,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D131")
+					(reference "D133")
 					(unit 1)
 				)
 			)
@@ -32387,7 +33163,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9efe8b77-1c35-484a-b3dc-3ce44f7c4136")
-		(property "Reference" "D18"
+		(property "Reference" "D20"
 			(at 34.29 168.91 0)
 			(effects
 				(font
@@ -32494,6 +33270,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e1d2b9ac-7158-4906-b629-204be289ef9d")
 		)
@@ -32509,7 +33294,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D18")
+					(reference "D20")
 					(unit 1)
 				)
 			)
@@ -32524,7 +33309,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a0d0709c-84b4-49af-afa1-84ba096baf29")
-		(property "Reference" "D69"
+		(property "Reference" "D71"
 			(at 110.49 88.9 0)
 			(effects
 				(font
@@ -32631,6 +33416,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "bf0cbc4b-4dda-47da-a2b4-4ac4f6ede5aa")
 		)
@@ -32646,7 +33440,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D69")
+					(reference "D71")
 					(unit 1)
 				)
 			)
@@ -32661,7 +33455,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a236bc81-78da-411a-a7b5-664377b88ac0")
-		(property "Reference" "D123"
+		(property "Reference" "D125"
 			(at 186.69 35.56 0)
 			(effects
 				(font
@@ -32768,6 +33562,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6d5ed37d-ca46-4a59-977f-60de993d6b52")
 		)
@@ -32783,7 +33586,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D123")
+					(reference "D125")
 					(unit 1)
 				)
 			)
@@ -32798,7 +33601,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a255c7d0-99fd-46d7-9acd-29d6bd09eda1")
-		(property "Reference" "D36"
+		(property "Reference" "D38"
 			(at 59.69 151.13 0)
 			(effects
 				(font
@@ -32905,6 +33708,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "17ab8742-a869-416d-a142-f6abcdd06c91")
 		)
@@ -32920,7 +33732,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D36")
+					(reference "D38")
 					(unit 1)
 				)
 			)
@@ -32935,7 +33747,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a79fe8bd-87d1-4c22-ac66-4c2bbf75069c")
-		(property "Reference" "D135"
+		(property "Reference" "D137"
 			(at 186.69 142.24 0)
 			(effects
 				(font
@@ -33042,6 +33854,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "93285d12-442c-4841-9443-06c14cf4cb0d")
 		)
@@ -33057,137 +33878,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D135")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 252.73 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a7b5d18a-9704-4980-acd4-2cc4c6524475")
-		(property "Reference" "#PWR019"
-			(at 252.73 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 250.952 16.002 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 252.73 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 252.73 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "159d09e1-02af-415b-8698-9e3e5f95461f")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 74.93 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a99a013c-4d16-494e-8795-3a452ae9aec9")
-		(property "Reference" "#PWR05"
-			(at 74.93 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 73.152 16.002 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 74.93 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a2bc787f-30b5-48da-a206-4ad987f6937c")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR05")
+					(reference "D137")
 					(unit 1)
 				)
 			)
@@ -33202,7 +33893,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a9f1e164-37ab-4aa9-881e-4571fc807b93")
-		(property "Reference" "D113"
+		(property "Reference" "D115"
 			(at 161.29 124.46 0)
 			(effects
 				(font
@@ -33309,6 +34000,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "aad6236e-11c9-4288-b147-b6b0615e9126")
 		)
@@ -33324,7 +34024,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D113")
+					(reference "D115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 179.07 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac8678f1-0540-44b7-9b13-ab5afc58b6b0")
+		(property "Reference" "#PWR012"
+			(at 179.07 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "105ce8d2-cf15-4fde-b226-1ea6fd95a28e")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -33339,7 +34105,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad26f977-d710-4e03-934b-6e19aed652b8")
-		(property "Reference" "D27"
+		(property "Reference" "D29"
 			(at 59.69 71.12 0)
 			(effects
 				(font
@@ -33446,6 +34212,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0f907497-740e-4e06-83b7-3f89537cd00e")
 		)
@@ -33461,7 +34236,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D27")
+					(reference "D29")
 					(unit 1)
 				)
 			)
@@ -33476,7 +34251,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "af10b574-a1e8-4a0a-ae91-832cb56bf0c0")
-		(property "Reference" "D55"
+		(property "Reference" "D57"
 			(at 85.09 142.24 0)
 			(effects
 				(font
@@ -33583,6 +34358,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6ed533c1-5596-48bb-ac21-9462ba3a7d4f")
 		)
@@ -33598,7 +34382,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D55")
+					(reference "D57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VL")
+		(at 252.73 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afa73658-3202-47f4-a261-a811eb019839")
+		(property "Reference" "#PWR01"
+			(at 252.73 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VL"
+			(at 252.73 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 252.73 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VL\""
+			(at 252.73 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3296b03-807b-434f-bcd6-23af1ce3c348")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -33613,7 +34463,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1b2e958-d493-4b4e-a301-228c467a2239")
-		(property "Reference" "D57"
+		(property "Reference" "D59"
 			(at 85.09 160.02 0)
 			(effects
 				(font
@@ -33720,6 +34570,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "864f5e83-7484-4c9b-8708-404a61aca419")
 		)
@@ -33735,7 +34594,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D57")
+					(reference "D59")
 					(unit 1)
 				)
 			)
@@ -33750,7 +34609,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b217523c-15ae-439d-a339-5cbb554437b0")
-		(property "Reference" "D14"
+		(property "Reference" "D16"
 			(at 34.29 133.35 0)
 			(effects
 				(font
@@ -33857,6 +34716,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "2e970149-2f14-4e8c-a292-0f0468b053d7")
 		)
@@ -33872,7 +34740,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D14")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -33887,7 +34755,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b224389e-1d0f-436c-84cd-e90b5389e973")
-		(property "Reference" "D9"
+		(property "Reference" "D11"
 			(at 34.29 88.9 0)
 			(effects
 				(font
@@ -33994,6 +34862,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "00fcf509-22fc-4608-a8b7-6f42810893a1")
 		)
@@ -34009,7 +34886,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D9")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -34024,7 +34901,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2e3c591-4b04-44a3-aec7-722ad7d91d51")
-		(property "Reference" "D149"
+		(property "Reference" "D151"
 			(at 212.09 124.46 0)
 			(effects
 				(font
@@ -34131,6 +35008,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9a1fe750-7e78-406c-974e-febe4b9624db")
 		)
@@ -34146,7 +35032,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D149")
+					(reference "D151")
 					(unit 1)
 				)
 			)
@@ -34161,7 +35047,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3762184-c92a-4aa6-a48b-4117bee9bbd2")
-		(property "Reference" "D86"
+		(property "Reference" "D88"
 			(at 135.89 62.23 0)
 			(effects
 				(font
@@ -34268,6 +35154,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5f2293c9-566a-43f8-9899-580264116275")
 		)
@@ -34283,7 +35178,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D86")
+					(reference "D88")
 					(unit 1)
 				)
 			)
@@ -34298,7 +35193,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b425fb6e-8749-4bdd-aa4a-35bff61a3bcf")
-		(property "Reference" "D43"
+		(property "Reference" "D45"
 			(at 85.09 35.56 0)
 			(effects
 				(font
@@ -34405,6 +35300,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "68786bf9-d4b8-493d-971f-31af5fb77e2e")
 		)
@@ -34420,7 +35324,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D43")
+					(reference "D45")
 					(unit 1)
 				)
 			)
@@ -34435,7 +35339,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b4485d39-55b1-4dee-87ef-a2e5c8f925b5")
-		(property "Reference" "D153"
+		(property "Reference" "D155"
 			(at 237.49 17.78 0)
 			(effects
 				(font
@@ -34542,6 +35446,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "454a6748-6cc1-4aab-a01f-3f2e6c558ee4")
 		)
@@ -34557,7 +35470,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D153")
+					(reference "D155")
 					(unit 1)
 				)
 			)
@@ -34572,7 +35485,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b49265a1-c271-4cd5-8e39-ead8f33c4cf3")
-		(property "Reference" "D129"
+		(property "Reference" "D131"
 			(at 186.69 88.9 0)
 			(effects
 				(font
@@ -34679,6 +35592,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "bec67cbe-63a4-4528-bae6-6641bb6f87a0")
 		)
@@ -34694,7 +35616,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D129")
+					(reference "D131")
 					(unit 1)
 				)
 			)
@@ -34709,7 +35631,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b741ba07-ea3c-44aa-b66a-4c2e276b02da")
-		(property "Reference" "D74"
+		(property "Reference" "D76"
 			(at 110.49 133.35 0)
 			(effects
 				(font
@@ -34816,6 +35738,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "1b1d2649-9547-4834-bedd-2b2c207a2b0c")
 		)
@@ -34831,7 +35762,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D74")
+					(reference "D76")
 					(unit 1)
 				)
 			)
@@ -34846,7 +35777,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b8d12ad2-72ae-4b3d-8e73-b5c0ea7674c5")
-		(property "Reference" "D138"
+		(property "Reference" "D140"
 			(at 212.09 26.67 0)
 			(effects
 				(font
@@ -34953,6 +35884,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "22650207-6207-4ce7-a52f-2cab8cdd6f98")
 		)
@@ -34968,7 +35908,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D138")
+					(reference "D140")
 					(unit 1)
 				)
 			)
@@ -34983,7 +35923,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b8dd3307-8e19-4c96-815d-f6c009465ee5")
-		(property "Reference" "D178"
+		(property "Reference" "D3"
 			(at 34.29 17.78 0)
 			(effects
 				(font
@@ -35090,6 +36030,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d2fb4e86-38ab-40fa-9176-c9de70c8e78d")
 		)
@@ -35105,23 +36054,24 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D178")
+					(reference "D3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 204.47 156.21 0)
+		(lib_id "power:+5VL")
+		(at 24.13 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bab1d632-8e30-43ba-8ff2-59e8b5e6e2c6")
-		(property "Reference" "#PWR016"
-			(at 204.47 162.56 0)
+		(fields_autoplaced yes)
+		(uuid "baad4e76-f260-4c7e-9dd7-1d3a87b3bb2b")
+		(property "Reference" "#PWR019"
+			(at 24.13 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35129,8 +36079,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 204.47 159.766 0)
+		(property "Value" "+5VL"
+			(at 24.13 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35138,7 +36088,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 156.21 0)
+			(at 24.13 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35146,8 +36096,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 204.47 156.21 0)
+		(property "Datasheet" ""
+			(at 24.13 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35155,8 +36105,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 204.47 156.21 0)
+		(property "Description" "Power symbol creates a global label with name \"+5VL\""
+			(at 24.13 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35165,12 +36115,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "fe592521-13b4-4415-911e-2a3ab65ca2d9")
+			(uuid "e128b524-8f35-4cd6-91e2-d2b152fe85d4")
 		)
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR016")
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VL")
+		(at 176.53 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc31dec1-47f5-4f94-9936-f58f5aeca309")
+		(property "Reference" "#PWR07"
+			(at 176.53 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VL"
+			(at 176.53 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VL\""
+			(at 176.53 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fbc48d5-4f5d-4a29-9f4f-3560ad87755f")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -35185,7 +36201,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd7dfdbc-0094-45d5-bd0a-20bed799238e")
-		(property "Reference" "D12"
+		(property "Reference" "D14"
 			(at 34.29 115.57 0)
 			(effects
 				(font
@@ -35292,6 +36308,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a9867189-e9e3-419f-a3dc-bb0bfe90d8fa")
 		)
@@ -35307,7 +36332,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D12")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -35322,7 +36347,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be1ea120-30ba-4dba-a286-54ceb6875f0d")
-		(property "Reference" "D85"
+		(property "Reference" "D87"
 			(at 135.89 53.34 0)
 			(effects
 				(font
@@ -35429,6 +36454,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "8eae1fa1-a28d-456b-a457-ca394111d236")
 		)
@@ -35444,7 +36478,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D85")
+					(reference "D87")
 					(unit 1)
 				)
 			)
@@ -35459,7 +36493,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be56c073-a318-4462-b462-566306396e78")
-		(property "Reference" "D45"
+		(property "Reference" "D47"
 			(at 85.09 53.34 0)
 			(effects
 				(font
@@ -35566,6 +36600,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "2f1aa2e9-dba3-400d-a9b6-012bd4d14dc0")
 		)
@@ -35581,72 +36624,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 176.53 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bf7c9ed2-bc4c-4ee4-973c-e6012a796321")
-		(property "Reference" "#PWR013"
-			(at 176.53 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 174.752 16.002 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 176.53 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4a394fcb-5627-4a19-a37e-dfa776aa4f2a")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR013")
+					(reference "D47")
 					(unit 1)
 				)
 			)
@@ -35661,7 +36639,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf833df0-d208-4ef7-9e72-c85c08585148")
-		(property "Reference" "D147"
+		(property "Reference" "D149"
 			(at 212.09 106.68 0)
 			(effects
 				(font
@@ -35768,6 +36746,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "f0686408-fa16-4526-a497-99e298322d69")
 		)
@@ -35783,7 +36770,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D147")
+					(reference "D149")
 					(unit 1)
 				)
 			)
@@ -35798,7 +36785,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bfa24753-954a-4348-818e-60bc1df41f0a")
-		(property "Reference" "D62"
+		(property "Reference" "D64"
 			(at 110.49 26.67 0)
 			(effects
 				(font
@@ -35905,6 +36892,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "f69aa94a-19b2-4c59-a2e9-d56f0117e3ec")
 		)
@@ -35920,7 +36916,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D62")
+					(reference "D64")
 					(unit 1)
 				)
 			)
@@ -35935,7 +36931,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c1250d30-d49b-4005-8390-e1ec3a19e349")
-		(property "Reference" "D10"
+		(property "Reference" "D12"
 			(at 34.29 97.79 0)
 			(effects
 				(font
@@ -36042,6 +37038,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c84d26c6-c14f-4d8b-978e-9837481dd5c3")
 		)
@@ -36057,7 +37062,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D10")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -36072,7 +37077,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c15bb031-f788-43c6-b43c-16dc4961ef9e")
-		(property "Reference" "D3"
+		(property "Reference" "D5"
 			(at 34.29 35.56 0)
 			(effects
 				(font
@@ -36179,6 +37184,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "137d8c66-766b-49d9-bf7d-a2fd4f6c962e")
 		)
@@ -36194,7 +37208,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D3")
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VL")
+		(at 49.53 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c17c9c12-f272-48c2-9567-b1f6c98781f3")
+		(property "Reference" "#PWR017"
+			(at 49.53 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VL"
+			(at 49.53 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VL\""
+			(at 49.53 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "006e1346-b318-4a56-aa05-c00faff0dee7")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -36209,7 +37289,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c1932555-ce81-479f-af10-499df83ae9e7")
-		(property "Reference" "D91"
+		(property "Reference" "D93"
 			(at 135.89 106.68 0)
 			(effects
 				(font
@@ -36316,6 +37396,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4713479c-5066-49cb-b7cc-feb43e9558ac")
 		)
@@ -36331,7 +37420,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D91")
+					(reference "D93")
 					(unit 1)
 				)
 			)
@@ -36346,7 +37435,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c374336c-5832-44bc-af7c-452e12feac9f")
-		(property "Reference" "D93"
+		(property "Reference" "D95"
 			(at 135.89 124.46 0)
 			(effects
 				(font
@@ -36453,6 +37542,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "cfb52148-d4a8-4306-9ec6-526cc900d1be")
 		)
@@ -36468,7 +37566,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D93")
+					(reference "D95")
 					(unit 1)
 				)
 			)
@@ -36483,7 +37581,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c47f0663-29b3-456b-8ef3-cbcda49df204")
-		(property "Reference" "D121"
+		(property "Reference" "D123"
 			(at 186.69 17.78 0)
 			(effects
 				(font
@@ -36590,6 +37688,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "509aa29d-fa9e-484e-a3e5-208b06ad45d3")
 		)
@@ -36605,7 +37712,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D121")
+					(reference "D123")
 					(unit 1)
 				)
 			)
@@ -36620,7 +37727,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4a63cbb-1fec-4a77-818e-86895b6e655f")
-		(property "Reference" "D117"
+		(property "Reference" "D119"
 			(at 161.29 160.02 0)
 			(effects
 				(font
@@ -36727,6 +37834,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c239ef2a-13ec-495b-872e-de30a62f9c88")
 		)
@@ -36742,7 +37858,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D117")
+					(reference "D119")
 					(unit 1)
 				)
 			)
@@ -36757,7 +37873,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c5a619b0-9958-445f-8037-b26e203fc4f2")
-		(property "Reference" "D157"
+		(property "Reference" "D159"
 			(at 237.49 53.34 0)
 			(effects
 				(font
@@ -36864,6 +37980,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a64ba0b3-0ee5-4a84-a59e-452de59c1e99")
 		)
@@ -36879,7 +38004,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D157")
+					(reference "D159")
 					(unit 1)
 				)
 			)
@@ -36894,7 +38019,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c6fbd955-9945-4d25-9277-37ea6c8377a4")
-		(property "Reference" "D63"
+		(property "Reference" "D65"
 			(at 110.49 35.56 0)
 			(effects
 				(font
@@ -37001,6 +38126,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 110.49 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "772be3c4-c516-41b3-8a6b-bdf9810527fa")
 		)
@@ -37016,7 +38150,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D63")
+					(reference "D65")
 					(unit 1)
 				)
 			)
@@ -37031,7 +38165,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c71edb8d-93ba-4b65-9f81-b4a608c36eb3")
-		(property "Reference" "D134"
+		(property "Reference" "D136"
 			(at 186.69 133.35 0)
 			(effects
 				(font
@@ -37138,6 +38272,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "cd389404-828b-4ccf-935b-2fba847d2d51")
 		)
@@ -37153,7 +38296,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D134")
+					(reference "D136")
 					(unit 1)
 				)
 			)
@@ -37168,7 +38311,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c7943d5e-b723-4a6a-a548-43cca3595e68")
-		(property "Reference" "D54"
+		(property "Reference" "D56"
 			(at 85.09 133.35 0)
 			(effects
 				(font
@@ -37275,6 +38418,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d31c4a2b-3f2d-473e-80dd-262f94c39ea4")
 		)
@@ -37290,7 +38442,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D54")
+					(reference "D56")
 					(unit 1)
 				)
 			)
@@ -37305,7 +38457,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c898f5e3-8915-4534-82ef-ad27fc7c0db9")
-		(property "Reference" "D169"
+		(property "Reference" "D171"
 			(at 262.89 17.78 0)
 			(effects
 				(font
@@ -37412,6 +38564,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 262.89 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "089b5b7d-2e07-4ed5-8acc-7219875f246b")
 		)
@@ -37427,72 +38588,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D169")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 24.13 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c917e667-9e4e-4702-a1ca-20679540650c")
-		(property "Reference" "#PWR01"
-			(at 24.13 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 22.352 16.002 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 24.13 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9686dc1-dca5-4ebe-82a3-6e4eb9ca1615")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR01")
+					(reference "D171")
 					(unit 1)
 				)
 			)
@@ -37507,7 +38603,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c9b5d569-58bb-4907-bf9c-e221c80782b3")
-		(property "Reference" "D82"
+		(property "Reference" "D84"
 			(at 135.89 26.67 0)
 			(effects
 				(font
@@ -37614,6 +38710,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4d83787a-b973-486c-8917-ae86593a2a94")
 		)
@@ -37629,7 +38734,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D82")
+					(reference "D84")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 229.87 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca0b421a-7159-4136-b6c5-527848ee9655")
+		(property "Reference" "#PWR016"
+			(at 229.87 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.87 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 229.87 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66008fbe-aca9-4f24-ac71-db21d31a3ad0")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -37644,7 +38815,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cadb4c97-aa69-4476-8f46-c153c116b090")
-		(property "Reference" "D163"
+		(property "Reference" "D165"
 			(at 237.49 106.68 0)
 			(effects
 				(font
@@ -37751,6 +38922,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d433ac35-3b90-4dc5-8bb8-998155a0aaab")
 		)
@@ -37766,7 +38946,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D163")
+					(reference "D165")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 128.27 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ccda2245-397f-4c45-af0a-ccd25741427b")
+		(property "Reference" "#PWR010"
+			(at 128.27 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.27 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 128.27 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d3e02a5-2863-4853-b131-c2e633357bb4")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -37781,7 +39027,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cd903ef3-fd6b-46a5-b35d-7a60d65338e5")
-		(property "Reference" "D37"
+		(property "Reference" "D39"
 			(at 59.69 160.02 0)
 			(effects
 				(font
@@ -37888,6 +39134,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6ca5dd79-60f0-487e-b99b-90e76ab7c04f")
 		)
@@ -37903,7 +39158,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D37")
+					(reference "D39")
 					(unit 1)
 				)
 			)
@@ -37918,7 +39173,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d2b4c831-4ac6-4b72-9312-ae78cebb2b93")
-		(property "Reference" "D21"
+		(property "Reference" "D23"
 			(at 59.69 17.78 0)
 			(effects
 				(font
@@ -38025,6 +39280,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "72e4998f-bc64-4d15-b888-0246cc859346")
 		)
@@ -38040,7 +39304,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D21")
+					(reference "D23")
 					(unit 1)
 				)
 			)
@@ -38055,7 +39319,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d3391c37-92bc-4d24-9874-820222b88f3e")
-		(property "Reference" "D168"
+		(property "Reference" "D170"
 			(at 237.49 151.13 0)
 			(effects
 				(font
@@ -38162,6 +39426,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c667de4c-7a8a-48fe-966b-a7843d7b35d0")
 		)
@@ -38177,7 +39450,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D168")
+					(reference "D170")
 					(unit 1)
 				)
 			)
@@ -38192,7 +39465,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d3d5b1ce-0601-487d-b6be-92d133074c02")
-		(property "Reference" "D97"
+		(property "Reference" "D99"
 			(at 135.89 160.02 0)
 			(effects
 				(font
@@ -38299,6 +39572,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "19b2f149-2b57-4f1b-b119-5f26d9ef85b7")
 		)
@@ -38314,7 +39596,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D97")
+					(reference "D99")
 					(unit 1)
 				)
 			)
@@ -38329,7 +39611,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d43efaa7-db16-4093-a68d-9d74ecc0863c")
-		(property "Reference" "D140"
+		(property "Reference" "D142"
 			(at 212.09 44.45 0)
 			(effects
 				(font
@@ -38436,6 +39718,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9f5cd433-0ed2-454d-b059-b32d8343eeed")
 		)
@@ -38451,7 +39742,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D140")
+					(reference "D142")
 					(unit 1)
 				)
 			)
@@ -38466,7 +39757,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d69ad40d-baea-45bd-a91e-040abd64fc26")
-		(property "Reference" "D151"
+		(property "Reference" "D153"
 			(at 212.09 142.24 0)
 			(effects
 				(font
@@ -38573,6 +39864,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a2f3bbb8-a966-42fa-8c58-d88ae630604f")
 		)
@@ -38588,7 +39888,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D151")
+					(reference "D153")
 					(unit 1)
 				)
 			)
@@ -38603,7 +39903,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d6e7954d-f48a-475e-8bba-a3861fe755e8")
-		(property "Reference" "D11"
+		(property "Reference" "D13"
 			(at 34.29 106.68 0)
 			(effects
 				(font
@@ -38710,6 +40010,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0f3b6f3a-8869-49c4-ae83-b5523f6fd814")
 		)
@@ -38725,7 +40034,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D11")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -38740,7 +40049,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d881f6e2-dee9-424c-a1b5-0aefe51077f6")
-		(property "Reference" "D143"
+		(property "Reference" "D145"
 			(at 212.09 71.12 0)
 			(effects
 				(font
@@ -38847,6 +40156,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5fd54198-886b-445c-a151-2fa61c0d9cb6")
 		)
@@ -38862,7 +40180,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D143")
+					(reference "D145")
 					(unit 1)
 				)
 			)
@@ -38877,7 +40195,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d8e3f2f0-5736-4532-b2b0-967145d16149")
-		(property "Reference" "D13"
+		(property "Reference" "D15"
 			(at 34.29 124.46 0)
 			(effects
 				(font
@@ -38984,6 +40302,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "612a374c-919a-4a4e-8132-c935aa247d81")
 		)
@@ -38999,7 +40326,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D13")
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -39014,7 +40341,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "da9addf8-79cf-4e7b-bbea-2cc3896fbd3f")
-		(property "Reference" "D107"
+		(property "Reference" "D109"
 			(at 161.29 71.12 0)
 			(effects
 				(font
@@ -39121,6 +40448,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 161.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0e2267f8-6542-4b21-b541-6e01c69f20b4")
 		)
@@ -39136,7 +40472,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D107")
+					(reference "D109")
 					(unit 1)
 				)
 			)
@@ -39151,7 +40487,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "db0b1d55-ba9c-4c98-ae96-8666826aaade")
-		(property "Reference" "D59"
+		(property "Reference" "D61"
 			(at 85.09 177.8 0)
 			(effects
 				(font
@@ -39258,6 +40594,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c6827306-52a8-41c7-89f7-c1416099ee57")
 		)
@@ -39273,7 +40618,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D59")
+					(reference "D61")
 					(unit 1)
 				)
 			)
@@ -39288,7 +40633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd2c59ef-f6d6-4bd1-88ca-8252f72e025c")
-		(property "Reference" "D47"
+		(property "Reference" "D49"
 			(at 85.09 71.12 0)
 			(effects
 				(font
@@ -39395,6 +40740,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "29554587-5a82-42d9-8c2b-1577bd363e2b")
 		)
@@ -39410,7 +40764,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D47")
+					(reference "D49")
 					(unit 1)
 				)
 			)
@@ -39425,7 +40779,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2fb2daf-25fc-44be-b905-4575cbf132d3")
-		(property "Reference" "D20"
+		(property "Reference" "D22"
 			(at 34.29 186.69 0)
 			(effects
 				(font
@@ -39532,6 +40886,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 34.29 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0c9b2f7e-bf77-4900-9304-20b910abdf2b")
 		)
@@ -39547,7 +40910,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D20")
+					(reference "D22")
 					(unit 1)
 				)
 			)
@@ -39562,7 +40925,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e53452ac-db62-477d-94a4-d8e05899ae0b")
-		(property "Reference" "D164"
+		(property "Reference" "D166"
 			(at 237.49 115.57 0)
 			(effects
 				(font
@@ -39669,6 +41032,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 237.49 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "7c3fc9a0-6f0b-47fb-a2fc-b093d938654a")
 		)
@@ -39684,7 +41056,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D164")
+					(reference "D166")
 					(unit 1)
 				)
 			)
@@ -39699,7 +41071,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e581690b-3de6-4dd0-9ff8-07160d07d192")
-		(property "Reference" "D52"
+		(property "Reference" "D54"
 			(at 85.09 115.57 0)
 			(effects
 				(font
@@ -39806,6 +41178,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 85.09 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "50730d5c-1a2c-4a96-a404-36666eff135a")
 		)
@@ -39821,7 +41202,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D52")
+					(reference "D54")
 					(unit 1)
 				)
 			)
@@ -39836,7 +41217,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ec4272eb-2219-475c-9fa3-ab6f7e037930")
-		(property "Reference" "D34"
+		(property "Reference" "D36"
 			(at 59.69 133.35 0)
 			(effects
 				(font
@@ -39943,6 +41324,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "f477a99a-1a45-492a-a285-d7a4f732cc83")
 		)
@@ -39958,7 +41348,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D34")
+					(reference "D36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VL")
+		(at 74.93 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eca32e71-8eb8-4b78-8f16-eed9ae309607")
+		(property "Reference" "#PWR015"
+			(at 74.93 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VL"
+			(at 74.93 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VL\""
+			(at 74.93 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83980332-c917-45f3-ac24-b5f646f16439")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -39973,7 +41429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "edcfd887-e215-407d-9a4f-e1088a816596")
-		(property "Reference" "D136"
+		(property "Reference" "D138"
 			(at 186.69 151.13 0)
 			(effects
 				(font
@@ -40080,6 +41536,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "7590cbbb-c10a-46ba-b3b8-19a380937668")
 		)
@@ -40095,7 +41560,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D136")
+					(reference "D138")
 					(unit 1)
 				)
 			)
@@ -40110,7 +41575,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ee52f58d-e105-41c1-9266-cc79cd5a6b0c")
-		(property "Reference" "D84"
+		(property "Reference" "D86"
 			(at 135.89 44.45 0)
 			(effects
 				(font
@@ -40217,6 +41682,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 135.89 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "31fc732b-ca25-4959-920e-3bab3a172d83")
 		)
@@ -40232,7 +41706,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D84")
+					(reference "D86")
 					(unit 1)
 				)
 			)
@@ -40247,7 +41721,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0dc955b-41e6-4fc1-8e42-76d9087f4056")
-		(property "Reference" "D40"
+		(property "Reference" "D42"
 			(at 59.69 186.69 0)
 			(effects
 				(font
@@ -40354,6 +41828,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "99111358-cf39-4d8e-8937-43b03768be8f")
 		)
@@ -40369,7 +41852,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D40")
+					(reference "D42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VL")
+		(at 100.33 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5eddf62-5067-4e38-b976-81312d80ff8a")
+		(property "Reference" "#PWR013"
+			(at 100.33 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VL"
+			(at 100.33 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VL\""
+			(at 100.33 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8213a51-2288-4cd0-8f81-73a155576f49")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -40384,7 +41933,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f7a87f10-941d-4d38-879e-f054b010c973")
-		(property "Reference" "D132"
+		(property "Reference" "D134"
 			(at 186.69 115.57 0)
 			(effects
 				(font
@@ -40491,6 +42040,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 186.69 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "05763b2d-a54e-4b1a-a740-eb8921a4b3ce")
 		)
@@ -40506,7 +42064,73 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D132")
+					(reference "D134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VL")
+		(at 201.93 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9e7645e-f535-4a02-8f1c-91028279b8aa")
+		(property "Reference" "#PWR05"
+			(at 201.93 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VL"
+			(at 201.93 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VL\""
+			(at 201.93 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5d8d208-b974-4c9b-bb14-ea2ee8b50405")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -40521,7 +42145,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9e9a5ed-78c0-4285-b96d-9d8b3868d005")
-		(property "Reference" "D32"
+		(property "Reference" "D34"
 			(at 59.69 115.57 0)
 			(effects
 				(font
@@ -40628,6 +42252,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 59.69 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "70bdcd0e-1bfc-4739-a57c-43ae51a9b8e3")
 		)
@@ -40643,72 +42276,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 49.53 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fb7e3259-f0f0-4861-b85a-210912ab566f")
-		(property "Reference" "#PWR03"
-			(at 49.53 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 47.752 16.002 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 49.53 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "367d835b-edd4-43fb-9651-a9ec2f70ba43")
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "#PWR03")
+					(reference "D34")
 					(unit 1)
 				)
 			)
@@ -40723,7 +42291,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ffdbe200-ec60-4706-bb82-bb5b04d73371")
-		(property "Reference" "D146"
+		(property "Reference" "D148"
 			(at 212.09 97.79 0)
 			(effects
 				(font
@@ -40830,6 +42398,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 212.09 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "785a7969-d8a5-482d-951f-185a5491524b")
 		)
@@ -40845,7 +42422,7 @@
 		(instances
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/f7e054ab-e6f9-45d1-9e92-1309241566f0"
-					(reference "D146")
+					(reference "D148")
 					(unit 1)
 				)
 			)
