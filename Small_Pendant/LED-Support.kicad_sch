@@ -1617,6 +1617,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 162.56 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c9a84e54-7f96-453d-b3ae-45e523a2a767")
 		)
@@ -1677,6 +1686,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x02, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
 			(at 30.48 81.28 0)
 			(effects
 				(font
@@ -1890,6 +1908,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 148.59 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4a92a165-217b-40cb-8383-5312b3b1ab89")
 		)
@@ -2015,6 +2042,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 22.86 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
 			(at 22.86 33.02 0)
 			(effects
 				(font
@@ -2354,6 +2390,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 92.71 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "851d5a86-b562-4681-926e-e0d2d87ec8e7")
 		)
@@ -2479,6 +2524,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 78.74 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
 			(at 78.74 33.02 0)
 			(effects
 				(font
@@ -2620,6 +2674,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 36.83 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d8bc016e-502f-4548-b9ac-deb9f1cad64d")
 		)
@@ -2680,6 +2743,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x02, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
 			(at 30.48 93.98 0)
 			(effects
 				(font
@@ -2827,6 +2899,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 176.53 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "88be3679-a483-4a5e-9fd2-9475cf97a723")
 		)
@@ -2887,6 +2968,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x02, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
 			(at 30.48 68.58 0)
 			(effects
 				(font
@@ -3033,6 +3123,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 50.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b42a455e-f53c-40a8-83b9-986b5b2fc12a")
 		)
@@ -3157,6 +3256,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 134.62 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
 			(at 134.62 33.02 0)
 			(effects
 				(font
@@ -3298,6 +3406,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 120.65 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e05fe13a-1fa2-41f0-8c36-1c2ad331fcd2")
 		)
@@ -3431,6 +3548,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 64.77 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2e479cdb-6bb7-4563-86e8-eafeae7ac9e2")
 		)
@@ -3555,6 +3681,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
 			(at 106.68 33.02 0)
 			(effects
 				(font
