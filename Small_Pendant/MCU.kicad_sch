@@ -4294,6 +4294,12 @@
 		(uuid "1e161e8f-78f5-49ae-87c8-1dee0bea075f")
 	)
 	(junction
+		(at 67.31 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25d4c7dc-9d40-4fff-b81c-ce36c3405e58")
+	)
+	(junction
 		(at 76.2 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4310,12 +4316,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a44a5e6-6caa-468d-9c82-83b7a887e653")
-	)
-	(junction
-		(at 67.31 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f6b9f3d-3d40-4a82-bcc4-6bb215d7c174")
 	)
 	(junction
 		(at 85.09 80.01)
@@ -4364,12 +4364,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b27fcef-8f15-4ae5-b945-c239275c475e")
-	)
-	(junction
-		(at 67.31 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5c580a00-1f5b-4c34-8849-44bcac390621")
 	)
 	(junction
 		(at 255.27 95.25)
@@ -4454,6 +4448,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "938aca01-1225-4676-97e4-341066baf6c3")
+	)
+	(junction
+		(at 67.31 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "964ddbd8-117f-4291-8a0d-e323c44e895a")
 	)
 	(junction
 		(at 200.66 58.42)
@@ -5283,6 +5283,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 95.25) (xy 67.31 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58e502c1-c28f-4192-9d1f-8030e5e82da4")
+	)
+	(wire
+		(pts
 			(xy 33.02 27.94) (xy 33.02 30.48)
 		)
 		(stroke
@@ -5940,16 +5950,6 @@
 			(type default)
 		)
 		(uuid "ae08c16c-b668-480d-aae0-bb9c075f6cb9")
-	)
-	(wire
-		(pts
-			(xy 67.31 95.25) (xy 67.31 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aee7933d-6d42-4bba-9132-e0e7d4593e98")
 	)
 	(wire
 		(pts
@@ -7494,7 +7494,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_0.5x0.5mm"
 			(at 195.58 31.75 0)
 			(effects
 				(font
@@ -7978,7 +7978,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_0.5x0.5mm"
 			(at 182.88 31.75 0)
 			(effects
 				(font
@@ -8035,7 +8035,7 @@
 				)
 			)
 		)
-		(property "Value" "3V3"
+		(property "Value" "5V"
 			(at 148.59 125.222 0)
 			(effects
 				(font
@@ -8043,7 +8043,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_0.5x0.5mm"
 			(at 143.51 130.81 0)
 			(effects
 				(font
@@ -10065,7 +10065,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_0.5x0.5mm"
 			(at 148.59 130.81 0)
 			(effects
 				(font
@@ -13099,7 +13099,7 @@
 				)
 			)
 		)
-		(property "Value" "5V"
+		(property "Value" "3V3"
 			(at 143.51 125.222 0)
 			(effects
 				(font
@@ -13107,7 +13107,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_0.5x0.5mm"
 			(at 138.43 130.81 0)
 			(effects
 				(font
@@ -15352,7 +15352,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DRT0003A"
+		(property "Footprint" "TPD2EUSB30DRTR:DRT0003A"
 			(at 212.09 40.64 0)
 			(effects
 				(font
