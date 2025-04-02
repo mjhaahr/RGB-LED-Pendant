@@ -125,7 +125,7 @@
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 1.0,
-        "min_text_thickness": 0.08,
+        "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.15,
         "min_track_width": 0.1,
         "min_via_annular_width": 0.1,
@@ -931,12 +931,12 @@
       "Root"
     ],
     [
-      "f7e054ab-e6f9-45d1-9e92-1309241566f0",
-      "LEDs"
-    ],
-    [
       "14f335fc-598f-404a-bfcd-3d46c6f23e92",
       "MCU"
+    ],
+    [
+      "f7e054ab-e6f9-45d1-9e92-1309241566f0",
+      "LEDs"
     ],
     [
       "0aa044a8-3060-48ad-928a-e0b7e1b97858",

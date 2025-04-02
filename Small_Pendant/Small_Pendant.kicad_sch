@@ -11,8 +11,41 @@
 		(comment 1 "Matthew Haahr")
 	)
 	(lib_symbols)
+	(text "All 177 RGB LEDs"
+		(exclude_from_sim no)
+		(at 19.05 47.244 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "447e7cc0-aebc-4742-af74-d5bd07b4694c")
+	)
+	(text "Decoupling Caps\nMale Interboard Connectors"
+		(exclude_from_sim no)
+		(at 19.304 76.454 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5568a177-3c0e-4869-893f-8dae91c185af")
+	)
+	(text "MCU\nUSB\nLevel Shift\n3V3 Regulator\nButtons\nTest Points\nFemale Interboard Connectors\n"
+		(exclude_from_sim no)
+		(at 18.796 19.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "700b17d1-9424-496d-a3e4-cf72ead561cd")
+	)
 	(sheet
-		(at 17.78 48.26)
+		(at 17.78 74.93)
 		(size 31.75 20.32)
 		(fields_autoplaced yes)
 		(stroke
@@ -24,7 +57,7 @@
 		)
 		(uuid "0aa044a8-3060-48ad-928a-e0b7e1b97858")
 		(property "Sheetname" "LED Support"
-			(at 17.78 47.5484 0)
+			(at 17.78 74.2184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33,7 +66,7 @@
 			)
 		)
 		(property "Sheetfile" "LED-Support.kicad_sch"
-			(at 17.78 69.1646 0)
+			(at 17.78 95.8346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50,7 +83,7 @@
 		)
 	)
 	(sheet
-		(at 17.78 77.47)
+		(at 17.78 17.78)
 		(size 31.75 20.32)
 		(fields_autoplaced yes)
 		(stroke
@@ -62,7 +95,7 @@
 		)
 		(uuid "14f335fc-598f-404a-bfcd-3d46c6f23e92")
 		(property "Sheetname" "MCU"
-			(at 17.78 76.7584 0)
+			(at 17.78 17.0684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71,45 +104,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 17.78 98.3746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Small_Pendant"
-				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 17.78 19.05)
-		(size 31.75 20.32)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f7e054ab-e6f9-45d1-9e92-1309241566f0")
-		(property "Sheetname" "LEDs"
-			(at 17.78 18.3384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "LEDs.kicad_sch"
-			(at 17.78 39.9546 0)
+			(at 17.78 38.6846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -121,6 +116,44 @@
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 45.72)
+		(size 31.75 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f7e054ab-e6f9-45d1-9e92-1309241566f0")
+		(property "Sheetname" "LEDs"
+			(at 17.78 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LEDs.kicad_sch"
+			(at 17.78 66.6246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f"
+					(page "3")
 				)
 			)
 		)
