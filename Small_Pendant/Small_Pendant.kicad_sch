@@ -56,7 +56,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "0aa044a8-3060-48ad-928a-e0b7e1b97858")
-		(property "Sheetname" "LED Support"
+		(property "Sheetname" "LED_Support"
 			(at 17.78 74.2184 0)
 			(effects
 				(font

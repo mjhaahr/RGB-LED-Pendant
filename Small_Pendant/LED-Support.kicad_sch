@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "1f97d3df-6766-41a9-b40f-455b8f151e1a")
-	(paper "A4")
+	(paper "A5")
 	(title_block
 		(title "Small Pendant")
 		(rev "A")
