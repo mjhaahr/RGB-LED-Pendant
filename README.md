@@ -10,7 +10,7 @@ Features:
     - Xinglight XL-1010RGBC-WS2812B
 - Two board design for tight packaging
 - ESP32-C3 Module for control
-    - Allows pattern changing over WiFi/BT as well as the buttons on the device
+    - Allows pattern changing over WiFi/Bluetooth as well as the buttons on the device
 - Onboard IMU to generate reactive patterns
     - Utilizes a Bosch BNO055 for the simplicity of the orientation solution
 - USB C Port for Power, Comms, and Programming
@@ -31,53 +31,53 @@ Features:
 
 ## Bill of Materials
 *TODO: Currently not finalized*
-- 1x Espressif ESP32-C3-MINI-1 Microcontroller Module
+- 1x Espressif ESP32-C3-MINI-1 - Microcontroller Module w/ WiFi and Bluetooth
     - [Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf)
     - [LCSC Part Number: C2934569](https://www.lcsc.com/product-detail/WiFi-Modules_Espressif-Systems-ESP32-C3-MINI-1-H4_C2934569.html)
     - Component: U1
-- 1x Diodes Incorporated AP2112K-3.3 Fixed 3V3 Regulator
+- 1x Diodes Incorporated AP2112K-3.3 - Fixed 3V3 Regulator
     - [Datasheet](https://www.diodes.com/assets/Datasheets/AP2112.pdf)
     - [LCSC Part Number: C51118](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_Diodes-Incorporated-AP2112K-3-3TRG1_C51118.html)
     - Component: U2
-- 1x Bosch Sensortec BNO055 Absolute Orientation Sensor
+- 1x Bosch Sensortec BNO055 - Absolute Orientation Sensor - 9 Axis IMU and Sensor Fusion Processor
     - [Datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bno055-ds000.pdf)
     - [LCSC Part Number: C93216](https://www.lcsc.com/product-detail/Accelerometers_Bosch-Sensortec-BNO055_C93216.html)
     - Component: U3
-- 1x SN74LVC1T45DCK Logic Level Translator
+- 1x TI SN74LVC1T45DCK - Logic Level Translator
     - [Datasheet](https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf)
     - [LCSC Part Number: C9382](https://www.lcsc.com/product-detail/Translators-Level-Shifters_Texas-Instruments-SN74LVC1T45DCKR_C9382.html)
     - Component: U4
-- 1x Tech Public TPD2EUSB30 USB ESD/TVS Diode (Clone of the TI Part of the same name)
+- 1x Tech Public TPD2EUSB30 - USB ESD/TVS Diode - Clone of the TI Part of the same name
     - [Datasheet](https://www.ti.com/lit/ds/symlink/tpd2eusb30.pdf)
     - [LCSC Part Number: C5182099](https://www.lcsc.com/product-detail/ESD-and-Surge-Protection-TVS-ESD_TECH-PUBLIC-TPD2EUSB30DRTR_C5182099.html)
     - Component: D1
-- 1x XINGLIGHT XL-1608SYGC-04 Green LED
+- 1x XINGLIGHT XL-1608SYGC-04 - Green LED
     - [Datasheet](https://www.lcsc.com/datasheet/lcsc_datasheet_2410121310_XINGLIGHT-XL-1608SYGC-04_C965806.pdf)
     - [LCSC Part Number: C965806](https://www.lcsc.com/product-detail/LED-Indication-Discrete_XINGLIGHT-XL-1608SYGC-04_C965806.html)
     - Component: 2
-- 177x Xinglight XL-1010RGBC-WS2812B Addressable RGB LED
+- 177x Xinglight XL-1010RGBC-WS2812B - 1mm x 1mm Addressable RGB LED
     - [Datasheet](https://www.lcsc.com/datasheet/lcsc_datasheet_2410121315_XINGLIGHT-XL-1010RGBC-WS2812B_C5349953.pdf)
     - [LCSC Part Number: C5349953](https://www.lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-1010RGBC-WS2812B_C5349953.html)
     - Component: D3-D179
-- 3x Bossie BX-TS-26-342TP SMD Tactile Push Buttons:
+- 3x Bossie BX-TS-26-342TP - SMD Tactile Push Buttons:
     - [Datasheet](https://www.lcsc.com/datasheet/lcsc_datasheet_2410121625_Bossie-BX-TS-26-342TP_C18078117.pdf)
     - [LCSC Part Number: C18078117](https://www.lcsc.com/product-detail/Tactile-Switches_Bossie-BX-TS-26-342TP_C18078117.html)
     - Component: SW1-SW3
-- 1x G-Switch GT-USB-9010AB USB 2.0 USB-C Connector (GCT-USB4105-GF Clone)
+- 1x G-Switch GT-USB-9010AB - USB 2.0 USB-C Connector (GCT-USB4105-GF Clone)
     - [Datasheet](https://www.lcsc.com/datasheet/lcsc_datasheet_2411221125_G-Switch-GT-USB-9010AB_C2988366.pdf)
     - [LCSC Part Number: C2988366](https://www.lcsc.com/product-detail/USB-Connectors_G-Switch-GT-USB-9010AB_C2988366.html)
     - Component: J1
 - Headers (Used as Interboard Connectors)
-    - 2x 2x2 1.27mm Pitch Pin Socket Vertical SMD
+    - 2x 2x2 Pin Socket - 1.27mm Pitch - Vertical SMD
         - Component: J2, J3
         - [LCSC Part Number: ]()
-    - 1x 2x4 1.27mm Pitch Pin Socket Vertical SMD
+    - 1x 2x4 Pin Socket - 1.27mm Pitch - Vertical SMD
         - Component: J4
         - [LCSC Part Number: ]()
-    - 2x 2x2 1.27mm Pitch Pin Header Vertical SMD
+    - 2x 2x2 Pin Header - 1.27mm Pitch - Vertical SMD
         - Component: J5, J6
         - [LCSC Part Number: ]()
-    - 1x 2x4 1.27mm Pitch Pin Header Vertical SMD
+    - 1x 2x4 Pin Header - 1.27mm Pitch - Vertical SMD
         - Component: J7
         - [LCSC Part Number: ]()
 - Capacitors
