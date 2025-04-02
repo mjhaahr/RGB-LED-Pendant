@@ -1,4 +1,4 @@
-# Small RGB LED Pendant with User Selectable Patterns
+# Small RGB LED Pendant with User-Selectable Patterns
 
 <!--  [Assembled Device](images/????.svg) -->
 
@@ -9,13 +9,14 @@ Features:
     - WS2812B-style (NeoPixel) control
     - Xinglight XL-1010RGBC-WS2812B
 - Two board design for tight packaging
+    - Front board contains the LED Matrix
+    - Back board holds the Microcontroller, IMU, and Power Regulation
 - ESP32-C3 Module for control
     - Allows pattern changing over WiFi/Bluetooth as well as the buttons on the device
 - Onboard IMU to generate reactive patterns
     - Utilizes a Bosch BNO055 for the simplicity of the orientation solution
 - USB C Port for Power, Comms, and Programming
-    - Connects to the onboard ESP32's USB-CDC/JTAG device
-
+    - Connects to the ESP32-C3's onboard USB-CDC/JTAG device
 
 ## Table Of Contents
 - [Bill Of Materials](#bill-of-materials)
@@ -24,7 +25,7 @@ Features:
 - [Extra Notes](#extra-notes)
 
 ![Microcontroller Schematic Page](images/Small_Pendant-MCU.svg)
-![LEDs Schematic Page](images/Small_Pendant-LEDs.svg)
+![LED Matrix Schematic Page](images/Small_Pendant-LEDs.svg)
 ![LED Support (Capacitors and Connectors) Schematic Page](images/Small_Pendant-LED_Support.svg)
 
 ## Bill of Materials
@@ -45,7 +46,7 @@ Features:
     - [Datasheet](https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf)
     - [LCSC Part Number: C9382](https://www.lcsc.com/product-detail/Translators-Level-Shifters_Texas-Instruments-SN74LVC1T45DCKR_C9382.html)
     - Component: U4
-- 1x Tech Public TPD2EUSB30 - USB ESD/TVS Diode - Clone of the TI Part of the same name
+- 1x Tech Public TPD2EUSB30 - USB ESD/TVS Diode (Clone of TI part with the same name)
     - [Datasheet](https://www.ti.com/lit/ds/symlink/tpd2eusb30.pdf)
     - [LCSC Part Number: C5182099](https://www.lcsc.com/product-detail/ESD-and-Surge-Protection-TVS-ESD_TECH-PUBLIC-TPD2EUSB30DRTR_C5182099.html)
     - Component: D1
@@ -126,6 +127,6 @@ Features:
     - Lol, I don't know yet
     
 ## Extra Notes
-- The [Only Pendant](https://github.com/mjhaahr/RGB-LED-Pendant/tree/Only_Pendant) branch features a much simplified design, with only the LED Matrix and no control board
+- The [Only Pendant](https://github.com/mjhaahr/RGB-LED-Pendant/tree/Only_Pendant) branch features a much-simplified design, with only the LED Matrix and no control board, it functions the same as a normal NeoPixel matrix.
 - A future version may replace the BNO055 with a more up-to-date IMU (and one that is NRND) and move the orientation calculation onto the main MCU
 - A future design may include an onboard battery and charger (would likely require enlarging the board)
