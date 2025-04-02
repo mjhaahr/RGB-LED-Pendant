@@ -25,7 +25,7 @@ Features:
 
 ![Microcontroller Schematic Page](images/Small_Pendant-MCU.svg)
 ![LEDs Schematic Page](images/Small_Pendant-LEDs.svg)
-![LEDs Schematic Page](images/Small_Pendant-LED_Support.svg)
+![LED Support (Capacitors and Connectors) Schematic Page](images/Small_Pendant-LED_Support.svg)
 
 ## Bill of Materials
 *TODO: Currently not finalized*
