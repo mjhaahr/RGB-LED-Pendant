@@ -1,3 +1,6 @@
 .DS_Store
 Small_Pendant-backups
 *.lck
+
+.clangd
+compile_flags.txt

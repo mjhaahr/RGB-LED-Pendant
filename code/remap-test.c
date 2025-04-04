@@ -1,4 +1,8 @@
 #include <FastLED.h>
+#include <stdint.h>
+
+#define UINT_FAST8_MAX  __UINT_FAST8_MAX__
+
 #define DIM             15u
 // NP for No Pixel
 #define NP              UINT_FAST8_MAX
@@ -30,7 +34,7 @@ uint_fast8_t pixelLut[DIM][DIM] = {
     {  NP,  NP, 162, 161, 160, 159, 158, 157, 156, 155, 154, 153, 152,  NP,  NP},
     {  NP,  NP,  NP, 163, 164, 165, 166, 167, 168, 169, 170, 171,  NP,  NP,  NP},
     {  NP,  NP,  NP,  NP,  NP, 176, 175, 174, 173, 172,  NP,  NP,  NP,  NP,  NP}
-}
+};
 
 bool isPixel(uint_fast8_t x, uint_fast8_t y) {
     return pixelLut[y][x] < NUM_LEDS;
@@ -40,13 +44,13 @@ bool isPixel(uint_fast8_t x, uint_fast8_t y) {
 void updateLEDs(CRGB** frame) {
     // Loop Over Pixels and update
     for (uint_fast8_t y = 0; y < DIM; y++) {
-        for (uint_fast8_t y = 0; y < DIM; y++) {
+        for (uint_fast8_t x = 0; x < DIM; x++) {
             uint_fast8_t addr = pixelLut[y][x];
             if (addr < NUM_LEDS) {
                 leds[addr] = frame[y][x];
             }
         }
     }
-    
+
     FastLED.show();
 }
