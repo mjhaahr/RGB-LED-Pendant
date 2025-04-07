@@ -46,18 +46,22 @@ Features:
     - [Datasheet](https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf)
     - [LCSC Part Number: C9382](https://www.lcsc.com/product-detail/Translators-Level-Shifters_Texas-Instruments-SN74LVC1T45DCKR_C9382.html)
     - Component: U4
-- 1x Tech Public TPD2EUSB30 - USB ESD/TVS Diode (Clone of TI part with the same name)
+- 1x Tech Public TPD2EUSB30 - 2-Channel USB ESD/TVS Diode (Clone of TI part with the same name)
     - [Datasheet](https://www.ti.com/lit/ds/symlink/tpd2eusb30.pdf)
     - [LCSC Part Number: C5182099](https://www.lcsc.com/product-detail/ESD-and-Surge-Protection-TVS-ESD_TECH-PUBLIC-TPD2EUSB30DRTR_C5182099.html)
     - Component: D1
+- 1x TI ESD441 - 1-Channel VBUS ESD Diode
+    - [Datasheet](https://www.ti.com/lit/ds/symlink/esd441.pdf)
+    - [LCSC Part Number: C22427765](https://www.lcsc.com/product-detail/ESD-and-Surge-Protection-TVS-ESD_Texas-Instruments-ESD441DPLR_C22427765.html)
+    - Component: D2
 - 1x XINGLIGHT XL-1608SYGC-04 - Green LED
     - [Datasheet](https://www.lcsc.com/datasheet/lcsc_datasheet_2410121310_XINGLIGHT-XL-1608SYGC-04_C965806.pdf)
     - [LCSC Part Number: C965806](https://www.lcsc.com/product-detail/LED-Indication-Discrete_XINGLIGHT-XL-1608SYGC-04_C965806.html)
-    - Component: 2
+    - Component: D3
 - 177x Xinglight XL-1010RGBC-WS2812B - 1mm x 1mm Addressable RGB LED
     - [Datasheet](https://www.lcsc.com/datasheet/lcsc_datasheet_2410121315_XINGLIGHT-XL-1010RGBC-WS2812B_C5349953.pdf)
     - [LCSC Part Number: C5349953](https://www.lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-1010RGBC-WS2812B_C5349953.html)
-    - Component: D3-D179
+    - Component: D4-D180
 - 3x Bossie BX-TS-26-342TP - SMD Tactile Push Buttons:
     - [Datasheet](https://www.lcsc.com/datasheet/lcsc_datasheet_2410121625_Bossie-BX-TS-26-342TP_C18078117.pdf)
     - [LCSC Part Number: C18078117](https://www.lcsc.com/product-detail/Tactile-Switches_Bossie-BX-TS-26-342TP_C18078117.html)
@@ -115,6 +119,9 @@ Features:
         - [LCSC Part Number: ]()
     - 5.1kΩ
         - Component: R10, R11
+        - [LCSC Part Number: ]()
+    - 470Ω
+        - Component: R12
         - [LCSC Part Number: ]()
 
 
