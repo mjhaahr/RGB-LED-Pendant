@@ -1,8 +1,10 @@
 # Small RGB LED Pendant with User-Selectable Patterns
 
-<!--  [Assembled Device](images/????.svg) -->
+<!--  ![Assembled Device](images/????.png) -->
 
-<!--  [Device Render](images/????.svg) -->
+![Front Side PCB Render](images/front-render.png)
+
+![Back Side PCB Render](images/back-render.png)
 
 Features:
 - 177 Addressable RGB LEDs
