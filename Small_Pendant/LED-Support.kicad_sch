@@ -2170,7 +2170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF4700TCE_C25117.pdf"
 			(at 46.99 68.58 0)
 			(effects
 				(font
@@ -2242,7 +2242,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25117"
 			(at 46.99 68.58 0)
 			(effects
 				(font
@@ -2303,7 +2303,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 162.56 33.02 0)
 			(effects
 				(font
@@ -2375,7 +2375,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 162.56 33.02 0)
 			(effects
 				(font
@@ -2417,7 +2417,7 @@
 				)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-M1"
 			(at 31.75 77.47 0)
 			(effects
 				(font
@@ -2434,7 +2434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DZ127S-22-04-55_C5160758.pdf"
 			(at 30.48 81.28 0)
 			(effects
 				(font
@@ -2452,7 +2452,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C5160758"
 			(at 30.48 81.28 0)
 			(effects
 				(font
@@ -2566,7 +2566,7 @@
 				)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-M2"
 			(at 31.75 106.172 90)
 			(effects
 				(font
@@ -2583,7 +2583,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DZ127S-22-06-55_C5160759.pdf"
 			(at 30.48 93.98 0)
 			(effects
 				(font
@@ -2593,6 +2593,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C5160759"
 			(at 30.48 93.98 0)
 			(effects
 				(font
@@ -2671,7 +2680,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 148.59 33.02 0)
 			(effects
 				(font
@@ -2743,7 +2752,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 148.59 33.02 0)
 			(effects
 				(font
@@ -2804,7 +2813,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 22.86 33.02 0)
 			(effects
 				(font
@@ -2876,7 +2885,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 22.86 33.02 0)
 			(effects
 				(font
@@ -3135,7 +3144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 92.71 33.02 0)
 			(effects
 				(font
@@ -3207,7 +3216,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 92.71 33.02 0)
 			(effects
 				(font
@@ -3268,7 +3277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 78.74 33.02 0)
 			(effects
 				(font
@@ -3340,7 +3349,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 78.74 33.02 0)
 			(effects
 				(font
@@ -3401,7 +3410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 36.83 33.02 0)
 			(effects
 				(font
@@ -3473,7 +3482,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 36.83 33.02 0)
 			(effects
 				(font
@@ -3534,7 +3543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 176.53 33.02 0)
 			(effects
 				(font
@@ -3606,7 +3615,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 176.53 33.02 0)
 			(effects
 				(font
@@ -3648,7 +3657,7 @@
 				)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-M1"
 			(at 31.75 64.77 0)
 			(effects
 				(font
@@ -3665,7 +3674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DZ127S-22-04-55_C5160758.pdf"
 			(at 30.48 68.58 0)
 			(effects
 				(font
@@ -3683,7 +3692,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C5160758"
 			(at 30.48 68.58 0)
 			(effects
 				(font
@@ -3749,7 +3758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 50.8 33.02 0)
 			(effects
 				(font
@@ -3821,7 +3830,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 50.8 33.02 0)
 			(effects
 				(font
@@ -3881,7 +3890,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 134.62 33.02 0)
 			(effects
 				(font
@@ -3953,7 +3962,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 134.62 33.02 0)
 			(effects
 				(font
@@ -4014,7 +4023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 120.65 33.02 0)
 			(effects
 				(font
@@ -4086,7 +4095,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 120.65 33.02 0)
 			(effects
 				(font
@@ -4147,7 +4156,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 64.77 33.02 0)
 			(effects
 				(font
@@ -4219,7 +4228,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 64.77 33.02 0)
 			(effects
 				(font
@@ -4279,7 +4288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 106.68 33.02 0)
 			(effects
 				(font
@@ -4351,7 +4360,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 106.68 33.02 0)
 			(effects
 				(font

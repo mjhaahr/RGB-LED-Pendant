@@ -4812,12 +4812,6 @@
 		(uuid "50e09371-5bd3-4745-8665-9b9319ff8fb6")
 	)
 	(junction
-		(at 179.07 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "53584a51-0db9-42a9-8dc3-072e437a96cf")
-	)
-	(junction
 		(at 78.74 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4956,12 +4950,6 @@
 		(uuid "b3be9ada-6167-4280-8644-367730974101")
 	)
 	(junction
-		(at 179.07 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b5588480-2e12-41f4-b9a9-0602f44e5ba1")
-	)
-	(junction
 		(at 179.07 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4978,12 +4966,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2cdfe91-2a68-427d-a5aa-98352f6c80b0")
-	)
-	(junction
-		(at 179.07 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cab6c7fa-64dc-4be7-8b33-3da916c30ac4")
 	)
 	(junction
 		(at 130.81 36.83)
@@ -5052,12 +5034,20 @@
 		(uuid "18debee5-af1b-44cd-b818-b78bdf01b0eb")
 	)
 	(no_connect
+		(at 176.53 144.78)
+		(uuid "1a047b78-c4dc-492d-93e1-1fcc77675ae2")
+	)
+	(no_connect
 		(at 44.45 55.88)
 		(uuid "1e6dd479-96b4-4c94-98b3-07199501a2a1")
 	)
 	(no_connect
 		(at 44.45 53.34)
 		(uuid "3d262bf2-ed28-4b5d-9761-75615d087a64")
+	)
+	(no_connect
+		(at 176.53 147.32)
+		(uuid "4010c903-571f-44c1-86a4-f54c391246d7")
 	)
 	(no_connect
 		(at 209.55 67.31)
@@ -5070,6 +5060,10 @@
 	(no_connect
 		(at 21.59 63.5)
 		(uuid "5f902cb1-7071-41e5-add3-b5e02f8d76a1")
+	)
+	(no_connect
+		(at 176.53 149.86)
+		(uuid "85b253ec-9b25-4a63-91e4-d989af3a7bc2")
 	)
 	(no_connect
 		(at 176.53 134.62)
@@ -5787,16 +5781,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 144.78) (xy 179.07 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "478262e4-a9da-40a2-beb8-baf54033fcd3")
-	)
-	(wire
-		(pts
 			(xy 133.35 129.54) (xy 133.35 147.32)
 		)
 		(stroke
@@ -6245,16 +6229,6 @@
 		)
 		(uuid "7d5c88b4-a455-43ff-b66a-59e02dbabd9e")
 	)
-	(wire
-		(pts
-			(xy 179.07 152.4) (xy 179.07 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d921b1f-60d5-4dc0-9d8a-997d92e5b0ec")
-	)
 	(polyline
 		(pts
 			(xy 113.03 12.7) (xy 113.03 74.93)
@@ -6424,16 +6398,6 @@
 			(type default)
 		)
 		(uuid "8ce2494a-bbd9-45c6-bf62-0b730bb95562")
-	)
-	(wire
-		(pts
-			(xy 176.53 147.32) (xy 179.07 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d895fe1-1afa-4556-8101-79fe0e0acf7a")
 	)
 	(wire
 		(pts
@@ -6817,16 +6781,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 149.86) (xy 176.53 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b742bb6c-cd31-4bef-ae36-208f55869260")
-	)
-	(wire
-		(pts
 			(xy 118.11 134.62) (xy 120.65 134.62)
 		)
 		(stroke
@@ -7054,16 +7008,6 @@
 			(type default)
 		)
 		(uuid "d0e383ea-c231-4dfd-8e78-44ef318acea6")
-	)
-	(wire
-		(pts
-			(xy 179.07 147.32) (xy 179.07 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1265b29-9fdf-448d-8fec-9cb6c3f86f3c")
 	)
 	(wire
 		(pts
@@ -7364,16 +7308,6 @@
 			(type default)
 		)
 		(uuid "fda382a4-69b8-4d7c-84aa-99724555738f")
-	)
-	(wire
-		(pts
-			(xy 176.53 144.78) (xy 179.07 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe9aa28a-ca36-4bbf-a96c-20fd1cf78553")
 	)
 	(wire
 		(pts
@@ -8008,7 +7942,7 @@
 				)
 			)
 		)
-		(property "Value" "27"
+		(property "Value" "0"
 			(at 240.03 46.99 90)
 			(effects
 				(font
@@ -8025,7 +7959,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF0000TCE_C17168.pdf"
 			(at 240.03 49.53 0)
 			(effects
 				(font
@@ -8097,7 +8031,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C17168"
 			(at 240.03 49.53 0)
 			(effects
 				(font
@@ -8326,7 +8260,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0de454dd-dee4-4767-94d7-ce77a3a3810b")
 		(property "Reference" "TP2"
@@ -8555,7 +8489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 134.62 82.55 0)
 			(effects
 				(font
@@ -8627,7 +8561,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 134.62 82.55 0)
 			(effects
 				(font
@@ -8688,7 +8622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121645_Chinocera-HGC0402R5106M100NTEJ_C7472949.pdf"
 			(at 127 82.55 0)
 			(effects
 				(font
@@ -8760,7 +8694,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C7472949"
 			(at 127 82.55 0)
 			(effects
 				(font
@@ -8870,7 +8804,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1dc99e7f-0d26-413d-817f-ab93674b5d49")
 		(property "Reference" "TP1"
 			(at 210.82 30.9879 0)
@@ -8937,7 +8871,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1de9306d-8ce2-4ec2-8f4d-c4c6b764eac2")
 		(property "Reference" "TP4"
 			(at 86.36 87.122 0)
@@ -9295,7 +9229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 45.72 175.26 0)
 			(effects
 				(font
@@ -9367,7 +9301,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 45.72 175.26 0)
 			(effects
 				(font
@@ -9492,7 +9426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF3301TCE_C25890.pdf"
 			(at 228.6 71.12 0)
 			(effects
 				(font
@@ -9564,7 +9498,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25890"
 			(at 228.6 71.12 0)
 			(effects
 				(font
@@ -10012,7 +9946,7 @@
 				)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-F1"
 			(at 82.55 130.302 0)
 			(effects
 				(font
@@ -10029,7 +9963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DW127S-22-04-43_C5160799.pdf"
 			(at 81.28 134.62 0)
 			(effects
 				(font
@@ -10047,7 +9981,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C5160799"
 			(at 81.28 134.62 0)
 			(effects
 				(font
@@ -10114,7 +10048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 130.81 30.48 0)
 			(effects
 				(font
@@ -10186,7 +10120,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25744"
 			(at 130.81 30.48 0)
 			(effects
 				(font
@@ -10244,7 +10178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 124.46 134.62 0)
 			(effects
 				(font
@@ -10316,7 +10250,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25744"
 			(at 124.46 134.62 0)
 			(effects
 				(font
@@ -10581,7 +10515,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121645_Chinocera-HGC0402R5106M100NTEJ_C7472949.pdf"
 			(at 90.17 45.72 0)
 			(effects
 				(font
@@ -10653,7 +10587,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C7472949"
 			(at 90.17 45.72 0)
 			(effects
 				(font
@@ -10713,7 +10647,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1301TCE_C25866.pdf"
 			(at 148.59 54.61 0)
 			(effects
 				(font
@@ -10785,7 +10719,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25866"
 			(at 148.59 54.61 0)
 			(effects
 				(font
@@ -10912,7 +10846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KP5NNNC_C14445.pdf"
 			(at 130.81 43.18 0)
 			(effects
 				(font
@@ -10984,7 +10918,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C14445"
 			(at 130.81 43.18 0)
 			(effects
 				(font
@@ -11016,7 +10950,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "585cfbed-cf90-491b-a3b2-c59c49b90ecd")
 		(property "Reference" "TP5"
 			(at 96.52 87.122 0)
@@ -11313,7 +11247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KP5NNNC_C14445.pdf"
 			(at 127 154.94 0)
 			(effects
 				(font
@@ -11385,7 +11319,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C14445"
 			(at 127 154.94 0)
 			(effects
 				(font
@@ -11443,7 +11377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 124.46 137.16 0)
 			(effects
 				(font
@@ -11515,7 +11449,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25744"
 			(at 124.46 137.16 0)
 			(effects
 				(font
@@ -11694,7 +11628,7 @@
 				)
 			)
 		)
-		(property "Value" "27"
+		(property "Value" "0"
 			(at 240.03 56.642 90)
 			(effects
 				(font
@@ -11711,7 +11645,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF0000TCE_C17168.pdf"
 			(at 240.03 52.07 0)
 			(effects
 				(font
@@ -11783,7 +11717,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C17168"
 			(at 240.03 52.07 0)
 			(effects
 				(font
@@ -12170,7 +12104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF3301TCE_C25890.pdf"
 			(at 226.06 71.12 0)
 			(effects
 				(font
@@ -12242,7 +12176,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25890"
 			(at 226.06 71.12 0)
 			(effects
 				(font
@@ -12368,7 +12302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121645_Chinocera-HGC0402R5106M100NTEJ_C7472949.pdf"
 			(at 53.34 96.52 0)
 			(effects
 				(font
@@ -12440,7 +12374,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C7472949"
 			(at 53.34 96.52 0)
 			(effects
 				(font
@@ -12635,7 +12569,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121645_Chinocera-HGC0402R5106M100NTEJ_C7472949.pdf"
 			(at 22.86 96.52 0)
 			(effects
 				(font
@@ -12707,7 +12641,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C7472949"
 			(at 22.86 96.52 0)
 			(effects
 				(font
@@ -12768,7 +12702,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 38.1 175.26 0)
 			(effects
 				(font
@@ -12840,7 +12774,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 38.1 175.26 0)
 			(effects
 				(font
@@ -13031,7 +12965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf"
 			(at 73.66 45.72 0)
 			(effects
 				(font
@@ -13103,7 +13037,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25905"
 			(at 73.66 45.72 0)
 			(effects
 				(font
@@ -13162,7 +13096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 219.71 130.81 0)
 			(effects
 				(font
@@ -13234,7 +13168,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 219.71 130.81 0)
 			(effects
 				(font
@@ -13592,7 +13526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf"
 			(at 64.77 39.37 0)
 			(effects
 				(font
@@ -13664,7 +13598,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25905"
 			(at 64.77 39.37 0)
 			(effects
 				(font
@@ -13706,7 +13640,7 @@
 				)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-F1"
 			(at 82.55 143.51 0)
 			(effects
 				(font
@@ -13723,7 +13657,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DW127S-22-04-43_C5160799.pdf"
 			(at 81.28 147.32 0)
 			(effects
 				(font
@@ -13741,7 +13675,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C5160799"
 			(at 81.28 147.32 0)
 			(effects
 				(font
@@ -13845,7 +13779,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a494ec28-a42e-4347-9a20-c2b3b6f7a73e")
 		(property "Reference" "TP3"
 			(at 76.2 87.122 0)
@@ -14207,7 +14141,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47pF"
+		(property "Value" "22pF"
 			(at 222.25 41.9099 0)
 			(effects
 				(font
@@ -14225,7 +14159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-CC0402JRNPO9BN220_C106203.pdf"
 			(at 226.06 40.64 0)
 			(effects
 				(font
@@ -14297,7 +14231,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C106203"
 			(at 226.06 40.64 0)
 			(effects
 				(font
@@ -14482,7 +14416,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47pF"
+		(property "Value" "22pF"
 			(at 236.22 41.9099 0)
 			(effects
 				(font
@@ -14500,7 +14434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-CC0402JRNPO9BN220_C106203.pdf"
 			(at 232.41 40.64 0)
 			(effects
 				(font
@@ -14572,7 +14506,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C106203"
 			(at 232.41 40.64 0)
 			(effects
 				(font
@@ -14631,7 +14565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 259.08 130.81 0)
 			(effects
 				(font
@@ -14703,7 +14637,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 259.08 130.81 0)
 			(effects
 				(font
@@ -14762,7 +14696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1003TCE_C25741.pdf"
 			(at 29.21 92.71 0)
 			(effects
 				(font
@@ -14834,7 +14768,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25741"
 			(at 29.21 92.71 0)
 			(effects
 				(font
@@ -15224,7 +15158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 149.86 177.8 0)
 			(effects
 				(font
@@ -15296,7 +15230,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 149.86 177.8 0)
 			(effects
 				(font
@@ -15422,7 +15356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121534_CCTC-TCC0402X7R124K160AT_C7393864.pdf"
 			(at 157.48 177.8 0)
 			(effects
 				(font
@@ -15494,7 +15428,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C7393864"
 			(at 157.48 177.8 0)
 			(effects
 				(font
@@ -15686,7 +15620,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KP5NNNC_C14445.pdf"
 			(at 78.74 39.37 0)
 			(effects
 				(font
@@ -15758,7 +15692,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C14445"
 			(at 78.74 39.37 0)
 			(effects
 				(font
@@ -16212,7 +16146,7 @@
 				)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-F2"
 			(at 82.55 172.212 90)
 			(effects
 				(font
@@ -16229,7 +16163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201843_DEALON-DW127S-22-06-43_C5160800.pdf"
 			(at 81.28 160.02 0)
 			(effects
 				(font
@@ -16239,6 +16173,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 81.28 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C5160800"
 			(at 81.28 160.02 0)
 			(effects
 				(font

@@ -29,7 +29,6 @@ Features:
 ![LED Support (Capacitors and Connectors) Schematic Page](images/Small_Pendant-LED_Support.svg)
 
 ## Bill of Materials
-*TODO: Currently not finalized*
 - 1x Espressif ESP32-C3-MINI-1 - Microcontroller Module w/ WiFi and Bluetooth
     - [Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf)
     - [LCSC Part Number: C2934569](https://www.lcsc.com/product-detail/WiFi-Modules_Espressif-Systems-ESP32-C3-MINI-1-H4_C2934569.html)
@@ -73,56 +72,56 @@ Features:
 - Headers (Used as Interboard Connectors)
     - 2x 2x2 Pin Socket - 1.27mm Pitch - Vertical SMD
         - Component: J2, J3
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C5160799](https://www.lcsc.com/product-detail/Female-Headers_DEALON-DW127S-22-04-43_C5160799.html)
     - 1x 2x4 Pin Socket - 1.27mm Pitch - Vertical SMD
         - Component: J4
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C5160800](https://www.lcsc.com/product-detail/Female-Headers_DEALON-DW127S-22-06-43_C5160800.html)
     - 2x 2x2 Pin Header - 1.27mm Pitch - Vertical SMD
         - Component: J5, J6
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C5160758](https://www.lcsc.com/product-detail/Pin-Headers_DEALON-DZ127S-22-04-55_C5160758.html)
     - 1x 2x4 Pin Header - 1.27mm Pitch - Vertical SMD
         - Component: J7
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C5160759](https://www.lcsc.com/product-detail/Pin-Headers_DEALON-DZ127S-22-06-55_C5160759.html)
 - Capacitors
     - *All Packages are 0402 unless otherwise noted*
     - 10µF
         - Component: C1, C8, C9, C16
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C7472949](https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Chinocera-HGC0402R5106M100NTEJ_C7472949.html)
     - 100nF
         - Component: C2, C4, C5, C10, C13, C14, C17-C28
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C1525](https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.html)
     - 1µF
         - Component: C3, C12, C15
-        - [LCSC Part Number: ]()
-    - 17pF
+        - [LCSC Part Number: C14445](https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL05A105KP5NNNC_C14445.html)
+    - 22pF
         - Component: C6, C7
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C106203](https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402JRNPO9BN220_C106203.html)
     - 120nF
         - Component: C11
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C7393864](https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_CCTC-TCC0402X7R124K160AT_C7393864.html)
 - Resistors:
     - *All Packages are 0402 unless otherwise noted*
     - 3.3kΩ
         - Component: R1, R2
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C25890](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF3301TCE_C25890.html)
     - 10kΩ
         - Component: R3, R8, R9
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C25744](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.html)
     - 1.3kΩ
         - Component: R4
-        - [LCSC Part Number: ]()
-    - 27Ω
+        - [LCSC Part Number: C25866](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF1301TCE_C25866.html)
+    - 0Ω
         - Component: R5, R6
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C17168](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF0000TCE_C17168.html)
     - 100kΩ
         - Component: R7
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C25741](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF1003TCE_C25741.html)
     - 5.1kΩ
         - Component: R10, R11
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C25905](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.html)
     - 470Ω
         - Component: R12
-        - [LCSC Part Number: ]()
+        - [LCSC Part Number: C25117](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF4700TCE_C25117.html)
 
 
 ## Case Design

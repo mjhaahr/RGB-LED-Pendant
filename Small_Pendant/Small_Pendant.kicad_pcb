@@ -385,6 +385,9 @@
 	(net 240 "Net-(D179-DO)")
 	(net 241 "unconnected-(D180-DO-Pad1)")
 	(net 242 "Net-(J5-Pin_3)")
+	(net 243 "unconnected-(U3-PIN16-Pad16)")
+	(net 244 "unconnected-(U3-PIN10-Pad10)")
+	(net 245 "unconnected-(U3-PIN15-Pad15)")
 	(footprint "LED_SMD:XINGLIGHT-XL-1010RGBC"
 		(locked yes)
 		(layer "F.Cu")
@@ -3239,7 +3242,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF3301TCE_C25890.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3282,19 +3285,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c3d5bc25-51cf-4c34-8600-8a5cce8d18d2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f3d018d7-ec44-4989-bdec-4022f89179a4")
 			(effects
 				(font
 					(size 1 1)
@@ -3354,7 +3344,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25890"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5121,7 +5111,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "47pF"
+		(property "Value" "22pF"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(uuid "6a01feea-11ef-44c0-8005-71cb19fba27c")
@@ -5144,7 +5134,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-CC0402JRNPO9BN220_C106203.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5187,19 +5177,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6ef9f650-76a5-4e99-ac0f-d18892fdb3ee")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4b66dea5-380a-402e-b59c-73978b186e7c")
 			(effects
 				(font
 					(size 1 1)
@@ -5259,7 +5236,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C106203"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8321,7 +8298,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8364,19 +8341,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ab745a81-f615-4d6b-96a4-3e8bb1312328")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7c210617-8e30-4705-953b-0d3cb2a03396")
 			(effects
 				(font
 					(size 1 1)
@@ -8436,7 +8400,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8954,7 +8918,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8997,19 +8961,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3d8bbeb0-6e50-4aca-9e05-e9adfad8db97")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c1bd5300-b969-4c8f-95e0-cc63a598db53")
 			(effects
 				(font
 					(size 1 1)
@@ -9069,7 +9020,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9269,7 +9220,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121645_Chinocera-HGC0402R5106M100NTEJ_C7472949.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9312,19 +9263,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "18556ad4-0cc9-49a6-b7fa-3d9a98752ca5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e2a7bddb-0a5c-4578-a510-4ae55803203c")
 			(effects
 				(font
 					(size 1 1)
@@ -9384,7 +9322,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C7472949"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11809,7 +11747,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11852,19 +11790,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1cff6e78-2f21-47c5-9aae-30aa0e7ab604")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "758d34ca-8931-46d3-b999-924401c89de6")
 			(effects
 				(font
 					(size 1 1)
@@ -11924,7 +11849,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25744"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13456,9 +13381,9 @@
 			(at -0.25 1.5625)
 			(size 0.3 0.525)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 177 "Earth")
+			(net 244 "unconnected-(U3-PIN10-Pad10)")
 			(pinfunction "PIN10")
-			(pintype "power_in")
+			(pintype "power_in+no_connect")
 			(solder_mask_margin 0.102)
 			(uuid "49f5030f-ecb6-4f1c-925a-4e25b145d094")
 		)
@@ -13506,9 +13431,9 @@
 			(at 2.25 1.5625)
 			(size 0.3 0.525)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 177 "Earth")
+			(net 245 "unconnected-(U3-PIN15-Pad15)")
 			(pinfunction "PIN15")
-			(pintype "power_in")
+			(pintype "power_in+no_connect")
 			(solder_mask_margin 0.102)
 			(uuid "cd00ac85-8bea-4326-80ac-00abd606eb42")
 		)
@@ -13516,9 +13441,9 @@
 			(at 2.3125 0.75)
 			(size 0.425 0.3)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 177 "Earth")
+			(net 243 "unconnected-(U3-PIN16-Pad16)")
 			(pinfunction "PIN16")
-			(pintype "power_in")
+			(pintype "power_in+no_connect")
 			(solder_mask_margin 0.102)
 			(uuid "14bd653f-dd96-4952-99fa-11cc9f635451")
 		)
@@ -15617,7 +15542,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF3301TCE_C25890.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15660,19 +15585,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "944a892e-5de0-4785-ba34-1112b6d39c4c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0a7f5680-2ce0-48ed-af05-a5dd15bbbc7e")
 			(effects
 				(font
 					(size 1 1)
@@ -15732,7 +15644,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25890"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17204,7 +17116,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17247,19 +17159,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4876ea9a-a682-4375-8017-5de33d4db526")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d5c48b5a-76ef-4274-80e0-bcd30b2bdfeb")
 			(effects
 				(font
 					(size 1 1)
@@ -17319,7 +17218,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17519,7 +17418,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KP5NNNC_C14445.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17562,19 +17461,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0dc926c4-7b39-4429-b53b-2a8e44adbdbe")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "afc41dd4-aab1-4317-be54-9117df8f1287")
 			(effects
 				(font
 					(size 1 1)
@@ -17634,7 +17520,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C14445"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18447,7 +18333,7 @@
 				(justify top)
 			)
 		)
-		(property "Value" "27"
+		(property "Value" "0"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "2c7ae845-37e0-47e4-864c-725f93174078")
@@ -18470,7 +18356,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF0000TCE_C17168.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18513,19 +18399,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ce2840ba-23ad-49bb-88d7-5fbc59108331")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "78b0beb6-fa5d-44b5-80c5-09625221cc66")
 			(effects
 				(font
 					(size 1 1)
@@ -18585,7 +18458,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C17168"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27050,7 +26923,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27093,19 +26966,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a1c955ab-d48e-473e-be9f-7e911d044fc3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "465cf9f1-3291-4900-b0d2-f262fd795e95")
 			(effects
 				(font
 					(size 1 1)
@@ -27165,7 +27025,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27978,7 +27838,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Value" "27"
+		(property "Value" "0"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "78571180-314e-49e9-9dd0-bb9f423d3d19")
@@ -28001,7 +27861,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF0000TCE_C17168.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28044,19 +27904,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b4f27b8b-aa95-4230-aab8-b0e42735b344")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f40af754-8b6d-4ec0-9749-9c74d74cb72f")
 			(effects
 				(font
 					(size 1 1)
@@ -28116,7 +27963,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C17168"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28316,7 +28163,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KP5NNNC_C14445.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28359,19 +28206,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ce6deff5-c6ef-4dd2-a2bc-99db9f75d8c1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "41437bfd-292b-4731-a416-2d2663938a6a")
 			(effects
 				(font
 					(size 1 1)
@@ -28431,7 +28265,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C14445"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37462,7 +37296,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37505,19 +37339,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a583770f-b6f2-4746-8ff7-71202114352b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "456523ca-95c6-4695-a1a1-713b4a897085")
 			(effects
 				(font
 					(size 1 1)
@@ -37577,7 +37398,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44401,7 +44222,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44444,19 +44265,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4acca52b-e172-4e72-b50d-28d3724a141c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7cb6bacc-47ee-42da-8201-242735c12b4b")
 			(effects
 				(font
 					(size 1 1)
@@ -44516,7 +44324,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46157,7 +45965,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46200,19 +46008,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "45230bac-3dbd-469b-a2bd-c92d142cdd13")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "284faa1b-5fca-4fa1-bcff-6058e626b9a4")
 			(effects
 				(font
 					(size 1 1)
@@ -46272,7 +46067,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25744"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -48379,7 +48174,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1301TCE_C25866.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -48403,7 +48198,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25866"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -49953,7 +49748,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -49996,19 +49791,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "be773837-0b4f-48fd-bed8-46ac480d58a4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5af9e7ac-a364-4502-978e-355c18651326")
 			(effects
 				(font
 					(size 1 1)
@@ -50068,7 +49850,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25744"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -52812,7 +52594,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -52855,19 +52637,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0df06eb7-eaaf-489e-a86d-4920e381f7bf")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ab1c08b6-5a76-49ca-9f89-8ad649c1af67")
 			(effects
 				(font
 					(size 1 1)
@@ -52927,7 +52696,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25905"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -56943,7 +56712,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221127_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -56986,19 +56755,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8c41fc0b-5d6e-4b14-a6c8-2ae012fc4769")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b55794c7-ef94-45c9-a40a-b5356dd40c69")
 			(effects
 				(font
 					(size 1 1)
@@ -57058,7 +56814,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25905"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -58507,7 +58263,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "47pF"
+		(property "Value" "22pF"
 			(at -1.14 2.1 0)
 			(layer "F.Fab")
 			(uuid "49dfd3d5-c250-45e5-a50c-ac2894a5cfe8")
@@ -58530,7 +58286,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-CC0402JRNPO9BN220_C106203.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -58573,19 +58329,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a82aff28-89e3-4e5d-910e-a826d37556e8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f565ffbe-f68b-4049-a0df-87d5d9091c0a")
 			(effects
 				(font
 					(size 1 1)
@@ -58645,7 +58388,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C106203"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -59162,7 +58905,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121534_CCTC-TCC0402X7R124K160AT_C7393864.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -59205,19 +58948,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "becedb47-65b5-4836-8f48-0d7971c6ab33")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b9967344-b873-4a07-9ad6-27437cf4a51d")
 			(effects
 				(font
 					(size 1 1)
@@ -59277,7 +59007,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C7393864"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -67061,7 +66791,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -67107,20 +66837,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "b13c847e-d293-4ef8-846f-73bbb7156811")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "ef0afc2d-b239-4558-a305-021e15a009e7")
 			(effects
 				(font
 					(size 1 1)
@@ -67185,7 +66901,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -67389,7 +67105,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF4700TCE_C25117.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -67499,7 +67215,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25117"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -68731,7 +68447,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -68777,20 +68493,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "0f74625a-5c95-41c5-bc07-c1e8237a37d9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "e9b62bd7-89ed-4d8f-8ff7-3aba39c9d6f4")
 			(effects
 				(font
 					(size 1 1)
@@ -68855,7 +68557,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -69059,7 +68761,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -69105,20 +68807,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "388c6035-d123-4d85-a818-f6739d5a424c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "21bf3034-c6c9-4c40-8e88-0d430f4f2ffa")
 			(effects
 				(font
 					(size 1 1)
@@ -69183,7 +68871,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -69387,7 +69075,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -69433,20 +69121,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "889a1d23-1f26-468d-a3ae-d696f066573b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "58485307-a676-4716-a579-dfafd1c0e47e")
 			(effects
 				(font
 					(size 1 1)
@@ -69511,7 +69185,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -70049,7 +69723,7 @@
 		(path "/14f335fc-598f-404a-bfcd-3d46c6f23e92/a494ec28-a42e-4347-9a20-c2b3b6f7a73e")
 		(sheetname "MCU")
 		(sheetfile "MCU.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_rect
 			(start 0.35 -0.35)
 			(end -0.35 0.35)
@@ -70631,7 +70305,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121645_Chinocera-HGC0402R5106M100NTEJ_C7472949.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -70677,20 +70351,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "f1f74776-fd52-4124-a327-d4220d9469f9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "de43efb4-6a78-4383-b3e3-506450ce1d04")
 			(effects
 				(font
 					(size 1 1)
@@ -70755,7 +70415,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C7472949"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -70959,7 +70619,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -71005,20 +70665,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "8c520bf5-1d9d-49bd-9f44-add184410045")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "ae4292ba-b21b-4db5-96ed-15528a5363a1")
 			(effects
 				(font
 					(size 1 1)
@@ -71083,7 +70729,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -71262,7 +70908,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-F1"
 			(at 0 -2.77 -90)
 			(layer "B.Fab")
 			(uuid "1a8ffe65-f7fe-4bc7-95ce-1da622592afe")
@@ -71287,7 +70933,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DW127S-22-04-43_C5160799.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -71313,7 +70959,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C5160799"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -71715,7 +71361,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -71761,20 +71407,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "2fde33e1-c858-45d5-aa8a-cd7c3ee3e820")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "b471ac00-cc7d-427a-8f58-c94984b170c8")
 			(effects
 				(font
 					(size 1 1)
@@ -71839,7 +71471,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -72043,7 +71675,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KP5NNNC_C14445.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -72089,20 +71721,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "95656406-89f7-4b4c-9faf-33626ba26452")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "ca8786e5-2c20-4ba5-b725-8e1e8ece162a")
 			(effects
 				(font
 					(size 1 1)
@@ -72167,7 +71785,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C14445"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -72346,7 +71964,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-M2"
 			(at 0 -3.6 90)
 			(layer "B.Fab")
 			(uuid "544771c8-ebe8-48a4-9799-f324fa7c259a")
@@ -72371,7 +71989,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DZ127S-22-06-55_C5160759.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -72393,6 +72011,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC Part" "C5160759"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "138c90f9-47ae-41e3-b45c-e1a5c1277ffc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -72941,7 +72573,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -72987,20 +72619,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "705e4822-a136-46cb-be9a-5409ae51d598")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "882c3150-6925-4dc6-953a-5c403bb7f4c5")
 			(effects
 				(font
 					(size 1 1)
@@ -73065,7 +72683,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -73299,7 +72917,7 @@
 		(path "/14f335fc-598f-404a-bfcd-3d46c6f23e92/1de9306d-8ce2-4ec2-8f4d-c4c6b764eac2")
 		(sheetname "MCU")
 		(sheetfile "MCU.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_rect
 			(start 0.35 -0.35)
 			(end -0.35 0.35)
@@ -73417,7 +73035,7 @@
 		(path "/14f335fc-598f-404a-bfcd-3d46c6f23e92/585cfbed-cf90-491b-a3b2-c59c49b90ecd")
 		(sheetname "MCU")
 		(sheetfile "MCU.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_rect
 			(start 0.35 -0.35)
 			(end -0.35 0.35)
@@ -73535,7 +73153,7 @@
 		(path "/14f335fc-598f-404a-bfcd-3d46c6f23e92/0de454dd-dee4-4767-94d7-ce77a3a3810b")
 		(sheetname "MCU")
 		(sheetfile "MCU.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_rect
 			(start 0.35 -0.35)
 			(end -0.35 0.35)
@@ -73598,7 +73216,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-M1"
 			(at 0 -2.33 -90)
 			(layer "B.Fab")
 			(uuid "6c7a7f8c-d6c1-4daf-8c8f-bcc767c99719")
@@ -73623,7 +73241,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DZ127S-22-04-55_C5160758.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -73649,7 +73267,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C5160758"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -74051,7 +73669,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -74097,20 +73715,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "8517a36a-1326-4415-9d05-c621363c209e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "df9cd914-9438-4596-bbf0-edcf0256ca97")
 			(effects
 				(font
 					(size 1 1)
@@ -74175,7 +73779,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -74354,7 +73958,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-F2"
 			(at 0 -4.04 -90)
 			(layer "B.Fab")
 			(uuid "02e7b1e3-befa-42bc-9b2d-5ac596aef392")
@@ -74379,7 +73983,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201843_DEALON-DW127S-22-06-43_C5160800.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -74401,6 +74005,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC Part" "C5160800"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "06b86ca5-157c-4ab9-ac98-78354c540cc4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -74949,7 +74567,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121645_Chinocera-HGC0402R5106M100NTEJ_C7472949.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -74995,20 +74613,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "a4707d1d-0536-4c53-ac91-10e17ec9cba5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "7553c688-b1dc-4edb-a6c9-a9cbc52e73a5")
 			(effects
 				(font
 					(size 1 1)
@@ -75073,7 +74677,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C7472949"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -75277,7 +74881,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -75323,20 +74927,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "2b24368e-a93e-41a1-84c9-2d699e909131")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "66f076f5-cc3a-46e3-8507-3d2024b18787")
 			(effects
 				(font
 					(size 1 1)
@@ -75401,7 +74991,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -75605,7 +75195,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1003TCE_C25741.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -75651,20 +75241,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "2a28b143-626a-47a6-9fed-5161bc290114")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "77149834-05dc-4c5b-a26a-7a9314c5ec09")
 			(effects
 				(font
 					(size 1 1)
@@ -75729,7 +75305,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C25741"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -75908,7 +75484,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-F1"
 			(at 0 -2.77 -90)
 			(layer "B.Fab")
 			(uuid "bf7d743c-9d2d-4532-a54c-2516ca5d9bf2")
@@ -75933,7 +75509,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DW127S-22-04-43_C5160799.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -75959,7 +75535,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C5160799"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -76361,7 +75937,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -76407,20 +75983,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "636a8e4f-0c2e-4ba3-b284-57ae9d8ac536")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "e7832dc8-ca4a-460d-bf18-ab88db885d87")
 			(effects
 				(font
 					(size 1 1)
@@ -76485,7 +76047,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -76687,7 +76249,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/esd441.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -76868,7 +76430,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -76914,20 +76476,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "8f10e74c-79a3-463f-acdb-3b90fca3de32")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "e2cc3f1c-5f15-49b3-b61b-c79e127ce149")
 			(effects
 				(font
 					(size 1 1)
@@ -76992,7 +76540,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -77196,7 +76744,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -77242,20 +76790,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "1137a170-0601-4e9f-a9b8-df62a53c66b3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "15a889cd-b5a8-491e-b744-6e7d9433288c")
 			(effects
 				(font
 					(size 1 1)
@@ -77320,7 +76854,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -77554,7 +77088,7 @@
 		(path "/14f335fc-598f-404a-bfcd-3d46c6f23e92/1dc99e7f-0d26-413d-817f-ab93674b5d49")
 		(sheetname "MCU")
 		(sheetfile "MCU.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_rect
 			(start 0.35 -0.35)
 			(end -0.35 0.35)
@@ -77617,7 +77151,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Interboard"
+		(property "Value" "Interboard-M1"
 			(at 0 -2.33 90)
 			(layer "B.Fab")
 			(uuid "29160ec0-3e17-4c69-9429-9dc24c553157")
@@ -77642,7 +77176,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DZ127S-22-04-55_C5160758.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -77668,7 +77202,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C5160758"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -78070,7 +77604,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121645_Chinocera-HGC0402R5106M100NTEJ_C7472949.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -78116,20 +77650,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "1b941cc7-fe4c-423a-b596-9c51b542a444")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part#" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "1f5b8d49-41b4-40f8-b193-2b0317358573")
 			(effects
 				(font
 					(size 1 1)
@@ -78194,7 +77714,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C7472949"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -82971,22 +82491,6 @@
 		(uuid "6436861c-cdfb-4752-b8cc-082b1e07575f")
 	)
 	(segment
-		(start 79.75 51.864576)
-		(end 79.75 51.5625)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 177)
-		(uuid "64fc5524-b7a5-4dfd-8a47-7c1a6bc2987f")
-	)
-	(segment
-		(start 80.585424 52.7)
-		(end 79.75 51.864576)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 177)
-		(uuid "686aef10-6bda-4ab0-a48c-a4b725dfe165")
-	)
-	(segment
 		(start 77.5575 51.37)
 		(end 77.58 51.37)
 		(width 0.2)
@@ -83065,14 +82569,6 @@
 		(layer "F.Cu")
 		(net 177)
 		(uuid "b34cfd78-fead-4b64-8c8f-5daec2a6aaed")
-	)
-	(segment
-		(start 80.68 52.7)
-		(end 80.585424 52.7)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 177)
-		(uuid "b4fd6bc5-52ec-49cd-8e05-4c741683ef93")
 	)
 	(segment
 		(start 73.58 45.52)
@@ -83211,6 +82707,22 @@
 		(uuid "4b25d23e-e04e-4c5d-ad2d-ae4681aa337f")
 	)
 	(via
+		(at 81 50)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 177)
+		(uuid "5c30ff99-eab0-4670-a667-61b105d63518")
+	)
+	(via
+		(at 80 50.8)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 177)
+		(uuid "868a04ac-15f9-434e-9f62-6505ba83361a")
+	)
+	(via
 		(at 87.3 42.92)
 		(size 0.6)
 		(drill 0.3)
@@ -83298,6 +82810,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 177)
 		(uuid "e723a99a-f32f-4f38-89c4-f484ace1b3da")
+	)
+	(via
+		(at 79 50)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 177)
+		(uuid "e85a4edb-a75e-43c5-b247-a8ff8ba8fecb")
 	)
 	(via
 		(at 84 46.2)
@@ -84944,47 +84464,31 @@
 		(width 0.1)
 		(layer "F.Cu")
 		(net 202)
-		(uuid "1aef784f-7935-4fdf-9085-29051e2aea85")
+		(uuid "1e273048-11ac-4076-9c6b-58075573bef3")
 	)
 	(segment
-		(start 87.31 50.16)
-		(end 85.81 48.66)
+		(start 79.4 50.6)
+		(end 78.7 50.6)
 		(width 0.1)
 		(layer "F.Cu")
 		(net 202)
-		(uuid "3fbf948a-ead2-4e93-b8ff-9cbf7f6c2799")
+		(uuid "2d5049c6-79ea-48f1-8695-e53b688ffb9d")
 	)
 	(segment
-		(start 83.04 48.66)
-		(end 82.8 48.9)
+		(start 78.7 50.6)
+		(end 78.35 50.25)
 		(width 0.1)
 		(layer "F.Cu")
 		(net 202)
-		(uuid "4dfaf478-e044-4c8b-ad8a-c4fb901d3880")
+		(uuid "38320dce-355f-4199-aa3c-da805f50e766")
 	)
 	(segment
-		(start 79.75 50.25)
+		(start 78.35 50.25)
 		(end 77.6875 50.25)
 		(width 0.1)
 		(layer "F.Cu")
 		(net 202)
-		(uuid "6c28c660-518a-4e49-a7eb-4f34003042c4")
-	)
-	(segment
-		(start 85.81 48.66)
-		(end 83.04 48.66)
-		(width 0.1)
-		(layer "F.Cu")
-		(net 202)
-		(uuid "b614c128-1c13-48e2-b101-dcbb35703b01")
-	)
-	(segment
-		(start 81.1 48.9)
-		(end 79.75 50.25)
-		(width 0.1)
-		(layer "F.Cu")
-		(net 202)
-		(uuid "d6579558-c234-47e0-9033-a3fb78a6ffcf")
+		(uuid "3f094134-9503-4e4d-a1e3-04d522397f20")
 	)
 	(segment
 		(start 82.8 48.9)
@@ -84992,7 +84496,39 @@
 		(width 0.1)
 		(layer "F.Cu")
 		(net 202)
-		(uuid "f857c689-818a-4d5b-9115-055bff49875f")
+		(uuid "6ea62b8a-4776-4e2d-98c4-e7cac8161b1b")
+	)
+	(segment
+		(start 83.04 48.66)
+		(end 82.8 48.9)
+		(width 0.1)
+		(layer "F.Cu")
+		(net 202)
+		(uuid "756609db-23f4-419c-badf-ffb151a961cb")
+	)
+	(segment
+		(start 81.1 48.9)
+		(end 79.4 50.6)
+		(width 0.1)
+		(layer "F.Cu")
+		(net 202)
+		(uuid "84c8c661-65c0-4de9-8fde-0e2361238d31")
+	)
+	(segment
+		(start 87.31 50.16)
+		(end 85.81 48.66)
+		(width 0.1)
+		(layer "F.Cu")
+		(net 202)
+		(uuid "9e75157a-dc87-4df5-bc5d-955dc79c7339")
+	)
+	(segment
+		(start 85.81 48.66)
+		(end 83.04 48.66)
+		(width 0.1)
+		(layer "F.Cu")
+		(net 202)
+		(uuid "e8cec857-5226-40ed-8d7b-940c3c34bbdf")
 	)
 	(segment
 		(start 49.575 60.175)
@@ -88701,22 +88237,21 @@
 		)
 		(polygon
 			(pts
-				(xy 82.7 49.5) (xy 82 49.5) (xy 82 49.7) (xy 81.7 49.7) (xy 81.7 50.3) (xy 82 50.3) (xy 82 52) (xy 82.7 52)
+				(xy 82.7 49.5) (xy 82 49.5) (xy 82 49.7) (xy 81.7 49.7) (xy 81.7 50.3) (xy 82 50.3) (xy 82 50.5)
+				(xy 82.7 50.5)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
 				(xy 82.516177 49.570185) (xy 82.536819 49.586819) (xy 82.663681 49.713681) (xy 82.697166 49.775004)
-				(xy 82.7 49.801362) (xy 82.7 51.698638) (xy 82.680315 51.765677) (xy 82.663681 51.786319) (xy 82.486319 51.963681)
-				(xy 82.424996 51.997166) (xy 82.398638 52) (xy 82.301362 52) (xy 82.234323 51.980315) (xy 82.213681 51.963681)
-				(xy 82.086819 51.836819) (xy 82.053334 51.775496) (xy 82.0505 51.749138) (xy 82.0505 51.285177)
-				(xy 82.041768 51.241282) (xy 82.041767 51.241279) (xy 82.041767 51.241278) (xy 82.020896 51.210043)
-				(xy 82.00002 51.143366) (xy 82 51.141154) (xy 82 50.45) (xy 81.736319 50.186319) (xy 81.702834 50.124996)
-				(xy 81.7 50.098638) (xy 81.7 49.901362) (xy 81.719685 49.834323) (xy 81.736319 49.813681) (xy 81.813681 49.736319)
-				(xy 81.875004 49.702834) (xy 81.899521 49.700197) (xy 81.899998 49.7) (xy 81.9 49.7) (xy 82 49.6)
-				(xy 82.000001 49.599999) (xy 82.013182 49.586819) (xy 82.074505 49.553334) (xy 82.100863 49.5505)
-				(xy 82.449138 49.5505)
+				(xy 82.7 49.801362) (xy 82.7 50.198638) (xy 82.680315 50.265677) (xy 82.663681 50.286319) (xy 82.536819 50.413181)
+				(xy 82.475496 50.446666) (xy 82.449138 50.4495) (xy 82.100862 50.4495) (xy 82.033823 50.429815)
+				(xy 82.013181 50.413181) (xy 81.9 50.3) (xy 81.896681 50.298625) (xy 81.834323 50.280315) (xy 81.813681 50.263681)
+				(xy 81.736319 50.186319) (xy 81.702834 50.124996) (xy 81.7 50.098638) (xy 81.7 49.901362) (xy 81.719685 49.834323)
+				(xy 81.736319 49.813681) (xy 81.813681 49.736319) (xy 81.875004 49.702834) (xy 81.899521 49.700197)
+				(xy 81.899998 49.7) (xy 81.9 49.7) (xy 82 49.6) (xy 82.000001 49.599999) (xy 82.013182 49.586819)
+				(xy 82.074505 49.553334) (xy 82.100863 49.5505) (xy 82.449138 49.5505)
 			)
 		)
 	)
@@ -90082,7 +89617,7 @@
 				(xy 66.884312 50.456074) (xy 66.88408 50.449348) (xy 66.880283 49.928842) (xy 68.8595 49.928842)
 				(xy 68.8595 50.071158) (xy 68.876462 50.134459) (xy 68.896334 50.208624) (xy 68.896335 50.208627)
 				(xy 68.967489 50.331871) (xy 68.967491 50.331874) (xy 68.967492 50.331875) (xy 69.068125 50.432508)
-				(xy 69.068126 50.432509) (xy 69.068128 50.43251) (xy 69.10897 50.45609) (xy 69.191375 50.503666)
+				(xy 69.068126 50.432509) (xy 69.068128 50.43251) (xy 69.108872 50.456033) (xy 69.191375 50.503666)
 				(xy 69.328842 50.5405) (xy 69.328844 50.5405) (xy 69.471156 50.5405) (xy 69.471158 50.5405) (xy 69.608625 50.503666)
 				(xy 69.6635 50.471983) (xy 69.7314 50.455511) (xy 69.797427 50.478364) (xy 69.840618 50.533285)
 				(xy 69.8495 50.579371) (xy 69.8495 54.862273) (xy 69.8495 54.967727) (xy 69.852661 54.979524) (xy 69.876793 55.069589)
@@ -90298,42 +89833,71 @@
 				(xy 74.099997 51.994508) (xy 73.974699 52.014352) (xy 73.974698 52.014352) (xy 73.912464 52.046063)
 				(xy 73.861658 52.07195) (xy 73.861657 52.071951) (xy 73.861652 52.071954) (xy 73.771954 52.161652)
 				(xy 73.771951 52.161657) (xy 73.77195 52.161658) (xy 73.75788 52.189272) (xy 73.714352 52.274698)
-				(xy 73.714352 52.274699) (xy 73.694508 52.399996) (xy 70.6505 52.399996) (xy 70.6505 50.514245)
-				(xy 70.670185 50.447206) (xy 70.722989 50.401451) (xy 70.792147 50.391507) (xy 70.855703 50.420532)
-				(xy 70.862181 50.426564) (xy 70.868125 50.432508) (xy 70.868126 50.432509) (xy 70.868128 50.43251)
-				(xy 70.90897 50.45609) (xy 70.991375 50.503666) (xy 71.128842 50.5405) (xy 71.128844 50.5405) (xy 71.271156 50.5405)
-				(xy 71.271158 50.5405) (xy 71.408625 50.503666) (xy 71.531875 50.432508) (xy 71.632508 50.331875)
-				(xy 71.703666 50.208625) (xy 71.7405 50.071158) (xy 71.7405 49.999996) (xy 75.194508 49.999996)
-				(xy 75.194508 50.000003) (xy 75.214352 50.1253) (xy 75.214352 50.125301) (xy 75.232805 50.161517)
-				(xy 75.27195 50.238342) (xy 75.271952 50.238344) (xy 75.271954 50.238347) (xy 75.361652 50.328045)
-				(xy 75.361654 50.328046) (xy 75.361658 50.32805) (xy 75.474696 50.385646) (xy 75.474697 50.385646)
-				(xy 75.474699 50.385647) (xy 75.599997 50.405492) (xy 75.6 50.405492) (xy 75.600003 50.405492) (xy 75.7253 50.385647)
-				(xy 75.725301 50.385647) (xy 75.725302 50.385646) (xy 75.725304 50.385646) (xy 75.838342 50.32805)
-				(xy 75.92805 50.238342) (xy 75.985646 50.125304) (xy 75.985646 50.125302) (xy 75.985647 50.125301)
-				(xy 75.985647 50.1253) (xy 76.005492 50.000003) (xy 76.005492 50) (xy 81.519867 50) (xy 81.538302 50.128225)
-				(xy 81.57502 50.208624) (xy 81.592118 50.246063) (xy 81.676951 50.343967) (xy 81.785931 50.414004)
-				(xy 81.906305 50.449348) (xy 81.910225 50.450499) (xy 81.910227 50.4505) (xy 81.910228 50.4505)
-				(xy 82.039773 50.4505) (xy 82.039773 50.450499) (xy 82.164069 50.414004) (xy 82.273049 50.343967)
-				(xy 82.357882 50.246063) (xy 82.411697 50.128226) (xy 82.430133 50) (xy 82.411697 49.871774) (xy 82.357882 49.753937)
-				(xy 82.273049 49.656033) (xy 82.164069 49.585996) (xy 82.164065 49.585994) (xy 82.164064 49.585994)
-				(xy 82.039774 49.5495) (xy 82.039772 49.5495) (xy 81.910228 49.5495) (xy 81.910226 49.5495) (xy 81.785935 49.585994)
-				(xy 81.785932 49.585995) (xy 81.785931 49.585996) (xy 81.753371 49.606921) (xy 81.67695 49.656033)
-				(xy 81.592118 49.753937) (xy 81.592117 49.753938) (xy 81.538302 49.871774) (xy 81.519867 50) (xy 76.005492 50)
-				(xy 76.005492 49.999996) (xy 75.985647 49.874699) (xy 75.985647 49.874698) (xy 75.984157 49.871774)
-				(xy 75.92805 49.761658) (xy 75.928046 49.761654) (xy 75.928045 49.761652) (xy 75.838347 49.671954)
-				(xy 75.838344 49.671952) (xy 75.838342 49.67195) (xy 75.725304 49.614354) (xy 75.725303 49.614353)
-				(xy 75.7253 49.614352) (xy 75.600003 49.594508) (xy 75.599997 49.594508) (xy 75.474699 49.614352)
-				(xy 75.474698 49.614352) (xy 75.403758 49.650499) (xy 75.361658 49.67195) (xy 75.361657 49.671951)
-				(xy 75.361652 49.671954) (xy 75.271954 49.761652) (xy 75.271951 49.761657) (xy 75.214352 49.874698)
-				(xy 75.214352 49.874699) (xy 75.194508 49.999996) (xy 71.7405 49.999996) (xy 71.7405 49.928842)
-				(xy 71.703666 49.791375) (xy 71.634717 49.671951) (xy 71.63251 49.668128) (xy 71.632506 49.668123)
-				(xy 71.531876 49.567493) (xy 71.531871 49.567489) (xy 71.408627 49.496335) (xy 71.408626 49.496334)
-				(xy 71.408625 49.496334) (xy 71.271158 49.4595) (xy 71.128842 49.4595) (xy 70.991375 49.496334)
-				(xy 70.991372 49.496335) (xy 70.868128 49.567489) (xy 70.868123 49.567493) (xy 70.862181 49.573436)
-				(xy 70.800858 49.606921) (xy 70.731166 49.601937) (xy 70.675233 49.560065) (xy 70.650816 49.494601)
-				(xy 70.6505 49.485755) (xy 70.6505 49.2) (xy 79.544867 49.2) (xy 79.563302 49.328225) (xy 79.617117 49.446061)
-				(xy 79.617118 49.446063) (xy 79.701951 49.543967) (xy 79.810931 49.614004) (xy 79.935225 49.650499)
-				(xy 79.935227 49.6505) (xy 79.935228 49.6505) (xy 80.064773 49.6505) (xy 80.064773 49.650499) (xy 80.189069 49.614004)
+				(xy 73.714352 52.274699) (xy 73.694508 52.399996) (xy 70.6505 52.399996) (xy 70.6505 50.8) (xy 79.544867 50.8)
+				(xy 79.563302 50.928225) (xy 79.587877 50.982035) (xy 79.617118 51.046063) (xy 79.701951 51.143967)
+				(xy 79.810931 51.214004) (xy 79.935225 51.250499) (xy 79.935227 51.2505) (xy 79.935228 51.2505)
+				(xy 80.064773 51.2505) (xy 80.064773 51.250499) (xy 80.189069 51.214004) (xy 80.298049 51.143967)
+				(xy 80.382882 51.046063) (xy 80.436697 50.928226) (xy 80.455133 50.8) (xy 80.436697 50.671774) (xy 80.382882 50.553937)
+				(xy 80.298049 50.456033) (xy 80.189069 50.385996) (xy 80.189065 50.385994) (xy 80.189064 50.385994)
+				(xy 80.064774 50.3495) (xy 80.064772 50.3495) (xy 79.935228 50.3495) (xy 79.935226 50.3495) (xy 79.810935 50.385994)
+				(xy 79.810932 50.385995) (xy 79.810931 50.385996) (xy 79.780595 50.405492) (xy 79.70195 50.456033)
+				(xy 79.617118 50.553937) (xy 79.617117 50.553938) (xy 79.563302 50.671774) (xy 79.544867 50.8) (xy 70.6505 50.8)
+				(xy 70.6505 50.514245) (xy 70.670185 50.447206) (xy 70.722989 50.401451) (xy 70.792147 50.391507)
+				(xy 70.855703 50.420532) (xy 70.862181 50.426564) (xy 70.868125 50.432508) (xy 70.868126 50.432509)
+				(xy 70.868128 50.43251) (xy 70.908872 50.456033) (xy 70.991375 50.503666) (xy 71.128842 50.5405)
+				(xy 71.128844 50.5405) (xy 71.271156 50.5405) (xy 71.271158 50.5405) (xy 71.408625 50.503666) (xy 71.531875 50.432508)
+				(xy 71.632508 50.331875) (xy 71.703666 50.208625) (xy 71.7405 50.071158) (xy 71.7405 49.999996)
+				(xy 75.194508 49.999996) (xy 75.194508 50.000003) (xy 75.214352 50.1253) (xy 75.214352 50.125301)
+				(xy 75.232805 50.161517) (xy 75.27195 50.238342) (xy 75.271952 50.238344) (xy 75.271954 50.238347)
+				(xy 75.361652 50.328045) (xy 75.361654 50.328046) (xy 75.361658 50.32805) (xy 75.474696 50.385646)
+				(xy 75.474697 50.385646) (xy 75.474699 50.385647) (xy 75.599997 50.405492) (xy 75.6 50.405492) (xy 75.600003 50.405492)
+				(xy 75.7253 50.385647) (xy 75.725301 50.385647) (xy 75.725302 50.385646) (xy 75.725304 50.385646)
+				(xy 75.838342 50.32805) (xy 75.92805 50.238342) (xy 75.985646 50.125304) (xy 75.985646 50.125302)
+				(xy 75.985647 50.125301) (xy 75.985647 50.1253) (xy 76.005492 50.000003) (xy 76.005492 50) (xy 78.544867 50)
+				(xy 78.563302 50.128225) (xy 78.591465 50.189892) (xy 78.617118 50.246063) (xy 78.701951 50.343967)
+				(xy 78.810931 50.414004) (xy 78.931305 50.449348) (xy 78.935225 50.450499) (xy 78.935227 50.4505)
+				(xy 78.935228 50.4505) (xy 79.064773 50.4505) (xy 79.064773 50.450499) (xy 79.189069 50.414004)
+				(xy 79.298049 50.343967) (xy 79.382882 50.246063) (xy 79.436697 50.128226) (xy 79.455133 50) (xy 80.544867 50)
+				(xy 80.563302 50.128225) (xy 80.591465 50.189892) (xy 80.617118 50.246063) (xy 80.701951 50.343967)
+				(xy 80.810931 50.414004) (xy 80.931305 50.449348) (xy 80.935225 50.450499) (xy 80.935227 50.4505)
+				(xy 80.935228 50.4505) (xy 81.064773 50.4505) (xy 81.064773 50.450499) (xy 81.189069 50.414004)
+				(xy 81.298049 50.343967) (xy 81.382882 50.246063) (xy 81.382885 50.246055) (xy 81.383181 50.245597)
+				(xy 81.3836 50.245233) (xy 81.388689 50.239361) (xy 81.389533 50.240092) (xy 81.435983 50.199839)
+				(xy 81.505141 50.189892) (xy 81.568698 50.218914) (xy 81.591819 50.245597) (xy 81.592117 50.246061)
+				(xy 81.592118 50.246063) (xy 81.676951 50.343967) (xy 81.785931 50.414004) (xy 81.906305 50.449348)
+				(xy 81.910225 50.450499) (xy 81.910227 50.4505) (xy 81.910228 50.4505) (xy 82.039773 50.4505) (xy 82.039773 50.450499)
+				(xy 82.164069 50.414004) (xy 82.273049 50.343967) (xy 82.357882 50.246063) (xy 82.411697 50.128226)
+				(xy 82.430133 50) (xy 82.411697 49.871774) (xy 82.357882 49.753937) (xy 82.273049 49.656033) (xy 82.164069 49.585996)
+				(xy 82.164065 49.585994) (xy 82.164064 49.585994) (xy 82.039774 49.5495) (xy 82.039772 49.5495)
+				(xy 81.910228 49.5495) (xy 81.910226 49.5495) (xy 81.785935 49.585994) (xy 81.785932 49.585995)
+				(xy 81.785931 49.585996) (xy 81.753371 49.606921) (xy 81.67695 49.656033) (xy 81.592116 49.753939)
+				(xy 81.591815 49.754408) (xy 81.591393 49.754772) (xy 81.586311 49.760639) (xy 81.585467 49.759908)
+				(xy 81.539011 49.800163) (xy 81.469852 49.810106) (xy 81.406297 49.781081) (xy 81.383185 49.754408)
+				(xy 81.382883 49.753939) (xy 81.382882 49.753938) (xy 81.382882 49.753937) (xy 81.298049 49.656033)
+				(xy 81.189069 49.585996) (xy 81.189065 49.585994) (xy 81.189064 49.585994) (xy 81.064774 49.5495)
+				(xy 81.064772 49.5495) (xy 80.935228 49.5495) (xy 80.935226 49.5495) (xy 80.810935 49.585994) (xy 80.810932 49.585995)
+				(xy 80.810931 49.585996) (xy 80.778371 49.606921) (xy 80.70195 49.656033) (xy 80.617118 49.753937)
+				(xy 80.617117 49.753938) (xy 80.563302 49.871774) (xy 80.544867 50) (xy 79.455133 50) (xy 79.436697 49.871774)
+				(xy 79.382882 49.753937) (xy 79.298049 49.656033) (xy 79.189069 49.585996) (xy 79.189065 49.585994)
+				(xy 79.189064 49.585994) (xy 79.064774 49.5495) (xy 79.064772 49.5495) (xy 78.935228 49.5495) (xy 78.935226 49.5495)
+				(xy 78.810935 49.585994) (xy 78.810932 49.585995) (xy 78.810931 49.585996) (xy 78.778371 49.606921)
+				(xy 78.70195 49.656033) (xy 78.617118 49.753937) (xy 78.617117 49.753938) (xy 78.563302 49.871774)
+				(xy 78.544867 50) (xy 76.005492 50) (xy 76.005492 49.999996) (xy 75.985647 49.874699) (xy 75.985647 49.874698)
+				(xy 75.984157 49.871774) (xy 75.92805 49.761658) (xy 75.928046 49.761654) (xy 75.928045 49.761652)
+				(xy 75.838347 49.671954) (xy 75.838344 49.671952) (xy 75.838342 49.67195) (xy 75.725304 49.614354)
+				(xy 75.725303 49.614353) (xy 75.7253 49.614352) (xy 75.600003 49.594508) (xy 75.599997 49.594508)
+				(xy 75.474699 49.614352) (xy 75.474698 49.614352) (xy 75.403758 49.650499) (xy 75.361658 49.67195)
+				(xy 75.361657 49.671951) (xy 75.361652 49.671954) (xy 75.271954 49.761652) (xy 75.271951 49.761657)
+				(xy 75.27195 49.761658) (xy 75.25681 49.791372) (xy 75.214352 49.874698) (xy 75.214352 49.874699)
+				(xy 75.194508 49.999996) (xy 71.7405 49.999996) (xy 71.7405 49.928842) (xy 71.703666 49.791375)
+				(xy 71.634717 49.671951) (xy 71.63251 49.668128) (xy 71.632506 49.668123) (xy 71.531876 49.567493)
+				(xy 71.531871 49.567489) (xy 71.408627 49.496335) (xy 71.408626 49.496334) (xy 71.408625 49.496334)
+				(xy 71.271158 49.4595) (xy 71.128842 49.4595) (xy 70.991375 49.496334) (xy 70.991372 49.496335)
+				(xy 70.868128 49.567489) (xy 70.868123 49.567493) (xy 70.862181 49.573436) (xy 70.800858 49.606921)
+				(xy 70.731166 49.601937) (xy 70.675233 49.560065) (xy 70.650816 49.494601) (xy 70.6505 49.485755)
+				(xy 70.6505 49.2) (xy 79.544867 49.2) (xy 79.563302 49.328225) (xy 79.617117 49.446061) (xy 79.617118 49.446063)
+				(xy 79.701951 49.543967) (xy 79.810931 49.614004) (xy 79.935225 49.650499) (xy 79.935227 49.6505)
+				(xy 79.935228 49.6505) (xy 80.064773 49.6505) (xy 80.064773 49.650499) (xy 80.189069 49.614004)
 				(xy 80.298049 49.543967) (xy 80.382882 49.446063) (xy 80.436697 49.328226) (xy 80.455133 49.2) (xy 80.442192 49.109996)
 				(xy 84.094508 49.109996) (xy 84.094508 49.110003) (xy 84.114352 49.2353) (xy 84.114352 49.235301)
 				(xy 84.114354 49.235304) (xy 84.17195 49.348342) (xy 84.171952 49.348344) (xy 84.171954 49.348347)
