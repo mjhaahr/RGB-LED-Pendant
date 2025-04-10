@@ -1,4 +1,4 @@
-23491687889431073
+23496921484833217
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -55797,6 +55797,13 @@ HDR-SMD_4P-P1.27-V-M-R2-C2-S1.27-LS5.5
 4
 4
 EasyEDA2KiCad
+HDR-SMD_8P-P1.27-V-F-R2-C4-LS4.8
+
+
+0
+8
+8
+EasyEDA2KiCad
 KEY-SMD_4P-L4.5-W4.5-P3.00-LS6.5-TL
 
 
@@ -55825,6 +55832,13 @@ LED0603-RD_PINK
 2
 2
 EasyEDA2KiCad
+LGA-28_L5.2-W3.8-P0.50-BL
+
+
+0
+28
+28
+EasyEDA2KiCad
 SOT-223_L6.7-W3.5-P2.30-BR
 
 
@@ -55843,8 +55857,15 @@ USB-C-SMD_G-SWITCH_GT-USB-9010AB
 
 
 0
-18
-16
+22
+20
+EasyEDA2KiCad
+WIFIM-SMD_ESP32-C3-MINI-1
+
+
+0
+61
+53
 EasyEDA2KiCad
 X2SON-2_L0.6-W0.3-P0.35_ESD441DPLR
 

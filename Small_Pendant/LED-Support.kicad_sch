@@ -2425,7 +2425,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD"
+		(property "Footprint" "EasyEDA2KiCad:HDR-SMD_4P-P1.27-V-M-R2-C2-S1.27-LS5.5"
 			(at 30.48 81.28 0)
 			(effects
 				(font
@@ -2583,7 +2583,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DZ127S-22-06-55_C5160759.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201840_DEALON-DZ127S-22-08-55_C5160760.pdf"
 			(at 30.48 93.98 0)
 			(effects
 				(font
@@ -2601,7 +2601,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C5160759"
+		(property "LCSC Part" "C5160760"
 			(at 30.48 93.98 0)
 			(effects
 				(font
@@ -3665,7 +3665,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD"
+		(property "Footprint" "EasyEDA2KiCad:HDR-SMD_4P-P1.27-V-M-R2-C2-S1.27-LS5.5"
 			(at 30.48 68.58 0)
 			(effects
 				(font

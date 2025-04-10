@@ -783,8 +783,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 22.225 0)
+			(property "Reference" "J1"
+				(at 0 22.86 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -792,14 +792,14 @@
 				)
 			)
 			(property "Value" "USB_C_Receptacle_USB2.0_16P"
-				(at 0 19.685 0)
+				(at 0 20.32 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "EasyEDA2KiCad:USB-C-SMD_G-SWITCH_GT-USB-9010AB"
 				(at 3.81 0 0)
 				(effects
 					(font
@@ -818,6 +818,69 @@
 				)
 			)
 			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C2988366"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1457,6 +1520,60 @@
 						)
 					)
 					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -22.86 90)
+					(length 5.08) hide
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -22.86 90)
+					(length 5.08) hide
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -22.86 90)
+					(length 5.08) hide
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9954,7 +10071,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_2x02_P1.27mm_Vertical_SMD"
+		(property "Footprint" "EasyEDA2KiCad:HDR-SMD_4P-P1.27-V-F-R2-C2-LS4.8"
 			(at 81.28 134.62 0)
 			(effects
 				(font
@@ -11919,7 +12036,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+		(property "Footprint" "EasyEDA2KiCad:USB-C-SMD_G-SWITCH_GT-USB-9010AB"
 			(at 33.02 40.64 0)
 			(effects
 				(font
@@ -12059,6 +12176,15 @@
 		)
 		(pin "A1"
 			(uuid "aecb70d6-e44b-41b7-85f0-ae42624f84fc")
+		)
+		(pin "S2"
+			(uuid "952dbfe7-7676-4cc5-becf-56bf1166022e")
+		)
+		(pin "S3"
+			(uuid "d36d9069-315e-41e9-937e-cb89207dea1b")
+		)
+		(pin "S4"
+			(uuid "c6983a70-d3c3-40b1-8a8e-90b1cb5c9347")
 		)
 		(instances
 			(project "Small_Pendant"
@@ -13218,7 +13344,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BNO055:LGA28R50P4X10_380X520X100"
+		(property "Footprint" "EasyEDA2KiCad:LGA-28_L5.2-W3.8-P0.50-BL"
 			(at 156.21 139.7 0)
 			(effects
 				(font
@@ -13648,7 +13774,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_2x02_P1.27mm_Vertical_SMD"
+		(property "Footprint" "EasyEDA2KiCad:HDR-SMD_4P-P1.27-V-F-R2-C2-LS4.8"
 			(at 81.28 147.32 0)
 			(effects
 				(font
@@ -13864,7 +13990,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MCU_Espressif_Official:ESP32-C3-MINI-1"
+		(property "Footprint" "EasyEDA2KiCad:WIFIM-SMD_ESP32-C3-MINI-1"
 			(at 181.61 95.25 0)
 			(effects
 				(font
@@ -16154,7 +16280,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_2x04_P1.27mm_Vertical_SMD"
+		(property "Footprint" "EasyEDA2KiCad:HDR-SMD_8P-P1.27-V-F-R2-C4-LS4.8"
 			(at 81.28 160.02 0)
 			(effects
 				(font
@@ -16163,7 +16289,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201843_DEALON-DW127S-22-06-43_C5160800.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411201842_DEALON-DW127S-22-08-43_C5160801.pdf"
 			(at 81.28 160.02 0)
 			(effects
 				(font
@@ -16181,7 +16307,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C5160800"
+		(property "LCSC Part" "C5160801"
 			(at 81.28 160.02 0)
 			(effects
 				(font

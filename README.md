@@ -77,13 +77,13 @@ Features:
         - [LCSC Part Number: C5160799](https://www.lcsc.com/product-detail/Female-Headers_DEALON-DW127S-22-04-43_C5160799.html)
     - 1x 2x4 Pin Socket - 1.27mm Pitch - Vertical SMD
         - Component: J4
-        - [LCSC Part Number: C5160800](https://www.lcsc.com/product-detail/Female-Headers_DEALON-DW127S-22-06-43_C5160800.html)
+        - [LCSC Part Number: C5160801](https://www.lcsc.com/product-detail/Female-Headers_DEALON-DW127S-22-08-43_C5160801.html)
     - 2x 2x2 Pin Header - 1.27mm Pitch - Vertical SMD
         - Component: J5, J6
         - [LCSC Part Number: C5160758](https://www.lcsc.com/product-detail/Pin-Headers_DEALON-DZ127S-22-04-55_C5160758.html)
     - 1x 2x4 Pin Header - 1.27mm Pitch - Vertical SMD
         - Component: J7
-        - [LCSC Part Number: C5160759](https://www.lcsc.com/product-detail/Pin-Headers_DEALON-DZ127S-22-06-55_C5160759.html)
+        - [LCSC Part Number: C5160760](https://www.lcsc.com/product-detail/Pin-Headers_DEALON-DZ127S-22-08-55_C5160760.html)
 - Capacitors
     - *All Packages are 0402 unless otherwise noted*
     - 10µF
