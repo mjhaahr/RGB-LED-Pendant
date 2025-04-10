@@ -11950,7 +11950,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+		(property "Footprint" "EasyEDA2KiCad:SOT-25-5_L2.9-W1.6-P0.95-LS2.8-BL"
 			(at 43.18 84.455 0)
 			(effects
 				(font
@@ -11977,7 +11977,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C51118"
+		(property "LCSC Part" "C22427765"
 			(at 43.18 92.71 0)
 			(effects
 				(font
@@ -14406,7 +14406,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "EasyEDA2KiCad:SC-70-6_L2.2-W1.3-P0.65-LS2.2-BR"
 			(at 41.91 152.4 0)
 			(effects
 				(font
@@ -16000,7 +16000,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPD2EUSB30DRTR:DRT0003A"
+		(property "Footprint" "EasyEDA2KiCad:SOT-723_L1.2-W0.8-P0.80-LS1.2-BR"
 			(at 262.89 69.85 0)
 			(effects
 				(font
