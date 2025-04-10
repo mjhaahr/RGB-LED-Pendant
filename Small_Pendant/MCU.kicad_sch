@@ -1509,9 +1509,9 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -7.62 -22.86 90)
-					(length 5.08)
+				(pin no_connect line
+					(at -15.24 -8.89 0)
+					(length 5.08) hide
 					(name "SHIELD"
 						(effects
 							(font
@@ -1527,8 +1527,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -7.62 -22.86 90)
+				(pin no_connect line
+					(at -15.24 -11.43 0)
 					(length 5.08) hide
 					(name "SHIELD"
 						(effects
@@ -1545,8 +1545,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -7.62 -22.86 90)
+				(pin no_connect line
+					(at -15.24 -13.97 0)
 					(length 5.08) hide
 					(name "SHIELD"
 						(effects
@@ -1563,8 +1563,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -7.62 -22.86 90)
+				(pin no_connect line
+					(at -15.24 -16.51 0)
 					(length 5.08) hide
 					(name "SHIELD"
 						(effects
@@ -5173,10 +5173,6 @@
 	(no_connect
 		(at 209.55 72.39)
 		(uuid "5653cc73-d358-4d03-a9de-98b3129d06d0")
-	)
-	(no_connect
-		(at 21.59 63.5)
-		(uuid "5f902cb1-7071-41e5-add3-b5e02f8d76a1")
 	)
 	(no_connect
 		(at 176.53 149.86)
