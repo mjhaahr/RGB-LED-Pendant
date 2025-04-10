@@ -4,3 +4,5 @@ Small_Pendant-backups
 
 .clangd
 compile_flags.txt
+
+split_boards/
