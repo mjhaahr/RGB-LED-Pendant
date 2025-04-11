@@ -254,7 +254,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Small_Pendant_Fab/Small_Pendant_Gerbers/",
       "pos_files": "Small_Pendant_Fab/",
       "specctra_dsn": "",
       "step": "",
