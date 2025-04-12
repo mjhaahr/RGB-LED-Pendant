@@ -22,7 +22,7 @@ Features:
 
 ## Table Of Contents
 - [Bill Of Materials](#bill-of-materials)
-- [Production/Assembly](production/assembly)
+- [Fabrication and Assembly](#fabrication-and-assembly)
 - [Case Design](#case-design)
 - [Code](#code)
 - [Extra Notes](#extra-notes)
@@ -127,9 +127,9 @@ Features:
         - [LCSC Part Number: C25117](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF4700TCE_C25117.html)
 
 
-## Production/Assembly
+## Fabrication and Assembly
 - The boards were fabricated and assembled by JLCPCB
-- The boards were combined into one frame to reduce the cost of having to make and assembled two design
+- The boards were combined into one frame to reduce the cost of having to make and assemble two designs in one order
 - The frame was enlarged to fit the minimum board size for JLCPCB's PCBA service as well as provides the necessary fiducials and edge rails for assembly
 
 ![Front Side Assembly Frame Render](images/front-frame-render.png)
