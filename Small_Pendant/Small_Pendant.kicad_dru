@@ -1,0 +1,4 @@
+(version 1)
+(rule NO_BLIND_VIAS
+	(severity error)
+	(constraint disallow micro_via buried_via))
