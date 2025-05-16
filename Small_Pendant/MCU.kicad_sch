@@ -5594,6 +5594,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 85.09) (xy 260.35 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25c598e3-4ce4-42d3-a0db-c941e068d116")
+	)
+	(wire
+		(pts
 			(xy 228.6 74.93) (xy 228.6 77.47)
 		)
 		(stroke
@@ -5894,6 +5904,16 @@
 	)
 	(wire
 		(pts
+			(xy 273.05 85.09) (xy 270.51 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46d33cba-61d0-42cb-8591-f87fa31ec029")
+	)
+	(wire
+		(pts
 			(xy 133.35 129.54) (xy 133.35 147.32)
 		)
 		(stroke
@@ -6151,6 +6171,16 @@
 			(type default)
 		)
 		(uuid "613d4d21-e5b3-4f14-8730-fc38035988e1")
+	)
+	(wire
+		(pts
+			(xy 273.05 82.55) (xy 273.05 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "634c4a19-b827-4177-8a64-762b53eee040")
 	)
 	(wire
 		(pts
@@ -7518,6 +7548,16 @@
 		)
 		(uuid "a1c72083-b022-468c-ae65-d3818968d1be")
 	)
+	(text "Strapping Pin\n"
+		(exclude_from_sim no)
+		(at 267.462 88.392 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b1eeb598-1aed-4efd-bb66-41ef3e10b631")
+	)
 	(text "Interboard"
 		(exclude_from_sim no)
 		(at 70.866 117.094 0)
@@ -7814,6 +7854,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_DATA"
+		(shape output)
+		(at 260.35 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "956da464-8ac5-43fe-9437-f381d8219246")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 248.5353 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -12323,6 +12385,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 273.05 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ed96274-ba4a-41b5-afa3-0920946d3e05")
+		(property "Reference" "#PWR054"
+			(at 273.05 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 273.05 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 273.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d79975ca-9d3f-4d47-9433-e5857f4cefc9")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/14f335fc-598f-404a-bfcd-3d46c6f23e92"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Earth")
 		(at 133.35 157.48 0)
 		(unit 1)
@@ -13178,6 +13306,74 @@
 			(project "Small_Pendant"
 				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/14f335fc-598f-404a-bfcd-3d46c6f23e92"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 266.7 85.09 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f2743bb-11ea-405a-9ee4-7856a5669a93")
+		(property "Reference" "R12"
+			(at 266.7 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 266.7 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 266.954 84.074 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 266.7 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3a88e879-37de-44fb-9862-d81785aa5bb4")
+		)
+		(pin "1"
+			(uuid "769ab4f8-2038-4890-86b6-89a8ca82d1c0")
+		)
+		(instances
+			(project "Small_Pendant"
+				(path "/e1f67532-4244-48a0-a633-004c4e91cc2f/14f335fc-598f-404a-bfcd-3d46c6f23e92"
+					(reference "R12")
 					(unit 1)
 				)
 			)
