@@ -108,7 +108,7 @@ Features:
         - Component: R1, R2
         - [LCSC Part Number: C25890](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF3301TCE_C25890.html)
     - 10kΩ
-        - Component: R3, R8, R9
+        - Component: R3, R8, R9, R12
         - [LCSC Part Number: C25744](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.html)
     - 1.3kΩ
         - Component: R4
@@ -123,7 +123,7 @@ Features:
         - Component: R10, R11
         - [LCSC Part Number: C25905](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.html)
     - 470Ω
-        - Component: R12
+        - Component: R13
         - [LCSC Part Number: C25117](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF4700TCE_C25117.html)
 
 
@@ -148,3 +148,4 @@ Features:
 - The [Only Pendant](https://github.com/mjhaahr/RGB-LED-Pendant/tree/Only_Pendant) branch features a much-simplified design, with only the LED Matrix and no control board, it functions the same as a normal NeoPixel matrix.
 - A future version may replace the BNO055 with a more up-to-date IMU (and one that is NRND) and move the orientation calculation onto the main MCU
 - A future design may include an onboard battery and charger (would likely require enlarging the board)
+- V1 Hardware was Fabricated at JLCPCB, during standup it was found that a strapping pin was forgotten (GPIO8), for the V1 hardware a 8.06kΩ 0603 pull-up resistor was added across pins 4 and 6 of U4, this was fixed in the next revision with a 10kΩ closer to the MCU Module (U1)
