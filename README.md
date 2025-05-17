@@ -10,11 +10,11 @@ Features:
 - 177 Addressable RGB LEDs
     - WS2812B-style (NeoPixel) control
     - Xinglight XL-1010RGBC-WS2812B
-- Two board design for tight packaging
+- Two-board design for tight packaging
     - Front board contains the LED Matrix
     - Back board holds the Microcontroller, IMU, and Power Regulation
 - ESP32-C3 Module for control
-    - Allows pattern changing over WiFi/Bluetooth as well as the buttons on the device
+    - Allows pattern changing over WiFi/Bluetooth, as well as the buttons on the device
 - Onboard IMU to generate reactive patterns
     - Utilizes a Bosch BNO055 for the simplicity of the orientation solution
 - USB C Port for Power, Comms, and Programming
@@ -130,7 +130,7 @@ Features:
 ## Fabrication and Assembly
 - The boards were fabricated and assembled by JLCPCB
 - The boards were combined into one frame to reduce the cost of having to make and assemble two designs in one order
-- The frame was enlarged to fit the minimum board size for JLCPCB's PCBA service as well as provides the necessary fiducials and edge rails for assembly
+- The frame was enlarged to fit the minimum board size for JLCPCB's PCBA service, as well as providing the necessary fiducials and edge rails for assembly
 
 ![Front Side Assembly Frame Render](images/front-frame-render.png)
 
@@ -141,11 +141,13 @@ Features:
 
 ## Code
 *TODO: Not written*
-- To load the custom board definitions do the following:
+- To load the custom board definitions, do the following:
     - Lol, I don't know yet
     
 ## Extra Notes
-- The [Only Pendant](https://github.com/mjhaahr/RGB-LED-Pendant/tree/Only_Pendant) branch features a much-simplified design, with only the LED Matrix and no control board, it functions the same as a normal NeoPixel matrix.
+- The [Only Pendant](https://github.com/mjhaahr/RGB-LED-Pendant/tree/Only_Pendant) branch features a much-simplified design, with only the LED Matrix and no control board; it functions the same as a normal NeoPixel matrix.
 - A future version may replace the BNO055 with a more up-to-date IMU (and one that is NRND) and move the orientation calculation onto the main MCU
 - A future design may include an onboard battery and charger (would likely require enlarging the board)
-- V1 Hardware was Fabricated at JLCPCB, during standup it was found that a strapping pin was forgotten (GPIO8), for the V1 hardware a 8.06kΩ 0603 pull-up resistor was added across pins 4 and 6 of U4, this was fixed in the next revision with a 10kΩ closer to the MCU Module (U1)
+- During standup of V1 Hardware, it was found that a strapping pin was forgotten (10kΩ pull-up on GPIO8)
+    - To get the first run boards working, an 8.06kΩ 0603 pull-up resistor was added across pins 4 (GPIO8/`LED_Data`) and 6 (3V3) of U4
+    - Fixed for future revision with a 10kΩ 0402 pull-up resistor placed closer to the MCU Module (U1)
