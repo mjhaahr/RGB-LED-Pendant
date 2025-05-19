@@ -1,5 +1,3 @@
-#include "colorutils.h"
-#include "crgb.h"
 #include <FastLED.h>
 #include <stdint.h>
 
@@ -19,7 +17,7 @@
 CRGB leds[NUM_LEDS];
 
 // TODO: Add to Setup
-FastLED.addLeds<WS2812B, LED_PIN, RGB>(leds, NUM_LEDS);
+FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
 FastLED.setBrightness(MAX_BRIGHTNESS);
 
 // Takes Y and X (from Screen Top Left) and the corresponding value is the pixel address
@@ -41,6 +39,10 @@ uint_fast8_t pixelLut[DIM][DIM] = {
     {  NP,  NP,  NP, 163, 164, 165, 166, 167, 168, 169, 170, 171,  NP,  NP,  NP},
     {  NP,  NP,  NP,  NP,  NP, 176, 175, 174, 173, 172,  NP,  NP,  NP,  NP,  NP}
 };
+
+#define SMILEY_FACE_NUM_PIXELS      61
+// Active Pixels for smiley face (smile, left eye, right eye, outline)
+static uint_fast8_t smileyFacePixels[SMILEY_FACE_NUM_PIXELS] = {114, 135, 143, 144, 145, 146, 147, 129, 122, 47, 46, 55, 56, 76, 75, 42, 41, 60, 61, 71, 70, 0, 1, 2, 3, 4, 6, 5, 24, 25, 50, 51, 80, 81, 110, 111, 138, 139, 162, 163, 164, 176, 175, 174, 173, 172, 170, 171, 152, 151, 126, 125, 96, 95, 66, 65, 38, 37, 14, 13, 12};
 
 // Takes a pixel index and returns the angular offset from 0 (in tengths of a degree) and a unitless radius (in thousandths)
 // UINT_FAST16_MAX for center value
