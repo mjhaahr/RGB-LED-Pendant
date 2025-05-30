@@ -143,7 +143,9 @@ Features:
 *TODO: Not written*
 - To load the custom board definitions, do the following:
     - Lol, I don't know yet
-    
+    - `boards.local.txt`?
+    - Write script to find ESP32 Core and add custom board def?
+
 ## Extra Notes
 - The [Only Pendant](https://github.com/mjhaahr/RGB-LED-Pendant/tree/Only_Pendant) branch features a much-simplified design, with only the LED Matrix and no control board; it functions the same as a normal NeoPixel matrix.
 - A future version may replace the BNO055 with a more up-to-date IMU (and one that is NRND) and move the orientation calculation onto the main MCU

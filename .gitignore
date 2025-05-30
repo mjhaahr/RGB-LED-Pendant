@@ -1,8 +1,16 @@
-.DS_Store
+## KiCad
+# Don't Need Backups to be in Git
 Small_Pendant-backups
-*.lck
+# Not useful beyond exporting STEP Files
+split_boards/
 
+## Compiler Needs
 .clangd
 compile_flags.txt
+compiler_needs/
 
-split_boards/
+## Lock Files should always stay out
+*.lck
+
+## MacOS File System Weirdness
+.DS_Store
