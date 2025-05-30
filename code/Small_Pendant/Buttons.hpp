@@ -1,9 +1,14 @@
 /**
- * @file        Buttons.c
+ * @file        Buttons.h
  * @module      The Button Module (BTN)
  *
  * @brief       Contains Code for Interacting with the Buttons on the Small Pendant Project
  *
  * @author      Matthew Haahr (mjhaahr)
  */
-#include "Buttons.h"
+#ifndef __BUTTONS_H__
+#define __BUTTONS_H__
+
+#include "Config.hpp"
+
+#endif /* __BUTTONS_H__ */

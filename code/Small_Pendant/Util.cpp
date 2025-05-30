@@ -6,7 +6,7 @@
  *
  * @author      Matthew Haahr (mjhaahr)
  */
-#include "Util.h"
+#include "Util.hpp"
 
 // Takes a pixel index and returns the angular offset from 0 (in tengths of a degree), unitless radius (in thousandths), and Percentage of White for ColorWheel
 // UINT_FAST16_MAX for center value

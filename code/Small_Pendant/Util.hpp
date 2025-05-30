@@ -9,7 +9,7 @@
 #ifndef __UTIL_H__
 #define __UTIL_H__
 
-#include "Config.h"
+#include "Config.hpp"
 
 #define UTIL_MAX(x, y)  (((x) > (y)) ? (x) : (y))
 #define UTIL_MIN(x, y)  (((x) < (y)) ? (x) : (y))

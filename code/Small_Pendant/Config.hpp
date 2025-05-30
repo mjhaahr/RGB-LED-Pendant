@@ -1,6 +1,6 @@
 /**
  * @file        Config.h
- * @module      The Configuration Module (CONFIG)
+ * @module      The Configuration Module (CFG)
  *
  * @brief       Contains General Configuration Code for the Small Pendant Project
  *
