@@ -198,6 +198,6 @@ void DISP_Clear(void) {
 }
 
 static void printState(void) {
-    Serial.print("State: ");
-    Serial.println(stateLabels[state]);
+    DebugPrint("State: ");
+    DebugPrintln(stateLabels[state]);
 }

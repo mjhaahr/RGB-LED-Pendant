@@ -15,8 +15,8 @@ void setup() {
     BTN_Init();
     DISP_Init();
 
-    Serial.begin(57600);
-    Serial.println("Start");
+    DebugBegin(57600);
+    DebugPrintln("Start");
 }
 
 void loop() {

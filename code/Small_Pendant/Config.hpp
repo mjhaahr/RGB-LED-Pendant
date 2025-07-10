@@ -12,6 +12,8 @@
 #include <Arduino.h>
 #include <FastLED.h>
 
+#define DEBUG
+
 // System Update
 #define SYSTICK_PERIOD_MS           5u
 #define SYSTICK_FREQ                (1000 / SYSTICK_PERIOD_MS)
@@ -30,6 +32,16 @@
 #define NUM_LEDS                    177u
 #define MAX_BRIGHTNESS              15u
 
-// TODO: Setup Debug Enable for Printing
+#ifdef DEBUG
+    #define DebugBegin(...) Serial.begin(__VA_ARGS__);
+    #define DebugPrint(...) Serial.print(__VA_ARGS__);
+    #define DebugPrintln(...) Serial.println(__VA_ARGS__);
+    #define DebugWrite(...) Serial.write(__VA_ARGS__);
+#else
+    #define DebugBegin(...)
+    #define DebugPrint(...)
+    #define DebugPrintln(...)
+    #define DebugWrite(...)
+#endif
 
 #endif /* __CONFIG_H__ */
