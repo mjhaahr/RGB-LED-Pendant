@@ -16,18 +16,30 @@
 // Static Reference to the LEDs to allow updates
 static CRGB leds[NUM_LEDS];
 
-static uint_fast16_t wheelPos = 0;
-
 #define SMILEY_FACE_NUM_PIXELS      61
 // Active Pixels for smiley face (smile, left eye, right eye, outline)
 static uint_fast8_t smileyFacePixels[SMILEY_FACE_NUM_PIXELS] = {114, 135, 143, 144, 145, 146, 147, 129, 122, 47, 46, 55, 56, 76, 75, 42, 41, 60, 61, 71, 70, 0, 1, 2, 3, 4, 6, 5, 24, 25, 50, 51, 80, 81, 110, 111, 138, 139, 162, 163, 164, 176, 175, 174, 173, 172, 170, 171, 152, 151, 126, 125, 96, 95, 66, 65, 38, 37, 14, 13, 12};
 
 
-static uint8_t state = 0;
+typedef enum {
+    DISP_STATE_OFF      = 0u,
+    DISP_STATE_SMILEY   = 1u,
+    DISP_STATE_WHEEL    = 2u,
+    DISP_STATE_MAX,
+} DISP_State_e;
+
+static String stateLabels[DISP_STATE_MAX] = {"OFF", "SMILEY", "WHEEL"};
+
+static uint_fast16_t wheelPos = 0;
+static DISP_State_e state;
+static bool redraw;
 static CRGB currColor;
 
+static void printState(void);
+
+
 void DISP_NextColor(void) {
-    if (state == 2) {
+    if (state != DISP_STATE_SMILEY) {
       return;
     }
     
@@ -55,22 +67,40 @@ void DISP_NextColor(void) {
         default:
             break;
     }
-
-    state = 1;
+    
+    redraw = true;
 }
 
 void DISP_NextPattern(void) {
-    if (state == 2) {
-        // Wheel -> Smiley
-        state = 1;
-    } else {
-        // ? -> Wheel
-        state = 2;
+    // Cycle: Off -> Smiley -> Wheel (-> More) -> Smiley
+    DISP_Clear();
+    switch(state) {
+        case DISP_STATE_OFF:
+            state = DISP_STATE_SMILEY;
+            break;
+            
+        case DISP_STATE_SMILEY:
+            state = DISP_STATE_WHEEL;
+            break;
+            
+        case DISP_STATE_WHEEL:
+            state = DISP_STATE_SMILEY;
+            break;
+            
+        default:
+            state = DISP_STATE_OFF;
+            break;
     }
+    // Set redraw when changing patterns
+    redraw = true;
+    printState();
 }
 
 void DISP_Off(void) {
-    state = 3;
+    DISP_Clear();
+    state = DISP_STATE_OFF;
+    printState();
+    redraw = true;
 }
 
 /**
@@ -79,12 +109,9 @@ void DISP_Off(void) {
 void DISP_Init(void) {
     FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
     FastLED.setBrightness(MAX_BRIGHTNESS);
-
+    
     currColor = CRGB::Yellow;
-
-    // Start with smiley face
-    DISP_SmileyFace(currColor);
-    FastLED.show();
+    DISP_NextPattern();
 }
 
 /**
@@ -92,36 +119,34 @@ void DISP_Init(void) {
  */
 void DISP_Task(void) {
     switch (state) {
-        case 0:
-            // IDLE
+        case DISP_STATE_OFF:
             break;
-
-        case 1:
-            // Draw Smiley face
-            DISP_Clear();
-            DISP_SmileyFace(currColor);
-            FastLED.show();
-            state = 0;
+            
+        case DISP_STATE_SMILEY:
+            if (redraw) {
+                DISP_SmileyFace(currColor);
+            }
             break;
-
-        case 2:
-            // Color Wheel
+            
+        case DISP_STATE_WHEEL:
+            redraw = true;
             DISP_ColorWheel(wheelPos);
 
             wheelPos += 12;
             if (wheelPos >= 3600 ) {
                 wheelPos = 0;
             }
-
-            FastLED.show();
+            
             break;
-
-        case 3:
-            // Clear Screen
-            DISP_Clear();
-            FastLED.show();
-            state = 0;
+        
+        default:
+            state = DISP_STATE_OFF;
             break;
+    }
+    
+    if (redraw) {
+        redraw = false;
+        FastLED.show();
     }
 }
 
@@ -170,4 +195,9 @@ void DISP_Clear(void) {
     for (uint_fast8_t i = 0; i < NUM_LEDS; i++) {
         leds[i] = CRGB::Black;
     }
+}
+
+static void printState(void) {
+    Serial.print("State: ");
+    Serial.println(stateLabels[state]);
 }

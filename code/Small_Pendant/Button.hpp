@@ -16,7 +16,7 @@ typedef enum {
     BTN_STATE_IDLE,
     BTN_STATE_PRESSED,
     BTN_STATE_HELD,
-} BTN_ButtonState;
+} BTN_ButtonState_e;
 
 class Button {
     private:
@@ -24,7 +24,7 @@ class Button {
         uint8_t pin;
 
         // Button State doesn't get established until released (if pressed) or held
-        BTN_ButtonState currentState;
+        BTN_ButtonState_e currentState;
         // New Data Flag
         bool newData;
 
@@ -48,15 +48,15 @@ class Button {
 
         /**
          * Performs the debounce handle and evaluates the button
-         * @return BTN_ButtonState - The current state of the button
+         * @return BTN_ButtonState_e - The current state of the button
          */
-        BTN_ButtonState task(void);
+        BTN_ButtonState_e task(void);
 
         /**
          * Gets and clears the current button state
-         * @return BTN_ButtonState - The current state of the button
+         * @return BTN_ButtonState_e - The current state of the button
          */
-        BTN_ButtonState getState(void);
+        BTN_ButtonState_e getState(void);
 
         bool NewData(void);
 };

@@ -30,4 +30,6 @@
 #define NUM_LEDS                    177u
 #define MAX_BRIGHTNESS              15u
 
+// TODO: Setup Debug Enable for Printing
+
 #endif /* __CONFIG_H__ */

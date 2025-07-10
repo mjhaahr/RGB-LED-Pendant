@@ -36,9 +36,9 @@ void Button::init(uint8_t pin) {
 
 /**
  * Performs the debounce handle and evaluates the button
- * @return BTN_ButtonState - The current state of the button
+ * @return BTN_ButtonState_e - The current state of the button
  */
-BTN_ButtonState Button::task(void) {
+BTN_ButtonState_e Button::task(void) {
     // Increment tick timer (up to max val)
     if (this->debounceTicks < UINT8_MAX) {
         this->debounceTicks++;
@@ -95,9 +95,9 @@ BTN_ButtonState Button::task(void) {
 
 /**
  * Gets and clears the current button state
- * @return BTN_ButtonState - The current state of the button
+ * @return BTN_ButtonState_e - The current state of the button
  */
-BTN_ButtonState Button::getState(void) {
+BTN_ButtonState_e Button::getState(void) {
     return this->currentState;
 }
 

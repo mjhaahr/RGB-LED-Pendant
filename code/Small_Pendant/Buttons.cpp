@@ -31,7 +31,6 @@ void BTN_Task(void) {
         switch(colorButton.getState()) {
             case BTN_STATE_PRESSED:
                 DISP_NextColor();
-                Serial.println("Color");
                 break;
 
             default:
@@ -44,12 +43,10 @@ void BTN_Task(void) {
         switch(patternButton.getState()) {
             case BTN_STATE_PRESSED:
                 DISP_NextPattern();
-                Serial.println("Pattern");
                 break;
 
             case BTN_STATE_HELD:
                 DISP_Off();
-                Serial.println("Off");
                 break;
 
             default:
