@@ -16,7 +16,8 @@
 
 // System Update
 #define SYSTICK_PERIOD_MS           5u
-#define SYSTICK_FREQ                (1000 / SYSTICK_PERIOD_MS)
+#define SYSTICK_PERIOD_US           (SYSTICK_PERIOD_MS * 1000u)
+#define SYSTICK_FREQ                (1000u / SYSTICK_PERIOD_MS)
 // Update Display Every x Ticks
 #define DISPLAY_UPDATE_INT          2u
 
