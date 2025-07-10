@@ -25,10 +25,16 @@ class Button {
 
         // Button State doesn't get established until released (if pressed) or held
         BTN_ButtonState currentState;
+        // New Data Flag
+        bool newData;
 
         // Reflects the current state tracking for the pin itself
         int pinState;
         int lastPinState;
+        
+        // Debounced state of the button (pressed or unpressed)
+        int buttonState;
+        int lastButton;
 
         // Debounce tick timer
         uint8_t debounceTicks;
@@ -51,6 +57,8 @@ class Button {
          * @return BTN_ButtonState - The current state of the button
          */
         BTN_ButtonState getState(void);
+
+        bool NewData(void);
 };
 
 #endif /* __BUTTON_H__ */

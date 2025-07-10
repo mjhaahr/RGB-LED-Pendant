@@ -8,7 +8,6 @@
  */
 #include "Buttons.hpp"
 #include "Display.hpp"
-#include "Small_Pendant/Button.hpp"
 
 static Button colorButton;
 static Button patternButton;
@@ -28,27 +27,34 @@ void BTN_Task(void) {
     colorButton.task();
     patternButton.task();
 
-    switch(colorButton.getState()) {
-        case BTN_STATE_PRESSED:
-            DISP_NextColor();
-            break;
+    if (colorButton.NewData()) {
+        switch(colorButton.getState()) {
+            case BTN_STATE_PRESSED:
+                DISP_NextColor();
+                Serial.println("Color");
+                break;
 
-        default:
-            // Do Nothing Under otherwise
-            break;
+            default:
+                // Do Nothing Under otherwise
+                break;
+        }
     }
 
-    switch(patternButton.getState()) {
-        case BTN_STATE_PRESSED:
-            DISP_NextPattern();
-            break;
+    if (patternButton.NewData()) {
+        switch(patternButton.getState()) {
+            case BTN_STATE_PRESSED:
+                DISP_NextPattern();
+                Serial.println("Pattern");
+                break;
 
-        case BTN_STATE_HELD:
-            DISP_Off();
-            break;
+            case BTN_STATE_HELD:
+                DISP_Off();
+                Serial.println("Off");
+                break;
 
-        default:
-            // Do Nothing Under otherwise
-            break;
+            default:
+                // Do Nothing Under otherwise
+                break;
+        }
     }
 }

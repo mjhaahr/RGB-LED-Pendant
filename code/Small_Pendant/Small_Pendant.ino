@@ -15,6 +15,9 @@ void setup() {
     BTN_Init();
     DISP_Init();
 
+    Serial.begin(57600);
+    Serial.println("Start");
+
     // Hold for 2 seconds
     delay(2000);
 }

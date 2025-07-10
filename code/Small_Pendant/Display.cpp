@@ -11,6 +11,7 @@
 
 // TODO: Make a class?
 // TODO: Setup logic to change which effect is run (use the Buttons to call that?) (and I guess move the draw calls into here?)
+// TODO: Implement actual state logic (iff off, do not change states)
 
 // Static Reference to the LEDs to allow updates
 static CRGB leds[NUM_LEDS];
@@ -26,24 +27,28 @@ static uint8_t state = 0;
 static CRGB currColor;
 
 void DISP_NextColor(void) {
+    if (state == 2) {
+      return;
+    }
+    
     switch (currColor.as_uint32_t()) {
-        case 0x800080:
+        case 0xFF800080:
             currColor = CRGB::Red;
             break;
 
-        case 0xFF0000:
+        case 0xFFFF0000:
             currColor = CRGB::Yellow;
             break;
 
-        case 0xFFFF00:
+        case 0xFFFFFF00:
             currColor = CRGB::Green;
             break;
 
-        case 0x008000:
+        case 0xFF008000:
             currColor = CRGB::Blue;
             break;
 
-        case 0x0000FF:
+        case 0xFF0000FF:
             currColor = CRGB::Purple;
             break;
 
@@ -93,6 +98,7 @@ void DISP_Task(void) {
 
         case 1:
             // Draw Smiley face
+            DISP_Clear();
             DISP_SmileyFace(currColor);
             FastLED.show();
             state = 0;
@@ -112,8 +118,8 @@ void DISP_Task(void) {
 
         case 3:
             // Clear Screen
-            FastLED.show();
             DISP_Clear();
+            FastLED.show();
             state = 0;
             break;
     }
