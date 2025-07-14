@@ -137,7 +137,10 @@ Features:
 ![Back Side Assembly Frame Render](images/back-frame-render.png)
 
 ## Case Design
-*TODO: Current not even started*
+*TODO: Make Alternate with no Loop*
+*TODO: Images/Renders*
+- 3D Printed Case with Optional Keyring Loop (TODO: Make Alternate with no Loop)
+- Due to the small size, the two halves must be glued together, so ensure the whole pendant works before gluing together
 
 ## Code
 *TODO: Not written*
@@ -148,8 +151,8 @@ Features:
 
 ## Extra Notes
 - The [Only Pendant](https://github.com/mjhaahr/RGB-LED-Pendant/tree/Only_Pendant) branch features a much-simplified design, with only the LED Matrix and no control board; it functions the same as a normal NeoPixel matrix.
-- A future version may replace the BNO055 with a more up-to-date IMU (and one that is NRND) and move the orientation calculation onto the main MCU
-- A future design may include an onboard battery and charger (would likely require enlarging the board)
-- During standup of V1 Hardware, it was found that a strapping pin was forgotten (10kΩ pull-up on GPIO8)
+- A future version may replace the BNO055 with a more up-to-date IMU (and one that is a still active product) and move the orientation calculation onto the main MCU
+- A future design may include an onboard battery and charger (would likely require enlarging the board or adding thickness to the design)
+- During standup of V1 Hardware, it was found that an MCU strapping pin was forgotten (10kΩ pull-up on GPIO8)
     - To get the first run boards working, an 8.06kΩ 0603 pull-up resistor was added across pins 4 (GPIO8/`LED_Data`) and 6 (3V3) of U4
     - Fixed for future revision with a 10kΩ 0402 pull-up resistor placed closer to the MCU Module (U1)
