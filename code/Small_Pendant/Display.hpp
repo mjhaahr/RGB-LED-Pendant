@@ -11,12 +11,6 @@
 
 #include "Config.hpp"
 
-void DISP_NextColor(void);
-
-void DISP_NextPattern(void);
-
-void DISP_Off(void);
-
 /**
  * Initializes the Display Module and sets up the LEDs
  */
@@ -28,20 +22,24 @@ void DISP_Init(void);
 void DISP_Task(void);
 
 /**
- * Loads the color wheel into the frame buffer (needs to be actually drawn to the screen), given a wheel position
- * @param uint_fast16_t wheelPos - The wheel position in tenths of a degree
+ * Redraws the Display for Enhanced Dither Performance
  */
-void DISP_ColorWheel(uint_fast16_t wheelPos);
+void DISP_Redraw(void);
 
 /**
- * Draws a Simple Smiley Face to the frame buffer
- * @param CRGB color - The color to draw
+ * Advances the color of static color states
  */
-void DISP_SmileyFace(CRGB color);
+void DISP_NextColor(void);
 
 /**
- * Clears the frame buffer
+ * Advances the pattern (of active patterns, cannot go to off
  */
-void DISP_Clear(void);
+void DISP_NextPattern(void);
+
+/**
+ * Clears and Turns off the Display
+ * Futur HW TODO: Add FET to disable LED Power
+ */
+void DISP_Off(void);
 
 #endif /* __DISPLAY_H__ */

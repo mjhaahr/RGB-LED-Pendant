@@ -22,6 +22,8 @@ class Button {
     private:
         // The GPIO Pin Number Associated with the Button
         uint8_t pin;
+        // True if holding is a separate option
+        bool holdEn;
 
         // Button State doesn't get established until released (if pressed) or held
         BTN_ButtonState_e currentState;
@@ -43,8 +45,9 @@ class Button {
         /**
          * Initializes a Button Object
          * @param uint8_t pin - The GPIO Pin for the Button
+         * @param bool holdEn - True if HELD is a valid state
          */
-        void init(uint8_t pin);
+        void init(uint8_t pin, bool holdEn);
 
         /**
          * Performs the debounce handle and evaluates the button
@@ -53,11 +56,15 @@ class Button {
         BTN_ButtonState_e task(void);
 
         /**
-         * Gets and clears the current button state
+         * Gets the current button state
          * @return BTN_ButtonState_e - The current state of the button
          */
         BTN_ButtonState_e getState(void);
-
+        
+        /**
+         * Gets and clears if there is new data
+         * @return bool - True if new state data is available
+         */
         bool NewData(void);
 };
 

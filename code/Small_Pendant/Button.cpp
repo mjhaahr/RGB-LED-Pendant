@@ -8,19 +8,22 @@
  */
 #include "Button.hpp"
 
-#define BTN_DEBOUNCE_TIME_MS        25u
-#define BTN_DEBOUNCE_TIME_TICKS     (BTN_DEBOUNCE_TIME_MS / SYSTICK_PERIOD_MS)
+#define BTN_DEBOUNCE_TIME_MS        100u
+#define BTN_DEBOUNCE_TIME_TICKS     (BTN_DEBOUNCE_TIME_MS / UI_UPDATE_PERIOD_MS)
 
-#define BTN_HELD_TIME_MS            500u
-#define BTN_HELD_TIME_TICKS         (BTN_HELD_TIME_MS / SYSTICK_PERIOD_MS)
+#define BTN_HELD_TIME_MS            1000u
+#define BTN_HELD_TIME_TICKS         (BTN_HELD_TIME_MS / UI_UPDATE_PERIOD_MS)
 
 /**
  * Initializes a Button Object
  * @param uint8_t pin - The GPIO Pin for the Button
+ * @param bool holdEn - True if HELD is a valid state
  */
-void Button::init(uint8_t pin) {
+void Button::init(uint8_t pin, bool holdEn) {
     this->pin = pin;
     pinMode(pin, INPUT_PULLUP);
+
+    this->holdEn = holdEn;
 
     this->currentState = BTN_STATE_IDLE;
     this->newData = false;
@@ -59,8 +62,8 @@ BTN_ButtonState_e Button::task(void) {
         case BTN_STATE_IDLE:
             // Check if pressed
             if (this->buttonState == GPIO_BUTTON_PRESSED) {
-                // Check if held for long enough to be "HELD"
-                if (this->debounceTicks >= BTN_HELD_TIME_TICKS) {
+                // Check if held for long enough to be "HELD" (and hold is allowed)
+                if ((this->debounceTicks >= BTN_HELD_TIME_TICKS) && this->holdEn) {
                     this->newData = true;
                     this->currentState = BTN_STATE_HELD;
                 }
@@ -94,13 +97,17 @@ BTN_ButtonState_e Button::task(void) {
 }
 
 /**
- * Gets and clears the current button state
+ * Gets the current button state
  * @return BTN_ButtonState_e - The current state of the button
  */
 BTN_ButtonState_e Button::getState(void) {
     return this->currentState;
 }
 
+/**
+ * Gets and clears if there is new data
+ * @return bool - True if new state data is available
+ */
 bool Button::NewData(void) {
     bool out = this->newData;
     this->newData = false;

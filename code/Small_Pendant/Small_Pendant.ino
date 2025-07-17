@@ -13,7 +13,6 @@
 
 hw_timer_t *taskTimer = NULL;
 volatile SemaphoreHandle_t taskSemaphore;
-static uint8_t dispayUpdateTicks;
 
 void ARDUINO_ISR_ATTR taskStart() {
 	xSemaphoreGiveFromISR(taskSemaphore, NULL);
@@ -22,6 +21,9 @@ void ARDUINO_ISR_ATTR taskStart() {
 void setup() {
     BTN_Init();
     DISP_Init();
+
+    // TODO: Setup IMU and add the calibration getter here
+    // TODO: Do something with LED BUILTIN
 
     DebugBegin(57600);
     DebugPrintln("Start");
@@ -35,24 +37,27 @@ void setup() {
     // Attach taskStart ISR to task timer.
     timerAttachInterrupt(taskTimer, &taskStart);
     
-    // Set timer alarm to call taskStart ISR every 5 milliseconds.
-    // Repeat the alarm (third parameter) with unlimited count = 0 (fourth parameter).
+    // Set task timer alarm to call taskStart ISR with the SysTick Period
+    // Repeat the alarm (3rd param = true) with unlimited count (4th param = 0).
     timerAlarm(taskTimer, SYSTICK_PERIOD_US, true, 0);
-    
-    // Start Display Update Tracking at 0
-    dispayUpdateTicks = 0;
 }
 
 void loop() {
+    // Start UI Update Tracking at 0
+    static uint8_t uiUpdateTicks = 0;
+    
     // If Task Timer has fired
     if (xSemaphoreTake(taskSemaphore, 0) == pdTRUE) {
-        // Increment display update check (runs every DISPLAY_UPDATE_INT ticks)
-        if (++dispayUpdateTicks <= DISPLAY_UPDATE_INT) {
-            dispayUpdateTicks = 0;
+        // Increment display update check (runs every UI_UPDATE_INT ticks)
+        if (++uiUpdateTicks >= UI_UPDATE_INT) {
+            uiUpdateTicks = 0;
             // Check buttons
             BTN_Task();
             // Update display
             DISP_Task();
+        } else {
+          // Redraw the current display otherwise to update temporal dithering
+          DISP_Redraw();
         }
     }
 }

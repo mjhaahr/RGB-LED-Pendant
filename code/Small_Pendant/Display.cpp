@@ -9,17 +9,9 @@
 #include "Display.hpp"
 #include "Util.hpp"
 
-// TODO: Make a class?
-// TODO: Setup logic to change which effect is run (use the Buttons to call that?) (and I guess move the draw calls into here?)
-// TODO: Implement actual state logic (iff off, do not change states)
-
-// Static Reference to the LEDs to allow updates
-static CRGB leds[NUM_LEDS];
-
 #define SMILEY_FACE_NUM_PIXELS      61
 // Active Pixels for smiley face (smile, left eye, right eye, outline)
-static uint_fast8_t smileyFacePixels[SMILEY_FACE_NUM_PIXELS] = {114, 135, 143, 144, 145, 146, 147, 129, 122, 47, 46, 55, 56, 76, 75, 42, 41, 60, 61, 71, 70, 0, 1, 2, 3, 4, 6, 5, 24, 25, 50, 51, 80, 81, 110, 111, 138, 139, 162, 163, 164, 176, 175, 174, 173, 172, 170, 171, 152, 151, 126, 125, 96, 95, 66, 65, 38, 37, 14, 13, 12};
-
+const static uint_fast8_t smileyFacePixels[SMILEY_FACE_NUM_PIXELS] = {114, 135, 143, 144, 145, 146, 147, 129, 122, 47, 46, 55, 56, 76, 75, 42, 41, 60, 61, 71, 70, 0, 1, 2, 3, 4, 6, 5, 24, 25, 50, 51, 80, 81, 110, 111, 138, 139, 162, 163, 164, 176, 175, 174, 173, 172, 170, 171, 152, 151, 126, 125, 96, 95, 66, 65, 38, 37, 14, 13, 12};
 
 typedef enum {
     DISP_STATE_OFF      = 0u,
@@ -28,80 +20,40 @@ typedef enum {
     DISP_STATE_MAX,
 } DISP_State_e;
 
-static String stateLabels[DISP_STATE_MAX] = {"OFF", "SMILEY", "WHEEL"};
+// Struct to hold the static context for the state info
+typedef struct {
+    uint_fast16_t wheelPos;
+    DISP_State_e state;
+    bool redraw;
+    CRGB currColor;
+} DISP_DisplayContext_t;
 
-static uint_fast16_t wheelPos = 0;
-static DISP_State_e state;
-static bool redraw;
-static CRGB currColor;
-
+/**
+ * Local State Print helper
+ */
 static void printState(void);
 
+/**
+ * Loads the color wheel into the frame buffer (needs to be actually drawn to the screen), given a wheel position
+ * @param uint_fast16_t wheelPos - The wheel position in tenths of a degree
+ */
+static void DISP_ColorWheel(uint_fast16_t wheelPos);
 
-void DISP_NextColor(void) {
-    if (state != DISP_STATE_SMILEY) {
-      return;
-    }
-    
-    switch (currColor.as_uint32_t()) {
-        case 0xFF800080:
-            currColor = CRGB::Red;
-            break;
+/**
+ * Draws a Simple Smiley Face to the frame buffer
+ * @param CRGB color - The color to draw
+ */
+static void DISP_SmileyFace(CRGB color);
 
-        case 0xFFFF0000:
-            currColor = CRGB::Yellow;
-            break;
+/**
+ * Clears the frame buffer
+ */
+static void DISP_Clear(void);
 
-        case 0xFFFFFF00:
-            currColor = CRGB::Green;
-            break;
-
-        case 0xFF008000:
-            currColor = CRGB::Blue;
-            break;
-
-        case 0xFF0000FF:
-            currColor = CRGB::Purple;
-            break;
-
-        default:
-            break;
-    }
-    
-    redraw = true;
-}
-
-void DISP_NextPattern(void) {
-    // Cycle: Off -> Smiley -> Wheel (-> More) -> Smiley
-    DISP_Clear();
-    switch(state) {
-        case DISP_STATE_OFF:
-            state = DISP_STATE_SMILEY;
-            break;
-            
-        case DISP_STATE_SMILEY:
-            state = DISP_STATE_WHEEL;
-            break;
-            
-        case DISP_STATE_WHEEL:
-            state = DISP_STATE_SMILEY;
-            break;
-            
-        default:
-            state = DISP_STATE_OFF;
-            break;
-    }
-    // Set redraw when changing patterns
-    redraw = true;
-    printState();
-}
-
-void DISP_Off(void) {
-    DISP_Clear();
-    state = DISP_STATE_OFF;
-    printState();
-    redraw = true;
-}
+// Static Context
+static DISP_DisplayContext_t dispContext;
+// Static Reference to the LEDs to allow updates
+static CRGB leds[NUM_LEDS];
 
 /**
  * Initializes the Display Module and sets up the LEDs
@@ -109,8 +61,11 @@ void DISP_Off(void) {
 void DISP_Init(void) {
     FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
     FastLED.setBrightness(MAX_BRIGHTNESS);
-    
-    currColor = CRGB::Yellow;
+
+    dispContext.wheelPos = 0;
+    dispContext.state = DISP_STATE_OFF;
+    dispContext.redraw = false;
+    dispContext.currColor = CRGB::Yellow;
     DISP_NextPattern();
 }
 
@@ -118,45 +73,151 @@ void DISP_Init(void) {
  * Runs the Primary Display Task, responsible for controlling what's shown on the LEDs
  */
 void DISP_Task(void) {
-    switch (state) {
+    DebugPrintln("Start");
+    switch (dispContext.state) {
         case DISP_STATE_OFF:
             break;
             
         case DISP_STATE_SMILEY:
-            if (redraw) {
-                DISP_SmileyFace(currColor);
+            if (dispContext.redraw) {
+                DISP_SmileyFace(dispContext.currColor);
             }
             break;
             
         case DISP_STATE_WHEEL:
-            redraw = true;
-            DISP_ColorWheel(wheelPos);
+            dispContext.redraw = true;
+            DISP_ColorWheel(dispContext.wheelPos);
 
-            wheelPos += 12;
-            if (wheelPos >= 3600 ) {
-                wheelPos = 0;
+            dispContext.wheelPos += 12;
+            if (dispContext.wheelPos >= 3600 ) {
+                dispContext.wheelPos = 0;
             }
             
             break;
         
         default:
-            state = DISP_STATE_OFF;
+            dispContext.state = DISP_STATE_OFF;
             break;
     }
     
-    if (redraw) {
-        redraw = false;
+    if (dispContext.redraw) {
+        dispContext.redraw = false;
         FastLED.show();
     }
+    DebugPrintln("Stop");
+}
+
+/**
+ * Redraws the Display for Enhanced Dither Performance
+ */
+void DISP_Redraw(void) {
+    // Only redraw the dynamic states
+    switch (dispContext.state) {
+        case DISP_STATE_WHEEL:
+            FastLED.show();
+            
+        default:
+            // Smiley, Off, (more to come) are static and don't need a redraw
+            break;
+    }
+}
+
+/**
+ * Advances the color of static color states
+ */
+void DISP_NextColor(void) {
+    if (dispContext.state != DISP_STATE_SMILEY) {
+      return;
+    }
+    
+    switch (dispContext.currColor.as_uint32_t()) {
+        case 0xFF800080:
+            dispContext.currColor = CRGB::Red;
+            DebugPrintln("Color: RED");
+            break;
+
+        case 0xFFFF0000:
+            dispContext.currColor = CRGB::Yellow;
+            DebugPrintln("Color: YELLOW");
+            break;
+
+        case 0xFFFFFF00:
+            dispContext.currColor = CRGB::Green;
+            DebugPrintln("Color: GREEN");
+            break;
+
+        case 0xFF008000:
+            dispContext.currColor = CRGB::Blue;
+            DebugPrintln("Color: BLUE");
+            break;
+
+        case 0xFF0000FF:
+            dispContext.currColor = CRGB::Purple;
+            DebugPrintln("Color: PURPLE");
+            break;
+
+        default:
+            break;
+    }
+    
+    dispContext.redraw = true;
+}
+
+/**
+ * Advances the pattern (of active patterns, cannot go to off
+ */
+void DISP_NextPattern(void) {
+    // Cycle: Off -> Smiley -> Wheel (-> More) -> Smiley
+    DISP_Clear();
+    switch(dispContext.state) {
+        case DISP_STATE_OFF:
+            dispContext.state = DISP_STATE_SMILEY;
+            break;
+            
+        case DISP_STATE_SMILEY:
+            dispContext.state = DISP_STATE_WHEEL;
+            break;
+            
+        case DISP_STATE_WHEEL:
+            dispContext.state = DISP_STATE_SMILEY;
+            break;
+            
+        default:
+            dispContext.state = DISP_STATE_OFF;
+            break;
+    }
+    // Set redraw when changing patterns
+    dispContext.redraw = true;
+    printState();
+}
+
+/**
+ * Clears and Turns off the Display
+ * Future HW TODO: Add FET to disable LED Power
+ */
+void DISP_Off(void) {
+    DISP_Clear();
+    dispContext.state = DISP_STATE_OFF;
+    printState();
+    dispContext.redraw = true;
+}
+
+/**
+ * Local State Print helper
+ */
+static void printState(void) {
+    const static String stateLabels[DISP_STATE_MAX] = {"OFF", "SMILEY", "WHEEL"};
+    DebugPrint("State: ");
+    DebugPrintln(stateLabels[dispContext.state]);
 }
 
 /**
  * Loads the color wheel into the frame buffer (needs to be actually drawn to the screen), given a wheel position
  * @param uint_fast16_t wheelPos - The wheel position in tenths of a degree
  */
-void DISP_ColorWheel(uint_fast16_t wheelPos) {
+static void DISP_ColorWheel(uint_fast16_t wheelPos) {
     // Pre-allocate pos data pointer
-    uint_fast16_t* posData;
+    const uint_fast16_t* posData;
     // Loop over all pixels
     for (uint_fast8_t i = 0; i < NUM_LEDS; i++) {
         posData = UTIL_PolarCoords(i);
@@ -182,7 +243,7 @@ void DISP_ColorWheel(uint_fast16_t wheelPos) {
  * Draws a Simple Smiley Face to the frame buffer
  * @param CRGB color - The color to draw
  */
-void DISP_SmileyFace(CRGB color) {
+static void DISP_SmileyFace(CRGB color) {
     for (uint_fast8_t i = 0; i < SMILEY_FACE_NUM_PIXELS; i++) {
         leds[smileyFacePixels[i]] = color;
     }
@@ -191,13 +252,8 @@ void DISP_SmileyFace(CRGB color) {
 /**
  * Clears the frame buffer
  */
-void DISP_Clear(void) {
+static void DISP_Clear(void) {
     for (uint_fast8_t i = 0; i < NUM_LEDS; i++) {
         leds[i] = CRGB::Black;
     }
-}
-
-static void printState(void) {
-    DebugPrint("State: ");
-    DebugPrintln(stateLabels[state]);
 }

@@ -27,8 +27,8 @@ CRGB UTIL_Rainbow(uint_fast8_t pos);
 /**
  * Gets the Polar Coords of the given LED address
  * @param uint_fast8_t led - The LED address
- * @return uint_fast16_t* [3] - Polar Coordinates of the given LED (angle in tenths of a degree, unitless radius, visual weight percentage from center)
+ * @return const uint_fast16_t* [3] - Polar Coordinates of the given LED (angle in tenths of a degree, unitless radius, visual weight percentage from center)
  */
-uint_fast16_t* UTIL_PolarCoords(uint_fast8_t led);
+const uint_fast16_t* UTIL_PolarCoords(uint_fast8_t led);
 
 #endif /* __UTIL_H__ */

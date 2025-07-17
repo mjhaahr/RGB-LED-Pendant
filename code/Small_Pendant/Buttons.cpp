@@ -16,8 +16,8 @@ static Button patternButton;
  * Initializes the Buttons Module
  */
 void BTN_Init(void) {
-    colorButton.init(BOOT_COLOR_BUTTON_PIN);
-    patternButton.init(USER_PATTERN_BUTTON_PIN);
+    colorButton.init(BOOT_COLOR_BUTTON_PIN, false);
+    patternButton.init(USER_PATTERN_BUTTON_PIN, true);
 }
 
 /**

@@ -15,11 +15,12 @@
 #define DEBUG
 
 // System Update
-#define SYSTICK_PERIOD_MS           5u
-#define SYSTICK_PERIOD_US           (SYSTICK_PERIOD_MS * 1000u)
-#define SYSTICK_FREQ                (1000u / SYSTICK_PERIOD_MS)
-// Update Display Every x Ticks
-#define DISPLAY_UPDATE_INT          2u
+#define SYSTICK_PERIOD_US           2000u
+#define SYSTICK_FREQ                (1000000u / SYSTICK_PERIOD_US)
+
+// Update UI (Buttons and Display) after a certain number of Sys Ticks
+#define UI_UPDATE_PERIOD_MS         10u
+#define UI_UPDATE_INT               (UI_UPDATE_PERIOD_MS * (1000u / SYSTICK_PERIOD_US))
 
 // Pin Defines
 #define LED_PIN                     8u
@@ -31,7 +32,7 @@
 
 // LED Setup
 #define NUM_LEDS                    177u
-#define MAX_BRIGHTNESS              15u
+#define MAX_BRIGHTNESS              12u
 
 #ifdef DEBUG
     #define DebugBegin(...) Serial.begin(__VA_ARGS__);
