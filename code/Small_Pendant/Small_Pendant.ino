@@ -57,7 +57,7 @@ void loop() {
             DISP_Task();
         } else {
           // Redraw the current display otherwise to update temporal dithering
-          DISP_Redraw();
+          // DISP_Redraw();
         }
     }
 }

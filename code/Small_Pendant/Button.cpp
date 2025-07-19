@@ -8,7 +8,7 @@
  */
 #include "Button.hpp"
 
-#define BTN_DEBOUNCE_TIME_MS        100u
+#define BTN_DEBOUNCE_TIME_MS        65u
 #define BTN_DEBOUNCE_TIME_TICKS     (BTN_DEBOUNCE_TIME_MS / UI_UPDATE_PERIOD_MS)
 
 #define BTN_HELD_TIME_MS            1000u

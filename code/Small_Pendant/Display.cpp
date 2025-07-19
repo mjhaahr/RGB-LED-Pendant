@@ -13,6 +13,10 @@
 // Active Pixels for smiley face (smile, left eye, right eye, outline)
 const static uint_fast8_t smileyFacePixels[SMILEY_FACE_NUM_PIXELS] = {114, 135, 143, 144, 145, 146, 147, 129, 122, 47, 46, 55, 56, 76, 75, 42, 41, 60, 61, 71, 70, 0, 1, 2, 3, 4, 6, 5, 24, 25, 50, 51, 80, 81, 110, 111, 138, 139, 162, 163, 164, 176, 175, 174, 173, 172, 170, 171, 152, 151, 126, 125, 96, 95, 66, 65, 38, 37, 14, 13, 12};
 
+#define DISP_WHEEL_TIME_S           3
+#define DISP_WHEEL_MAX              3600
+#define DISP_WHEEL_INT              (DISP_WHEEL_MAX / (UI_UPDATE_FREQ * DISP_WHEEL_TIME_S));
+
 typedef enum {
     DISP_STATE_OFF      = 0u,
     DISP_STATE_SMILEY   = 1u,
@@ -26,7 +30,7 @@ typedef struct {
     DISP_State_e state;
     bool redraw;
     CRGB currColor;
-} DISP_DisplayContext_t;
+} DISP_DisplayContext_s;
 
 /**
  * Local State Print helper
@@ -51,7 +55,7 @@ static void DISP_SmileyFace(CRGB color);
 static void DISP_Clear(void);
 
 // Static Context
-static DISP_DisplayContext_t dispContext;
+static DISP_DisplayContext_s dispContext;
 // Static Reference to the LEDs to allow updates
 static CRGB leds[NUM_LEDS];
 
@@ -61,6 +65,8 @@ static CRGB leds[NUM_LEDS];
 void DISP_Init(void) {
     FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
     FastLED.setBrightness(MAX_BRIGHTNESS);
+    // Disable dithering to remove flicker
+    FastLED.setDither(DISABLE_DITHER);
 
     dispContext.wheelPos = 0;
     dispContext.state = DISP_STATE_OFF;
@@ -73,7 +79,6 @@ void DISP_Init(void) {
  * Runs the Primary Display Task, responsible for controlling what's shown on the LEDs
  */
 void DISP_Task(void) {
-    DebugPrintln("Start");
     switch (dispContext.state) {
         case DISP_STATE_OFF:
             break;
@@ -88,8 +93,8 @@ void DISP_Task(void) {
             dispContext.redraw = true;
             DISP_ColorWheel(dispContext.wheelPos);
 
-            dispContext.wheelPos += 12;
-            if (dispContext.wheelPos >= 3600 ) {
+            dispContext.wheelPos += DISP_WHEEL_INT;
+            if (dispContext.wheelPos >= DISP_WHEEL_MAX) {
                 dispContext.wheelPos = 0;
             }
             
@@ -104,7 +109,6 @@ void DISP_Task(void) {
         dispContext.redraw = false;
         FastLED.show();
     }
-    DebugPrintln("Stop");
 }
 
 /**
