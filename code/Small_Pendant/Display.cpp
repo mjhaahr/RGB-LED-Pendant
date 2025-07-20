@@ -19,17 +19,20 @@ const static uint_fast8_t smileyFacePixels[SMILEY_FACE_NUM_PIXELS] = {114, 135, 
 
 typedef enum {
     DISP_STATE_OFF      = 0u,
-    DISP_STATE_SMILEY   = 1u,
-    DISP_STATE_WHEEL    = 2u,
+    DISP_STATE_WHEEL    = 1u,
+    DISP_STATE_SMILEY   = 2u,
+    DISP_STATE_CYLON    = 3u,
     DISP_STATE_MAX,
 } DISP_State_e;
 
 // Struct to hold the static context for the state info
 typedef struct {
-    uint_fast16_t wheelPos;
+    uint_fast16_t index;
+    bool dir;
     DISP_State_e state;
     bool redraw;
     CRGB currColor;
+    bool alternate;
 } DISP_DisplayContext_s;
 
 /**
@@ -50,6 +53,12 @@ static void DISP_ColorWheel(uint_fast16_t wheelPos);
 static void DISP_SmileyFace(CRGB color);
 
 /**
+ * Draws a the next frame of the Cylon image using the color
+ * @param CRGB color - The color to draw
+ */
+static void DISP_Cylon(CRGB color);
+
+/**
  * Clears the frame buffer
  */
 static void DISP_Clear(void);
@@ -68,10 +77,12 @@ void DISP_Init(void) {
     // Disable dithering to remove flicker
     FastLED.setDither(DISABLE_DITHER);
 
-    dispContext.wheelPos = 0;
+    dispContext.index = 0u;
+    dispContext.dir = false;
     dispContext.state = DISP_STATE_OFF;
     dispContext.redraw = false;
-    dispContext.currColor = CRGB::Yellow;
+    dispContext.currColor = CRGB::Purple;
+    dispContext.alternate = false;
     DISP_NextPattern();
 }
 
@@ -83,21 +94,44 @@ void DISP_Task(void) {
         case DISP_STATE_OFF:
             break;
             
+        case DISP_STATE_WHEEL:
+            dispContext.redraw = true;
+            DISP_ColorWheel(dispContext.index);
+
+            dispContext.index += DISP_WHEEL_INT;
+            if (dispContext.index >= DISP_WHEEL_MAX) {
+                dispContext.index = 0u;
+            }
+            
+            break;
+            
         case DISP_STATE_SMILEY:
             if (dispContext.redraw) {
                 DISP_SmileyFace(dispContext.currColor);
             }
             break;
             
-        case DISP_STATE_WHEEL:
+        case DISP_STATE_CYLON:
             dispContext.redraw = true;
-            DISP_ColorWheel(dispContext.wheelPos);
+            // Run every other frame
+            if (!dispContext.alternate) {
+                // Handle Wrap
+                if (dispContext.index >= NUM_LEDS) {
+                    dispContext.dir = true;
+                    dispContext.index = NUM_LEDS;
+                } else if (dispContext.index == 0u) {
+                    dispContext.dir = false;
+                }
+    
+                DISP_Cylon(dispContext.currColor);
+      
+                // Advance Index (false is incr, true is decr)
+                dispContext.index += (dispContext.dir) ? (-1) : (1);
 
-            dispContext.wheelPos += DISP_WHEEL_INT;
-            if (dispContext.wheelPos >= DISP_WHEEL_MAX) {
-                dispContext.wheelPos = 0;
+                dispContext.alternate = true;
+            } else {
+                dispContext.alternate = false;
             }
-            
             break;
         
         default:
@@ -112,26 +146,16 @@ void DISP_Task(void) {
 }
 
 /**
- * Redraws the Display for Enhanced Dither Performance
- */
-void DISP_Redraw(void) {
-    // Only redraw the dynamic states
-    switch (dispContext.state) {
-        case DISP_STATE_WHEEL:
-            FastLED.show();
-            
-        default:
-            // Smiley, Off, (more to come) are static and don't need a redraw
-            break;
-    }
-}
-
-/**
  * Advances the color of static color states
  */
 void DISP_NextColor(void) {
-    if (dispContext.state != DISP_STATE_SMILEY) {
-      return;
+    // Unless it's a solic color state, return
+    switch(dispContext.state) {
+        case DISP_STATE_SMILEY:
+        case DISP_STATE_CYLON:
+            break;
+        default:
+            return;
     }
     
     switch (dispContext.currColor.as_uint32_t()) {
@@ -175,15 +199,19 @@ void DISP_NextPattern(void) {
     DISP_Clear();
     switch(dispContext.state) {
         case DISP_STATE_OFF:
-            dispContext.state = DISP_STATE_SMILEY;
-            break;
-            
-        case DISP_STATE_SMILEY:
             dispContext.state = DISP_STATE_WHEEL;
             break;
             
         case DISP_STATE_WHEEL:
             dispContext.state = DISP_STATE_SMILEY;
+            break;
+            
+        case DISP_STATE_SMILEY:
+            dispContext.state = DISP_STATE_CYLON;
+            break;
+            
+        case DISP_STATE_CYLON:
+            dispContext.state = DISP_STATE_WHEEL;
             break;
             
         default:
@@ -210,7 +238,7 @@ void DISP_Off(void) {
  * Local State Print helper
  */
 static void printState(void) {
-    const static String stateLabels[DISP_STATE_MAX] = {"OFF", "SMILEY", "WHEEL"};
+    const static String stateLabels[DISP_STATE_MAX] = {"OFF", "WHEEL", "SMILEY", "CYLON"};
     DebugPrint("State: ");
     DebugPrintln(stateLabels[dispContext.state]);
 }
@@ -260,4 +288,18 @@ static void DISP_Clear(void) {
     for (uint_fast8_t i = 0; i < NUM_LEDS; i++) {
         leds[i] = CRGB::Black;
     }
+}
+
+/**
+ * Draws a the next frame of the Cylon image using the color
+ * @param CRGB color - The color to draw
+ */
+static void DISP_Cylon(CRGB color) {
+    // Scale current display
+    for(uint8_t i = 0; i < NUM_LEDS; i++) { 
+        leds[i].nscale8(200); 
+    }
+    
+    // Set next pixel
+    leds[dispContext.index] = color;
 }

@@ -22,11 +22,6 @@ void DISP_Init(void);
 void DISP_Task(void);
 
 /**
- * Redraws the Display for Enhanced Dither Performance
- */
-void DISP_Redraw(void);
-
-/**
  * Advances the color of static color states
  */
 void DISP_NextColor(void);

@@ -26,8 +26,8 @@
 
 // Pin Defines
 #define LED_PIN                     8u
-#define BOOT_COLOR_BUTTON_PIN       9u
-#define USER_PATTERN_BUTTON_PIN     0u
+#define BOOT_COLOR_BUTTON_PIN       0u
+#define USER_PATTERN_BUTTON_PIN     9u
 
 #define GPIO_BUTTON_PRESSED         LOW
 #define GPIO_BUTTON_UNPRESSED       HIGH
