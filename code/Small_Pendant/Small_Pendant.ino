@@ -22,21 +22,25 @@ void setup() {
     BTN_Init();
     DISP_Init();
 
+    Wire.setPins(SDA_IMU, SCL_IMU);
+
     // TODO: Setup IMU and add the calibration getter here
-    // TODO: Do something with LED BUILTIN
+
+    pinMode(LED_BUILTIN, OUTPUT);
+    digitalWrite(LED_BUILTIN, LOW);
 
     DebugBegin(57600);
     DebugPrintln("Start");
 
     // Create semaphore to flag when timer has fired
-  	taskSemaphore = xSemaphoreCreateBinary();
-  	
-  	// Set timer frequency to 1Mhz
+    taskSemaphore = xSemaphoreCreateBinary();
+
+    // Set timer frequency to 1Mhz
     taskTimer = timerBegin(1000000);
-    
+
     // Attach taskStart ISR to task timer.
     timerAttachInterrupt(taskTimer, &taskStart);
-    
+
     // Set task timer alarm to call taskStart ISR with the SysTick Period
     // Repeat the alarm (3rd param = true) with unlimited count (4th param = 0).
     timerAlarm(taskTimer, SYSTICK_PERIOD_US, true, 0);

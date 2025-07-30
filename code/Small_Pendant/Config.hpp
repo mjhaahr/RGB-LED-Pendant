@@ -11,6 +11,7 @@
 
 #include <Arduino.h>
 #include <FastLED.h>
+#include <Wire.h>
 
 #undef DEBUG
 
@@ -28,6 +29,14 @@
 #define LED_PIN                     8u
 #define BOOT_COLOR_BUTTON_PIN       0u
 #define USER_PATTERN_BUTTON_PIN     9u
+
+#define SDA_IMU                     2u
+#define SCL_IMU                     3u
+
+#undef BUILTIN_LED
+#undef LED_BUILTIN
+#define BUILTIN_LED                 1u
+#define LED_BUILTIN                 BUILTIN_LED
 
 #define GPIO_BUTTON_PRESSED         LOW
 #define GPIO_BUTTON_UNPRESSED       HIGH
