@@ -2,10 +2,6 @@
 
 ![Assembled Device](images/assembled-pendant.png)
 
-![Front Side PCB Render](images/front-render.png)
-
-![Back Side PCB Render](images/back-render.png)
-
 Features:
 - 177 Addressable RGB LEDs
     - WS2812B-style (NeoPixel) control
@@ -19,6 +15,10 @@ Features:
     - Utilizes a Bosch BNO055 for the simplicity of the orientation solution
 - USB C Port for Power, Comms, and Programming
     - Connects to the ESP32-C3's onboard USB-CDC/JTAG device
+
+![Front Side PCB Render](images/front-render.png)
+
+![Back Side PCB Render](images/back-render.png)
 
 ## Table Of Contents
 - [Bill Of Materials](#bill-of-materials)
