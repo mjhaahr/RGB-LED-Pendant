@@ -1,6 +1,6 @@
 # Small RGB LED Pendant with User-Selectable Patterns
 
-<!--  ![Assembled Device](images/????.png) -->
+![Assembled Device](images/assembled-pendant.png)
 
 ![Front Side PCB Render](images/front-render.png)
 
@@ -137,17 +137,19 @@ Features:
 ![Back Side Assembly Frame Render](images/back-frame-render.png)
 
 ## Case Design
-*TODO: Make Alternate with no Loop*
-*TODO: Images/Renders*
-- 3D Printed Case with Optional Keyring Loop (TODO: Make Alternate with no Loop)
+<!--- *TODO: Make Alternate with no Loop* --->
+![Assembled Case](images/assembled-case.png)
+
+![Case Design](images/case-design.png)
+
+- 3D Printed Case with Keyring Loop
 - Due to the small size, the two halves must be glued together, so ensure the whole pendant works before gluing together
+- Included are the [CAD Files](case/Models) and [STLs](case/3D_Prints)
 
 ## Code
-*TODO: Not written*
-- To load the custom board definitions, do the following:
-    - Lol, I don't know yet
-    - `boards.local.txt`?
-    - Write script to find ESP32 Core and add custom board def?
+- Open the [Arduino Project](code/Small_Pendant) (Small_Pendant.ino and the rest of the directory)
+- Ensure the ESP32 Arduino Core is installed and select the ESP32C3 Dev Module
+- Plug in the pendant and click upload
 
 ## Extra Notes
 - The [Only Pendant](https://github.com/mjhaahr/RGB-LED-Pendant/tree/Only_Pendant) branch features a much-simplified design, with only the LED Matrix and no control board; it functions the same as a normal NeoPixel matrix.
